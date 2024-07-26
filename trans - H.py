@@ -1,3 +1,5 @@
+#用此文件翻译H-Scene文本。
+
 import os
 import json
 import time
