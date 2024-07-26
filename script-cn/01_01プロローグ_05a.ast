@@ -1,0 +1,175 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "蓼科と相談する"},
+        {"bg", y = -200, x = -480, zoom = 120, file = "zbg030c", path = ":bg/", ax = 1280, ay = 720, bx = -640, by = -360, sync = 0},
+        {"fg", ch = "イヴ", size = "z2", ex01 = "a0099", mode = 3, resize = 1, path = ":fg/eve/z2/", file = "eve_z2a0200", face = "a0011", head = "eve_z2a", ex05 = "eve_z2a0000", lv = 5, id = 13, sync = 0},
+        {"extrans", time = 250},
+        {"bgm", file = "bgm23"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"凪"},
+                    "「有什么好主意吗？」"
+                }
+            }
+        },
+        linknext = "block_00001",
+        line = 18
+    },
+    block_00001 = {
+        {"fg", ch = "イヴ", size = "z2", ex01 = "b0099", mode = 3, path = ":fg/eve/z2/", file = "eve_z2b0210", face = "b0020", head = "eve_z2b", ex05 = "eve_z2b0010", lv = 5, id = 13},
+        {"fgact", ch = "イヴ", act = "おじぎ", lv = 5, id = 13},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_eve_00112", ch = "eve"}
+            },
+            ja = {
+                {
+                    name = {"イヴ", "蓼科"},
+                    "「嗯……如果联系校内的安保，",
+                    {"rt2"},
+                    "他们可能会来帮忙」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 27
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"凪"},
+                    "「我觉得这主意不错。",
+                    {"rt2"},
+                    "但他们到达需要时间」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 31
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使再快，也需要几分钟的时间。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 33
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {"更何况能不能争取到打电话的时间……。"}
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 35
+    },
+    block_00005 = {
+        {"fg", ch = "龍司", size = "no", ex01 = "a0099", mode = 1, path = ":fg/ryu/no/", file = "ryu_noa0700", face = "a0027", head = "ryu_noa", lv = 3, id = 200},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ryu_00019", ch = "ryu"}
+            },
+            ja = {
+                {
+                    name = {"龍司"},
+                    "「如果他们不来，我们就过去。",
+                    {"rt2"},
+                    "我只给你们三秒钟」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 41
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"凪"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 44
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"凪"},
+                    "「没办法了，是吧」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 47
+    },
+    block_00008 = {
+        {"fg", ch = "イヴ", size = "z2", ex01 = "b0099", mode = 3, path = ":fg/eve/z2/", file = "eve_z2b0210", face = "b0018", head = "eve_z2b", ex05 = "eve_z2b0010", lv = 5, id = 13},
+        {"text"},
+        text = {
+            ja = {
+                {"如果不出去，未来只会变得更加复杂。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 52
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {"既然如此，只有一个办法。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 54
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"凪"},
+                    "「交给我吧。我会处理好的」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 57
+    },
+    block_00011 = {
+        {"excall", file = "01_01プロローグ_06"},
+        {"text"},
+        linkback = "block_00010",
+        line = 60
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}
