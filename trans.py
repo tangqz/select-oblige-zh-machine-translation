@@ -1,3 +1,5 @@
+#用此文件翻译转换格式后的正文。
+
 import os
 import json
 import time
@@ -94,11 +96,11 @@ def process_json_file(file_path, output_folder):
                 # 解析JSON对象
                 translated_json = json.loads(clean_translated_batch_no_ruby)
                 
-                # 检查翻译结果中是否包含日文字符（仅正文部分）
-                #for item in translated_json:
-                #    for key, value in item.items():
-                #        if re.search(r'[あ-んア-ン]', value):
-                #            raise ValueError("Translation contains Japanese characters in the text content.")
+                 检查翻译结果中是否包含日文字符（仅正文部分）
+                for item in translated_json:
+                    for key, value in item.items():
+                        if re.search(r'[あ-んア-ン]', value):
+                            raise ValueError("Translation contains Japanese characters in the text content.")
                 
                 translated_data.extend(translated_json)
                 break  # 成功翻译，跳出重试循环
