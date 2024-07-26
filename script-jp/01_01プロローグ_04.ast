@@ -1,0 +1,2173 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="裏の住人"},
+		{"bg", y=100, speed=150000, file="zbg017c", path=":bg/", x2=640, y2=100, x=-640, ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"bg", lv=5, id=5, rule="cinema", file="cinema01", alpha=192, time=400, path=":sys/", vague=40, sync=0},
+		{"extrans", rule=139, vague=40},
+		{"bgm", file="bgm20"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"二人に案内されたのは、主に大通りで、",
+					{"rt2"},
+					"脇道には一切入らなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 18,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"目星をつけておいた小道や施設を巡り、",
+					{"rt2"},
+					"土地勘を細部までハッキリさせていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 21,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いざという時……それがどんな時かはさておき、",
+					{"rt2"},
+					"何事にも困らないようにしておくのが重要だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 24,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"有事の際への準備は、怠ってはならない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 26,
+	},
+	block_00004 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"cgdel", lv=5, id=5, rule="cinema", time=400, sync=0},
+		{"bg", file="bg026c", path=":bg/", sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最後に、残しておいたポイントへと向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 38,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"学生寮の近くにある、備品庫だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 40,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"入るにはおそらく鍵が必要だろうが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 42,
+	},
+	block_00007 = {
+		{"bg", x=-600, y=30, zoom=120, time=500, file="zbg026c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……お。いいねえ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 47,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"電子式ではなく、鍵を差し込んで開けるタイプの扉だ。",
+					{"rt2"},
+					"こういうのには慣れている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 50,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「監視カメラは……ないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 53,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり重要視されていない場所なのか、",
+					{"rt2"},
+					"保管されている物に価値を見出していないのか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 56,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どちらにしろ好都合だと思いながら、",
+					{"rt2"},
+					"ポケットからピッキングツールを取り出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 59,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな物を持ってきているワン・ズ・ギフトの当選者は",
+					{"rt2"},
+					"俺が初めてじゃないだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 62,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「自慢にもならんけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 65,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こういうタイプの鍵には種類がある。",
+					{"rt2"},
+					"両端に歯のある鍵、四方に歯のある鍵など……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 68,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どんな鍵だろうと、問題はない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 70,
+	},
+	block_00016 = {
+		{"se", file="se扉鍵", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"カチャリと小気味のいい音が鳴った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 76,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺なら三秒だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 79,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00088", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "？？？"},
+					"「へえ、凄く器用なんですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 84,
+	},
+	block_00019 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「――っ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 89,
+	},
+	block_00020 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"bg", file="bg026c", path=":bg/", sync=0},
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0210", face="a0004", head="eve_noa", ex05="eve_noa0010", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00089", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「蓼科です。さっきぶりですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 104,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「お前……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 107,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「まいったな。",
+					{"rt2"},
+					"周りには気をつけていたんだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 111,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「何かやってる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 114,
+	},
+	block_00024 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0210", face="a0019", head="eve_noa", ex05="eve_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00090", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「やってる、というと？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 121,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「気配を消して、呼吸の合間を縫うように",
+					{"rt2"},
+					"入ってこられたら、素人だと思う方が間違いだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 125,
+	},
+	block_00026 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0200", face="a0002", head="eve_noa", ex05="eve_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0200", face="a0004", head="eve_noa", ex05="eve_noa0000", lv=3, id=13},
+				{"fgact", ch="イヴ", act="おじぎ", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00091", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「ああ、そういう意味ですか。",
+					{"rt2"},
+					"合気道をたしなむ程度に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 135,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「たしなむ程度で、",
+					{"rt2"},
+					"達人レベルの芸当をされてたまるかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 139,
+	},
+	block_00028 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0006", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00092", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「ふふふ、褒め言葉として受け取っておきますね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 146,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……それで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 149,
+	},
+	block_00030 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0019", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00093", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「え？　何でしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 156,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「この後どうするんだ。見てたんだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 159,
+	},
+	block_00032 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0210", face="b0010", head="eve_nob", ex05="eve_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00094", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「そうですね……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 166,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どんな言葉が出てきてもいいように構えていると、",
+					{"rt2"},
+					"蓼科はとびきりの笑顔で言い放った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 169,
+	},
+	block_00034 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=30, file="zbg026c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="イヴ", size="z1", ex01="b0099", mode=3, resize=1, path=":fg/eve/z1/", file="eve_z1b0210", face="b0003", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00095", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「一緒に入っちゃいましょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 181,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 184,
+	},
+	block_00036 = {
+		{"fg", ch="イヴ", size="z1", ex01="a0099", mode=3, path=":fg/eve/z1/", file="eve_z1a0200", face="a0019", head="eve_z1a", ex05="eve_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00096", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「布波能さんはここに入るために",
+					{"rt2"},
+					"鍵を開けたんじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 192,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それは、そうなんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 195,
+	},
+	block_00038 = {
+		{"fg", ch="イヴ", size="z1", ex01="a0099", mode=3, path=":fg/eve/z1/", file="eve_z1a0200", face="a0006", head="eve_z1a", ex05="eve_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00097", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「この学園は学生達の自主性と教養に任されています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 202,
+	},
+	block_00039 = {
+		{"fg", ch="イヴ", size="z1", ex01="a0099", mode=3, path=":fg/eve/z1/", file="eve_z1a0200", face="a0004", head="eve_z1a", ex05="eve_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00098", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「ですので、布波能さんの思うがままに、",
+					{"rt2"},
+					"学生生活を謳歌してみてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 210,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そ、そうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 213,
+	},
+	block_00041 = {
+		{"fg", ch="イヴ", size="z1", ex01="a0099", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0003", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", ex01="a0099", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0006", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+				{"fgact", ch="イヴ", act="うんうん", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00099", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「じゃあすぐに行動しましょう？",
+					{"rt2"},
+					"ほらっ、早く入らないと人が来ちゃいますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 223,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"確かにこんな所でまごついているのは怪しすぎる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 225,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いくらか逡巡した後、",
+					{"rt2"},
+					"俺らはそのままスルリと倉庫の中へ身を忍ばせた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 228,
+	},
+	block_00044 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"se", file="se扉閉める(体育用具室)", id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg030d", path=":bg/", sync=0},
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, resize=1, path=":fg/eve/no/", file="eve_nob0210", face="b0004", head="eve_nob", ex05="eve_nob0010", lv=3, id=13, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00100", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「いいですねこういうの。私ドキドキします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 246,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"内側から鍵をかけながら、",
+					{"rt2"},
+					"テンションを上げている女に人差し指を立てる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 249,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「何を考えてるのか知らないが、もう少し静かに",
+					{"rt2"},
+					"喋ってくれ。近くに誰かいたらヤバイだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 253,
+	},
+	block_00047 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0210", face="b0018", head="eve_nob", ex05="eve_nob0010", lv=3, id=13},
+		{"fgact", ch="イヴ", act="おじぎ", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0210", face="b0015", head="eve_nob", ex05="eve_nob0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00101", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「失礼しました。気をつけます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 262,
+	},
+	block_00048 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0019", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00102", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「それで、この後はどうするつもりなんです？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 271,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺の台詞なんだけどそれ……。",
+					{"rt2"},
+					"まあなんだ、物色する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 275,
+	},
+	block_00050 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0200", face="a0003", head="eve_noa", ex05="eve_noa0000", lv=3, id=13},
+		{"fgact", ch="イヴ", act="びっくり", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00103", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「まあ！　物色！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 283,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だから静かにしなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 286,
+	},
+	block_00052 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0200", face="a0020", head="eve_noa", ex05="eve_noa0000", lv=3, id=13},
+		{"fgact", ch="イヴ", act="おじぎ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00104", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「す、すみません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 294,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いいとこ育ちで世間知らずのお嬢様なんだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 296,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"物色という言葉が正しく伝わっているのかも怪しい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 298,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"手早く目的を果たすべきだろうと判断して、予定外の",
+					{"rt2"},
+					"同行者がいるのはこの際、気にしないことにした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 301,
+	},
+	block_00056 = {
+		{"bg", y=100, speed=150000, file="zbg030d", path=":bg/", x2=640, y2=100, x=-640, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宝物庫ともいうべき倉庫を見回し、",
+					{"rt2"},
+					"何があるのかを順々に確認していく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 306,
+	},
+	block_00057 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=1, path=":fg/eve/no/", file="eve_nob0210", face="b0019", head="eve_nob", ex05="eve_nob0010", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00105", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「暗いですけど、ちゃんと見えてます？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 313,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「大体のものは、形でな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 316,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"各季節に備えたストーブや扇風機など大物の他に、",
+					{"rt2"},
+					{"txruby", text="なにがし"},
+					"某",
+					{"txruby"},
+					"かのイベントに使われるであろう飾り物などがある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 322,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"段ボールの中身は分からないが、ホコリの層が",
+					{"rt2"},
+					"出来ているから、滅多に使われていない様子だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 325,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「少しばかり拝借してもバレそうにないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 328,
+	},
+	block_00062 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=1, path=":fg/eve/no/", file="eve_noa0210", face="a0015", head="eve_noa", ex05="eve_noa0010", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00106", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「見るだけにしないとダメですよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 335,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「冗談だ。安心してくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 338,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今はな……そう思いつつ、",
+					{"rt2"},
+					"夜目を利かせて細かくチェックする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 341,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ちょっとした物を隠すのも容易そうだ。",
+					{"rt2"},
+					"人の出入りが少ないようなら利用してもいいかもな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 344,
+	},
+	block_00066 = {
+		{"bgm", stop=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg030d", path=":bg/", sync=0},
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0210", face="a0006", head="eve_noa", ex05="eve_noa0010", lv=3, id=13, sync=0},
+		{"extrans"},
+		{"se", file="se扉鍵", id=1},
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=3, path=":fg/eve/no/", file="eve_noa0210", face="a0018", head="eve_noa", ex05="eve_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00107", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「あッ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 363,
+	},
+	block_00067 = {
+		{"se", file="se扉開く(体育用具室)", id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その時、突然扉の方から音が響く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 367,
+	},
+	block_00068 = {
+		{"fg", ch="イヴ", size="no", ex01="b0099", mode=3, path=":fg/eve/no/", file="eve_nob0210", face="b0020", head="eve_nob", ex05="eve_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00108", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「誰か来ました……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 374,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まさか侵入がバレたのか――考える間もなく扉が開く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 376,
+	},
+	block_00070 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いいから隠れろ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 381,
+	},
+	block_00071 = {
+		{"se", stop=1, time=500, id=2},
+		{"bg", y=-200, speed=800, file="zbg030d", path=":bg/", x2=0, y2=0, x=-480, ax=1280, ay=720, bx=-640, by=-360},
+		{"se", file="se倒れる(ベッド)", id=3},
+		{"bg", lv=5, id=5, rule="cinema", file="cinema01", alpha=192, time=400, path=":sys/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"咄嗟に二人で物陰に身を隠した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 389,
+	},
+	block_00072 = {
+		{"bgm", file="bgm23"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_gas_00001", ch="gas"},
+			},
+			ja = {
+				{
+					name = {"がさつな男子学生", "？？？"},
+					"「ほら、入れよ",
+					{"txruby", text="なるみや"},
+					"成宮",
+					{"txruby"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 398,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00001", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "？？？"},
+					"「わ、分かってるよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 405,
+	},
+	block_00074 = {
+		{"se", stop=1, time=500, id=3},
+		{"msgoff"},
+		{"cgdel", lv=5, id=5, rule="cinema", time=400, sync=0},
+		{"bg", file="bg030c", path=":bg/", sync=0},
+		{"fg", ch="帝雄", size="no", mode=3, path=":fg/tei/no/", file="tei_noa0200", face="a0011", head="tei_noa", lv=3, id=13, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"電灯がついて周囲を明るく照らしだしたかと思えば、",
+					{"rt2"},
+					"ぞろぞろと男子学生が入ってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 417,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その中に背を丸めてビクビクしている",
+					{"rt2"},
+					"小太りの男が一人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 420,
+	},
+	block_00076 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=400, y=20, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="龍司", size="z1", ex01="a0099", mode=3, resize=1, path=":fg/ryu/z1/", file="ryu_z1a0700", face="a0001", head="ryu_z1a", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"二人の男が入り口を塞ぐように立ちはだかり、",
+					{"rt2"},
+					"その後ろに威圧感を放つ男がもう一人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 434,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"立場と力関係は、誰が見ても明らかだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 436,
+	},
+	block_00078 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-400, y=20, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="帝雄", size="z1", mode=3, resize=1, path=":fg/tei/z1/", file="tei_z1a0200", face="a0014", head="tei_z1a", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_gas_00002", ch="gas"},
+			},
+			ja = {
+				{
+					name = {"がさつな男子学生"},
+					"「成宮、今日もいつもの、ちゃんと持ってきたよな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 446,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"追い詰められている学生……便宜上、",
+					{"rt2"},
+					"小太り君とでもしておこう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 449,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"彼に向かって威圧的な言葉がかけられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 451,
+	},
+	block_00081 = {
+		{"fg", ch="帝雄", size="z1", mode=3, path=":fg/tei/z1/", file="tei_z1a0200", face="a0011", head="tei_z1a", lv=4, id=13},
+		{"fgact", ch="帝雄", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00002", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "小太り君"},
+					"「うん……はいこれ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 459,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"オドオドしながら取り出されたのは、茶封筒。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 461,
+	},
+	block_00083 = {
+		{"se", file="se紙系_置く", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"男がそれを受け取ると、",
+					{"rt2"},
+					"中身を雑に抜き出して確認した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 466,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"現金だ。札束は分厚く、",
+					{"rt2"},
+					"十万どころじゃないのが一目で分かる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 469,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"珠賀良区では日常茶飯事であった、",
+					{"rt2"},
+					"カツアゲのセレブ版というところか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 472,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（どこであっても人がやることなんて同じだなー）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 475,
+	},
+	block_00087 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"感慨深いなーと思って見ていれば、現金を数え終わった",
+					{"rt2"},
+					"学生がリーダー格らしき男に向き直る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 480,
+	},
+	block_00088 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg030c", path=":bg/", sync=0},
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, resize=1, path=":fg/ryu/no/", file="ryu_noa0700", face="a0001", head="ryu_noa", x=-230, lv=3, id=9, sync=0},
+		{"fg", ch="帝雄", size="no", mode=3, resize=1, path=":fg/tei/no/", file="tei_noa0200", face="a0011", head="tei_noa", x=230, lv=3, id=10, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_gas_00003", ch="gas"},
+			},
+			ja = {
+				{
+					name = {"がさつな男子学生"},
+					"「今月分、確かにありましたよ龍司さん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 491,
+	},
+	block_00089 = {
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, path=":fg/ryu/no/", file="ryu_noa0700", face="a0015", head="ryu_noa", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"龍司と呼ばれた男は封筒を受け取ると、",
+					{"rt2"},
+					"クッと口の端をつり上げた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 496,
+	},
+	block_00090 = {
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, path=":fg/ryu/no/", file="ryu_noa0700", face="a0025", head="ryu_noa", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00013", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「お前が持っておけ。無くすなよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 501,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_gas_00004", ch="gas"},
+			},
+			ja = {
+				{
+					name = {"がさつな男子学生"},
+					"「はっ、はい、任せて下さい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 504,
+	},
+	block_00092 = {
+		{"fg", ch="帝雄", size="no", mode=3, path=":fg/tei/no/", file="tei_noa0200", face="a0014", head="tei_noa", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00003", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "小太り君"},
+					"「ねえ！　もうこんなこと止めてよ龍司くん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 511,
+	},
+	block_00093 = {
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, path=":fg/ryu/no/", file="ryu_noa0700", face="a0014", head="ryu_noa", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kod_00001", ch="kod"},
+			},
+			ja = {
+				{
+					name = {"声のデカい男子学生"},
+					"「成宮テメェ、静かにしやがれ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 516,
+	},
+	block_00094 = {
+		{"fg", ch="帝雄", size="no", mode=3, path=":fg/tei/no/", file="tei_noa0200", face="a0012", head="tei_noa", x=230, lv=3, id=10},
+		{"fgact", ch="帝雄", act="おじぎ", lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00004", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "小太り君"},
+					"「だ、だって……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 524,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"お前の声も十分デカいぞとツッコんでやりたいが、",
+					{"rt2"},
+					"小太り君はそれどころではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 527,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"取り巻きの一人が小太り君の胸ぐらに掴みかかり、",
+					{"rt2"},
+					"握り拳を突きつけて威圧する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 530,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kod_00002", ch="kod"},
+			},
+			ja = {
+				{
+					name = {"声のデカい男子学生"},
+					"「まだ教育が足りてねぇようだなぁ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 533,
+	},
+	block_00098 = {
+		{"fg", ch="帝雄", size="no", mode=3, path=":fg/tei/no/", file="tei_noa0200", face="a0020", head="tei_noa", x=230, lv=3, id=10},
+		{"fgact", ch="帝雄", act="いいえ", lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00005", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "小太り君"},
+					"「ひっ、ひぃいぃ……！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 541,
+	},
+	block_00099 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=400, y=20, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="龍司", size="z1", ex01="a0099", mode=3, resize=1, path=":fg/ryu/z1/", file="ryu_z1a0700", face="a0019", head="ryu_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00014", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「待て」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 551,
+	},
+	block_00100 = {
+		{"fg", ch="龍司", size="z1", ex01="a0099", mode=3, path=":fg/ryu/z1/", file="ryu_z1a0700", face="a0026", head="ryu_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00015", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「見える所に傷を付けるな……殴るなら、腹にしろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 556,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kod_00003", ch="kod"},
+			},
+			ja = {
+				{
+					name = {"声のデカい男子学生"},
+					"「すみません、龍司さん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 559,
+	},
+	block_00102 = {
+		{"se", file="se殴る(重)", id=1},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"へぇ……アイツ、慣れてるねぇ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 567,
+	},
+	block_00103 = {
+		{"fg", ch="イヴ", size="no", ex01="a0099", mode=1, path=":fg/eve/no/", file="eve_noa0200", face="a0013", head="eve_noa", ex05="eve_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00109", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 574,
+	},
+	block_00104 = {
+		{"se", file="se殴る(重b)", count=2, id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"感心している間にも小太り君は一発、二発と綺麗な",
+					{"rt2"},
+					"ボディブローをくらって腹を押さえながらうずくまる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 581,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"取り巻きの男も何かスポーツをやっているようで、",
+					{"rt2"},
+					"身のこなしだけなら大したものだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 584,
+	},
+	block_00106 = {
+		{"se", stop=1, time=500, id=1},
+		{"se", stop=1, time=500, id=2},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-200, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="帝雄", size="z1", mode=3, resize=1, path=":fg/tei/z1/", file="tei_z1a0200", face="a0020", head="tei_z1a", lv=4, id=10, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kod_00004", ch="kod"},
+			},
+			ja = {
+				{
+					name = {"声のデカい男子学生"},
+					"「成宮、お前も痛い思いをしたくはないだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 597,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kod_00005", ch="kod"},
+			},
+			ja = {
+				{
+					name = {"声のデカい男子学生"},
+					"「だったら逆らうんじゃねぇよ。分かったな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 600,
+	},
+	block_00108 = {
+		{"fg", ch="帝雄", size="z1", mode=3, path=":fg/tei/z1/", file="tei_z1a0200", face="a0011", head="tei_z1a", lv=4, id=10},
+		{"fgact", ch="帝雄", act="おじぎ", lv=4, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00006", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄", "小太り君"},
+					"「ご……ごめんなさい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 608,
+	},
+	block_00109 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg030c", path=":bg/", sync=0},
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, resize=1, path=":fg/ryu/no/", file="ryu_noa0700", face="a0025", head="ryu_noa", lv=3, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00016", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「…………フッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 618,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"龍司とやらは自分では手を出さず、",
+					{"rt2"},
+					"事態を見ることで",
+					{"txruby", text="しぎゃくしん"},
+					"嗜虐心",
+					{"txruby"},
+					"を満たしているようだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 621,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やるならやるで正面切って手下に背中を見せるくらいの",
+					{"rt2"},
+					"気概でやって欲しいものである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 624,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とはいえ関わり合いになる必要もないので、",
+					{"rt2"},
+					"このまま傍観させて貰おう……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 627,
+	},
+	block_00113 = {
+		{"se", file="se転ぶ、がしゃーん", id=1},
+		{"quake"},
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=3, path=":fg/ryu/no/", file="ryu_noa0700", face="a0021", head="ryu_noa", lv=3, id=9},
+		{"ex", time=1500, func="wait"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-200, x=-480, zoom=120, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="イヴ", size="z2", ex01="a0099", mode=3, resize=1, path=":fg/eve/z2/", file="eve_z2a0200", face="a0018", head="eve_z2a", ex05="eve_z2a0000", lv=5, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00110", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「あっ、ごめんなさい、私……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 647,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんて思っていた矢先に、",
+					{"rt2"},
+					"真後ろから大きな物音がした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 650,
+	},
+	block_00115 = {
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=1, path=":fg/ryu/no/", file="ryu_noa0700", face="a0019", head="ryu_noa", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00017", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「何だ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 657,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"様子を窺うのに夢中になって、",
+					{"rt2"},
+					"備品に身体をぶつけてしまったのか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 660,
+	},
+	block_00117 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"向こうも当然気づいて、全員が厳しい顔つきである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 664,
+	},
+	block_00118 = {
+		{"fg", ch="龍司", size="no", ex01="a0099", mode=1, path=":fg/ryu/no/", file="ryu_noa0700", face="a0027", head="ryu_noa", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00018", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司"},
+					"「そこにいるのは誰だ。さっさと出てこい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 669,
+	},
+	block_00119 = {
+		{"fg", ch="イヴ", size="z2", ex01="a0099", mode=3, path=":fg/eve/z2/", file="eve_z2a0200", face="a0011", head="eve_z2a", ex05="eve_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_00111", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ", "蓼科"},
+					"「どう、しましょう……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 676,
+	},
+	block_00120 = {
+		{"select", file="01_01プロローグ_05a", text="select"},
+		{"select", file="01_01プロローグ_05b", exp="f.eve=f.eve+1", text="select"},
+		{"select", name="01_01_04", mode="sys"},
+		{"text"},
+		select = {
+			ja = {
+				"蓼科と相談する",
+				"蓼科を守るため姿を現す",
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 686,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"　",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		line = 690,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

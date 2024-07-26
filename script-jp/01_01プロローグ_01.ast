@@ -1,0 +1,1794 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"select", label="next", text="select"},
+		{"select", file="02_奏命_18h4", text="select"},
+		{"select", file="03_イヴ_12h2", text="select"},
+		{"select", mode="sys", name="select_trial1"},
+		{"text"},
+		select = {
+			ja = {
+				"本編をプレイ",
+				"奏命のHシーンをプレイ",
+				"イヴのHシーンをプレイ",
+			},
+		},
+		linknext = "block_00001",
+		line = 5,
+	},
+	block_00001 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"savetitle", text="始まりの鐘"},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kok_00033", ch="kok"},
+			},
+			ja = {
+				{
+					name = {"声の低い警察官", "？？？"},
+					"「これが最後の質問だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 24,
+	},
+	block_00002 = {
+		{"bgm", file="bgm18"},
+		{"bg", y=360, speed=150000, time=2000, file="zbg035c", path=":bg/", x2=100, y2=-360, x=100, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kok_00034", ch="kok"},
+			},
+			ja = {
+				{
+					name = {"声の低い警察官", "？？？"},
+					"「ワン・ズ・ギフトの権利を不正に手に入れたと",
+					{"rt2"},
+					"認めれば、法の下で裁いてやる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 32,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kok_00035", ch="kok"},
+			},
+			ja = {
+				{
+					name = {"声の低い警察官", "？？？"},
+					"「もし認めないのなら……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 35,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kok_00036", ch="kok"},
+			},
+			ja = {
+				{
+					name = {"声の低い警察官", "？？？"},
+					"「選べ。認めるか、認めないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 38,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 41,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"「嘘を……認める訳にも、いかないだろ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 44,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kok_00037", ch="kok"},
+			},
+			ja = {
+				{
+					name = {"声の低い警察官", "？？？"},
+					"「そうか……バカなヤツだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 47,
+	},
+	block_00008 = {
+		{"msgoff"},
+		{"cgdel", id=-1, sync=0},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg035c", path=":bg/", sync=0},
+		{"extrans", time=2000},
+		{"ex", time=500, func="wait"},
+		{"bg", file="bg035d", path=":bg/"},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ああ、失敗した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 63,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					{"txruby", text="・・"},
+					"ヤツ",
+					{"txruby"},
+					"の、トリガーを引いてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 65,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"線引きを誤り、友のためにと色気を出した……",
+					{"rt2"},
+					"俺のミスだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 69,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"監禁されたこの部屋で、出来ることは、何もない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 71,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"逃げ場がない。打開策もない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 73,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それでも――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 75,
+	},
+	block_00014 = {
+		{"msgoff"},
+		{"cgdel", id=-1, sync=0},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="cg_pl_01", lv=8, id=8, time=4000, path=":cg/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"身体が満足に動かず、地面に這いつくばろうとも……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 85,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自らの口から零れ出た血反吐に塗れようとも……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 87,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"手を前に出すのは、やめない。やめてはならない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 89,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺には――この手で掴まなければいけないものがある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 91,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たとえ、惰弱であろうと……",
+					{"txruby", text="・・・・・・"},
+					"足りていない",
+					{"txruby"},
+					"手であろうと。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 93,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"前に進むのを、諦める訳にはいかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 95,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"『家族』の、ために――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 97,
+	},
+	block_00021 = {
+		{"msgoff"},
+		{"quake", dir="h"},
+		{"se", file="seぶつかる(重)、タックル", id=1},
+		{"cgdel", id=-1, sync=0},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="cg_pl_02", lv=8, id=8, time=2000, path=":cg/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00218", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「現実だよ、これが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 110,
+	},
+	block_00022 = {
+		{"cgdel", id=-1, sync=0},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="cg_pl_03", lv=8, id=8, time=200, path=":cg/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00219", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「動けるはずないだろ？　念入りに潰させたんだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 119,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00220", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「はなからチャンスなんてないんだよ。",
+					{"rt2"},
+					"この場における可能性は、全部潰した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 123,
+	},
+	block_00024 = {
+		{"quake", dir="h"},
+		{"se", file="seぶつかる(重)、タックル", id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00223", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「もっと絶望してくれよ、布波能……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 129,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00224", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「最後の望みは、蓼科のヤツか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 132,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00225", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「アイツが何を企んでいようが、遅い……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 135,
+	},
+	block_00027 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00226", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「遅いんだよ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 139,
+	},
+	block_00028 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00227", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「その前に、決着をつける！　俺自身の手で！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 143,
+	},
+	block_00029 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", file="black", lv=9, id=9, alpha=100, time=1000, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"（…………クソッタレ）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 149,
+	},
+	block_00030 = {
+		{"bg", file="black", lv=9, id=9, alpha=150, time=1000, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"（……ああ、やっぱ、無理だったわ）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 157,
+	},
+	block_00031 = {
+		{"bg", file="black", lv=9, id=9, alpha=200, time=1000, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"（悪いな……イヴ。せっかく協力してくれたのに）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 165,
+	},
+	block_00032 = {
+		{"bg", file="black", lv=9, id=9, alpha=230, time=1000, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"（バアさん……トウリと、弟妹を頼んだぞ）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 170,
+	},
+	block_00033 = {
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ryu_00228", ch="ryu"},
+			},
+			ja = {
+				{
+					name = {"龍司", "？？？"},
+					"「死ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 175,
+	},
+	block_00034 = {
+		{"bgm", stop=1, time=2000},
+		{"se", stop=1, id=-1, time=2000},
+		{"vostop", stop=1, time=2000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00001", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "？？？"},
+					"「――あんたと顔を合わせて話すのも、",
+					{"rt2"},
+					"今日で最後になるのかねえ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 193,
+	},
+	block_00035 = {
+		{"msgoff"},
+		{"bg", file="bg002c", path=":bg/", sync=0},
+		{"extrans", time=2000},
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0210", face="a0002", head="baa_noa", ex05="baa_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0200", face="a0015", head="baa_noa", ex05="baa_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00002", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「縁起でもないことを言うな？",
+					{"rt2"},
+					"ふふふ、じゃあそうならないように気張らなきゃね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 216,
+	},
+	block_00036 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0200", face="a0001", head="baa_noa", ex05="baa_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00003", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「いいかい。",
+					{"rt2"},
+					"私はきっかけを与えただけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 224,
+	},
+	block_00037 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0200", face="a0014", head="baa_noa", ex05="baa_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00004", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「この後どうするか、どんな結果を掴むかは、",
+					{"rt2"},
+					"あんた次第だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 232,
+	},
+	block_00038 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0200", face="a0010", head="baa_noa", ex05="baa_noa0000", lv=3, id=13},
+		{"fgact", ch="バアさん", act="おじぎ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00005", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「想像も出来ないような環境では、",
+					{"rt2"},
+					"戸惑うことも多いだろうさ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 241,
+	},
+	block_00039 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0210", face="a0002", head="baa_noa", ex05="baa_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0210", face="a0006", head="baa_noa", ex05="baa_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00006", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「だけど、思うがままにやってきな。",
+					{"rt2"},
+					"たとえやらかしたって、帰る場所もあるし家族もいる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 250,
+	},
+	block_00040 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0210", face="a0025", head="baa_noa", ex05="baa_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00007", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「せっかくの、一回きりのチャンスなんだからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 257,
+	},
+	block_00041 = {
+		{"fg", ch="バアさん", size="no", mode=3, path=":fg/baa/no/", file="baa_noa0200", face="a0015", head="baa_noa", ex05="baa_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00008", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「……バカ、言われなくとも信じてるさね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 264,
+	},
+	block_00042 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=20, file="zbg002c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="バアさん", size="z1", mode=3, resize=1, path=":fg/baa/z1/", file="baa_z1a0200", face="a0002", head="baa_z1a", ex05="baa_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00009", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「ああ、そうだ。",
+					{"rt2"},
+					"これを持って行きな。スマートフォンだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 277,
+	},
+	block_00043 = {
+		{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0200", face="a0009", head="baa_z1a", ex05="baa_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0200", face="a0005", head="baa_z1a", ex05="baa_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00010", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「今時の最新のものと比べたら遙かに旧式だが、",
+					{"rt2"},
+					"多機能だし、何しろシンプルで使いやすい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 286,
+	},
+	block_00044 = {
+		{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0200", face="a0002", head="baa_z1a", ex05="baa_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00011", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「慣れるために事前に触っておくといいさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 293,
+	},
+	block_00045 = {
+		{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0210", face="a0001", head="baa_z1a", ex05="baa_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00012", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「さてと……明朝には迎えが来るだろう。",
+					{"rt2"},
+					"それまでゆっくり過ごしておきな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 301,
+	},
+	block_00046 = {
+		{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0210", face="a0015", head="baa_z1a", ex05="baa_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="バアさん", size="z1", mode=3, path=":fg/baa/z1/", file="baa_z1a0210", face="a0013", head="baa_z1a", ex05="baa_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_baa_00013", ch="baa"},
+			},
+			ja = {
+				{
+					name = {"バアさん", "孤児院の先生"},
+					"「こんな場所でも、住めば都……。",
+					{"rt2"},
+					"離れれば寂しくなるかもしれないからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 310,
+	},
+	block_00047 = {
+		{"bgm", stop=1},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"ex", time=2000, func="wait"},
+		{"bg", speed=150000, time=2000, file="zbg004a", path=":bg/", x2=640, y2=100, x=-640, y=100, ax=1280, ay=720, bx=-640, by=-360},
+		{"se", file="se車の走行音_b", time=1000, vol=50, loop=1, id=1},
+		{"bgm", file="bgm19"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"日本国で、",
+					{"txruby", text="・・・・"},
+					"特別区域",
+					{"txruby"},
+					"として指定された区画がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 329,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"日本随一の掃き溜めとも呼ばれる、",
+					{"txruby", text="すがら"},
+					"珠賀良",
+					{"txruby"},
+					"区。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 331,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"戦後から高度経済成長期にかけて、必然的に生じた",
+					{"rt2"},
+					"闇をことごとく吸収し、負の発展を遂げた",
+					{"txruby", text="スラム"},
+					"特別区画",
+					{"txruby"},
+					"だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 334,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"金や家を持たない者、",
+					{"rt2"},
+					"訳ありで表の道を歩けない者が寄り集まっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 337,
+	},
+	block_00051 = {
+		{"bg", y=100, speed=150000, time=2000, file="zbg003a", path=":bg/", x2=-640, y2=100, x=640, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その一方で、非合法のカジノや性風俗が",
+					{"rt2"},
+					"欲望にまみれた",
+					{"txruby", text="・・・・"},
+					"表の人間",
+					{"txruby"},
+					"達を呼び寄せる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 343,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昼も夜もない歓楽街で、表社会では決して味わえない",
+					{"rt2"},
+					"享楽に",
+					{"txruby", text="ふけ"},
+					"耽",
+					{"txruby"},
+					"るのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 346,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"他所では闇が摘発され、消えていく中で、",
+					{"rt2"},
+					"この",
+					{"txruby", text="すがら"},
+					"珠賀良",
+					{"txruby"},
+					"区だけは今もなお生き続けていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 349,
+	},
+	block_00054 = {
+		{"bg", file="bg004a", path=":bg/"},
+		{"se", stop=1, time=2000, id=1},
+		{"se", file="se車の走行音_b", time=1000, loop=1, id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ゴミ捨て場とも",
+					{"txruby", text="やゆ"},
+					"揶揄",
+					{"txruby"},
+					"される場所に、",
+					{"rt2"},
+					"似つかわしくない車が走っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 365,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一目で高級車と分かるそれは高らかにエンジン音を",
+					{"rt2"},
+					"鳴らし、見かけた人々の視線を釘付けにする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 371,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何より、公的機関であることを示すエンブレムが",
+					{"rt2"},
+					"刻まれているのだから、皆が驚きを隠せない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 374,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それらの疑念を振り払うかのように、",
+					{"rt2"},
+					"高級車は舗装も満足にされていない道路を疾走する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 377,
+	},
+	block_00058 = {
+		{"se", stop=1, time=1000, id=2},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", rule="083r", vague=40, file="bg001a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ピーチ・フィールズ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 387,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"歓楽街から少し離れた所に、ぽつりと建っている",
+					{"rt2"},
+					"古びた児童養護施設。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 390,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"捨てられた孤児達を引き取って育て、お腹を空かせた",
+					{"rt2"},
+					"住民達に時々炊き出しを行う――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 393,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いわゆる『孤児院』である。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 395,
+	},
+	block_00062 = {
+		{"quake", dir="v"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ピーチ・フィールズの前で、高級車はようやく停止した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 400,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何事かと付近の住民が様子をうかがいにくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 402,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"孤児院に住む先生、そしてここで育った子供達も",
+					{"rt2"},
+					"同じように顔を出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 405,
+	},
+	block_00065 = {
+		{"se", file="se車のドア開ける", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"皆が固唾を飲んで見守る中、不意に車のドアが開いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 411,
+	},
+	block_00066 = {
+		{"bg", speed=5000, file="zev_fiv_c01_01", path=":ev/ev_fiv_c01/", x2=300, y2=-150, x=0, y=150, set="ev_fiv_c01", ax=1280, ay=720, bx=-640, by=-360},
+		{"ex", time=3000, func="wait"},
+		{"bg", file="ev_fiv_c01_01", path=":ev/ev_fiv_c01/", set="ev_fiv_c01"},
+		{"se", file="se車のドア閉じる", id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"降り立ったのは、",
+					{"rt2"},
+					"車よりもこの場に似つかわしくない少女。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 422,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"身長が１４０センチにも満たない、",
+					{"rt2"},
+					"とても身なりの良い少女だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 425,
+	},
+	block_00068 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00001", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「……………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 432,
+	},
+	block_00069 = {
+		{"se", stop=1, time=500, id=2},
+		{"bg", speed=150000, time=2000, file="zev_fiv_c01_01", path=":ev/ev_fiv_c01/", x2=-200, y2=300, x=300, y=300, set="ev_fiv_c01", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"少女の瞳が珠賀良区の人々を捉えていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 438,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"誰かを探していると察して、各々が顔を見合わせる。",
+					{"rt2"},
+					"何かやらかしたヤツがいるのかと邪推する輩もいた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 444,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その中で一人、",
+					{"rt2"},
+					"揺らがない瞳で少女を目視する青年。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 447,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00001", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ", "珠賀良区の少女"},
+					"「お兄ちゃん、もしかして、あの子が……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 452,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪", "珠賀良区の男"},
+					"「おそらくな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 455,
+	},
+	block_00074 = {
+		{"bg", y=300, file="zev_fiv_c01_02", path=":ev/ev_fiv_c01/", set="ev_fiv_c01", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00002", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「あなた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 465,
+	},
+	block_00075 = {
+		{"bg", time=500, file="ev_fiv_c01_02", path=":ev/ev_fiv_c01/", set="ev_fiv_c01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00003", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「あなたが、",
+					{"txruby", text="ふわの"},
+					"布波能",
+					{"txruby"},
+					{"txruby", text="なぎ"},
+					"凪",
+					{"txruby"},
+					"様ですの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 475,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ。俺がそうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 480,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人混みから抜け、少女の前に立った男。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 483,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ年若いが、一切の気負いなく",
+					{"txruby", text="しゅこう"},
+					"首肯",
+					{"txruby"},
+					"してみせる姿は、",
+					{"rt2"},
+					"頼もしさを感じさせた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 486,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00004", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「念のため、チケットを拝見しても",
+					{"rt2"},
+					"よろしいでしょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 492,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……これでいいか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 495,
+	},
+	block_00081 = {
+		{"se", file="se紙系_ページめくり早", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"取り出された紙片には、",
+					{"rt2"},
+					"煌びやかな金の装飾が施されている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 500,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"車にも同様のエンブレムが刻まれていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 502,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"つまり公的な物、日本国が発行したチケットである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 504,
+	},
+	block_00084 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", sync=0, face=1, file="ev_fiv_c01_03", time=400, path=":ev/ev_fiv_c01/", set="ev_fiv_c01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00005", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「確かに。それでは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 513,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"紙片を検分した後に、少女が小さく咳払いをする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 515,
+	},
+	block_00086 = {
+		{"bg", sync=0, face=1, file="ev_fiv_c01_02", time=400, path=":ev/ev_fiv_c01/", set="ev_fiv_c01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00006", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「ワン・ズ・ギフトの当選、おめでとうございます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 522,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00007", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「国民として登録されている若者から一年に一度、",
+					{"rt2"},
+					"抽選で一名に、桜元学園へ入学する権利を与える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 528,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00008", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「国民のための慈善事業。それが、ワン・ズ・ギフト」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 533,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00009", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ", "身なりの良い少女"},
+					"「あなたは見事、選ばれました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 538,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00010", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「私はファイブ。完全自律型自動人形Ｎ型０５番、",
+					{"rt2"},
+					"通称ファイブですの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 542,
+	},
+	block_00091 = {
+		{"bg", sync=0, face=1, file="ev_fiv_c01_03", time=400, path=":ev/ev_fiv_c01/", set="ev_fiv_c01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00011", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「お迎えに上がりました。",
+					{"rt2"},
+					"あなたをこれから桜元学園へとご案内しますの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 548,
+	},
+	block_00092 = {
+		{"se", file="se鐘", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――正午を告げる、鐘の音。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 555,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"偶然にも、",
+					{"rt2"},
+					"福音を授けるかの如く彩られた自動人形の言葉。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 560,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ……待っていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 563,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"珠賀良区という場所で育ってきた男は、",
+					{"rt2"},
+					"不敵な笑みをたたえていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 566,
+	},
+	block_00096 = {
+		{"se", stop=1, time=500, id=1},
+		{"bgm", stop=1},
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"ex", time=1000, func="wait"},
+		{"bg", file="titlelogo", lv=9, id=9, time=3000, path=":cg/", ax=335, ay=76, bx=305, by=284},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="01_01プロローグ_02"},
+		{"text"},
+		linkback = "block_00095",
+		line = 585,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+		next = { block="block_00001", label=1 },
+	},
+}

@@ -1,0 +1,295 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="蓼科を守るため姿を現す"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg030c", path=":bg/", sync=0},
+		{"fg", ch="ファイブ", size="no", mode=3, path=":fg/fiv/no/", file="fiv_noa0200", face="a0024", head="fiv_noa", x=-230, lv=3, id=9, sync=0},
+		{"fg", ch="帝雄", size="no", mode=3, path=":fg/tei/no/", file="tei_noa0200", face="a0012", head="tei_noa", x=230, lv=3, id=10, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm20"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「本当だ。嘘じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 19,
+	},
+	block_00001 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=400, y=20, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="ファイブ", size="z1", mode=3, resize=1, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0042", head="fiv_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00110", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「はあ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 29,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちょ、ファイブさん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 32,
+	},
+	block_00003 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0042", head="fiv_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00111", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「良く聞こえませんでした。もう一度お願いしますの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 37,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「人を殺しそうな目で言わないでくれますか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 40,
+	},
+	block_00005 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0210", face="a0042", head="fiv_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00112", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「良く聞こえませんでした。もう一度お願いしますの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 45,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（そういう所だけロボット感出すの……！？）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 48,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だからさっきも、ほら、言っただろ？",
+					{"rt2"},
+					"ここにいる小太り君と親睦をだなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 52,
+	},
+	block_00008 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=400, y=20, zoom=120, file="zbg030c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="ファイブ", size="z2", mode=3, resize=1, path=":fg/fiv/z2/", file="fiv_z2a0210", face="a0026", head="fiv_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00113", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「はあん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 62,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「嘘じゃないぞ！　ここで偶然会ったんだが、",
+					{"rt2"},
+					"話してみると気が合うもんでさ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 66,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いやー、友達になれそうだなー、",
+					{"rt2"},
+					"桜元学園での友達第一号！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 70,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もう内心ウッキウキ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 73,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だからそのぉ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 76,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「本当に入学出来て良かったです……ニタァ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 79,
+	},
+	block_00014 = {
+		{"fg", ch="帝雄", size="no", mode=1, path=":fg/tei/no/", file="tei_noa0200", face="a0020", head="tei_noa", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_tei_00036", ch="tei"},
+			},
+			ja = {
+				{
+					name = {"帝雄"},
+					"「無理だよぉ……。",
+					{"rt2"},
+					"しゃ、喋らなくなってからの方が怖いよぉぉぉ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 85,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ぐぬぬ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 88,
+	},
+	block_00016 = {
+		{"excall", file="01_01プロローグ_08"},
+		{"text"},
+		linkback = "block_00015",
+		line = 91,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
