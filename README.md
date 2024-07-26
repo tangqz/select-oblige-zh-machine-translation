@@ -16,3 +16,5 @@ Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 汉化补丁
 - 基于日文字符检测的漏译防止机制。
 - 针对 H-Scene 的提示词优化。
 - 游戏界面部分常用按钮的汉化。（设置和开始界面暂未汉化）
+### 备用链接
+v1.0补丁-度盘：/s/1ae5Qf0F3kMVgq3hLyeCBjA?pwd=0721
