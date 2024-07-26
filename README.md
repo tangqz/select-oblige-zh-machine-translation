@@ -2,10 +2,11 @@
 Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 汉化补丁  
 ### 简要说明  
 [演示视频](https://www.bilibili.com/video/BV1G1421t7Qu)  
-如果有大佬愿意校对的，欢迎提 PR。请在 **script-cn** 中修改。  
+欢迎提 PR。请在 **script-cn** 中修改。  
 用到 [VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools) 进行格式转换。
 在此开源用到的代码，供参考。  
 此补丁中，“ファイブ”暂译为“法伊芙”。AI名 モンステラ 译为“Monstera”（有译成“蒙斯特拉”的就不改了）
+个人日语只是正常阿宅的水平，各位大佬们如果有想法非常欢迎提issue！
 ### 用法
 将 releases 中发布的文件解压，将解压出的script、pc文件夹放到游戏根目录即可。
 ### 特性  
