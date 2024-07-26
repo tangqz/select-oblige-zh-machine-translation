@@ -1,0 +1,2408 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="スリの流儀"},
+		{"bg", time=2000, file="bg099a", path=":bg/"},
+		{"ex", time=500, func="wait"},
+		{"bg", file="bg003a", path=":bg/"},
+		{"bgm", file="bgm19"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今日も今日とて、",
+					{"rt2"},
+					"仕事のために大歓楽街へとやってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 21,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夜は特に人の多い場所だが、昼だって結構な人通りだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 23,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"休みなく運営しているセクシャルな店を物色している",
+					{"rt2"},
+					"ヤツもいれば、怪しげな売店に入っていくヤツもいる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 26,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その内の一つ、本来は輸入禁止である品が平然と",
+					{"rt2"},
+					"立ち並ぶショップに、俺はふらりと立ち寄った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 29,
+	},
+	block_00004 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="トウリ", size="z1", mode=3, resize=1, path=":fg/tou/z1/", file="tou_z1b0510", face="b0004", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0510", face="b0018", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00340", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「いらっしゃいませ……あっ！　お兄ちゃんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 45,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おう。ふらっと寄ってみたぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 48,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"店に入ると間髪を入れず、健全なレストランかのように",
+					{"rt2"},
+					"トウリが挨拶をしてくれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 51,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"アルバイトとして雇われていて、",
+					{"rt2"},
+					"毎日ではないが店員として働いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 54,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"見た感じはちゃんと仕事出来ているようで何よりだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 56,
+	},
+	block_00009 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0510", face="b0019", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0500", face="b0006", head="tou_z1b", ex05="tou_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00341", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「こんな時間にどうしたの？",
+					{"rt2"},
+					"妹が恋しくなっちゃったかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 64,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「バカ言え」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 67,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……いや、そうかもしれないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 70,
+	},
+	block_00012 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0500", face="b0018", head="tou_z1b", ex05="tou_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00342", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「へう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 75,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なんとなく立ち寄りたくなったんだし、",
+					{"rt2"},
+					"あながち外れじゃないかも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 79,
+	},
+	block_00014 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0020h", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00343", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「ぬわっ。そ、そうなんだ。ふーん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 84,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なんてな！　マスターに用事があるんだよ。",
+					{"rt2"},
+					"話してくるからトウリはちゃんと仕事してろよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 88,
+	},
+	block_00016 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003a", path=":bg/", sync=0},
+		{"fg", ch="トウリ", size="no", mode=3, resize=1, path=":fg/tou/no/", file="tou_noa0510", face="a0020h", head="tou_noa", ex05="tou_noa0010", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00001", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「お。誰かと思えば凪か。これから仕事か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 100,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちわーす。お察しの通りで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 103,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"口をあんぐり開けている妹はそのままに、",
+					{"rt2"},
+					"顔なじみの店主と言葉を交わす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 106,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00002", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「大歓楽街に",
+					{"txruby", text="この"},
+					"好",
+					{"txruby"},
+					"んで来るようなヤツらから",
+					{"rt2"},
+					"恵んで貰うお仕事……か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 110,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00003", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「ふふっ、まさしく物は言いようってヤツだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 113,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「頼んでた物は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 116,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00004", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「手に入ってるよ。そろそろ来るんじゃないかと、",
+					{"rt2"},
+					"カウンターに置いといて正解だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 120,
+	},
+	block_00023 = {
+		{"se", file="se物音(軽)", id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00005", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「ほらよ。お前が欲しがってたピッキングツールだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 125,
+	},
+	block_00024 = {
+		{"fg", ch="トウリ", size="no", mode=3, path=":fg/tou/no/", file="tou_noa0500", face="a0009", head="tou_noa", ex05="tou_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おお……！　ついに！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 130,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00006", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「かなりいい代物だ。",
+					{"rt2"},
+					"やろうと思えば、空き巣もし放題だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 134,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「無意味に悪さをしたい訳じゃない。",
+					{"rt2"},
+					"生きるためにも節操は持たないとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 138,
+	},
+	block_00027 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00007", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「なるほどね。",
+					{"rt2"},
+					"あとは、絵描き用のペン一式だったか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 144,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おおおお、それも手に入ったのか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 147,
+	},
+	block_00029 = {
+		{"fg", ch="トウリ", size="no", mode=3, path=":fg/tou/no/", file="tou_noa0500", face="a0024", head="tou_noa", ex05="tou_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00008", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「品質はどっちも私が保証してやる。",
+					{"rt2"},
+					"かなりいい物だぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 153,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ほうほう、ほうほう……ほうほう！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 156,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"両方とも実物を見せてもらい、",
+					{"rt2"},
+					"直接触って感触を確かめていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 159,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"特にペンセットは指に馴染む感じといい、",
+					{"rt2"},
+					"種類の多さといい……うーむ、これは絶品だ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 162,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「サンキューなマスター！",
+					{"rt2"},
+					"仕事が終わったらまた取りに来させて貰うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 166,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「でもこんなにいい物なのに、本当にタダでいいのかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 169,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00009", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「私からの、少しばかりの気持ちだ。",
+					{"rt2"},
+					"大切に使ってやってくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 173,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「マスター……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 176,
+	},
+	block_00037 = {
+		{"fg", ch="トウリ", size="no", mode=3, path=":fg/tou/no/", file="tou_noa0500", face="a0026", head="tou_noa", ex05="tou_noa0000", lv=3, id=13},
+		{"fgact", ch="トウリ", act="いいえ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00344", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「んんん～～～～～～～…………っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 182,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_onn_00010", ch="onn"},
+			},
+			ja = {
+				{
+					name = {"女店主"},
+					"「おっと！　これ以上、兄貴を独占してたら",
+					{"rt2"},
+					"私が殺されちまいそうだ。まーガンバレや」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 186,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ、マスターも！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 189,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"店の奥へと入っていくマスターへ手短に別れの挨拶を",
+					{"rt2"},
+					"済ませ、改めてトウリの顔を見る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 192,
+	},
+	block_00041 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="トウリ", size="z1", mode=3, resize=1, path=":fg/tou/z1/", file="tou_z1b0510", face="b0026", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00345", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「お兄ちゃんは女心が分かってないと思うな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 202,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「えーっと。すまん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 205,
+	},
+	block_00043 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0510", face="b0010", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13},
+		{"fgact", ch="トウリ", act="おじぎ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0510", face="b0024", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00346", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「むー。しょうがないなぁもう。許してあげるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 212,
+	},
+	block_00044 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0009", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00347", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「これからお仕事なんだよね。誰とやるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 217,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「昨日と同じメンバーだ。ただ指示役は他に任せて、",
+					{"rt2"},
+					"今日は俺が現場に出る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 221,
+	},
+	block_00046 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0002", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0005", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00348", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「テルとミツヤ、ジョージくんとエっちゃんかー。",
+					{"rt2"},
+					"それならジョージくんが指示役かな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 228,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ご名答。アイツになら安心して背中を任せられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 231,
+	},
+	block_00048 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0500", face="a0009", head="tou_z1a", ex05="tou_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0500", face="b0002", head="tou_z1b", ex05="tou_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00349", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「みんなにも気をつけてって伝えておいてね。",
+					{"rt2"},
+					"もちろん、お兄ちゃんも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 238,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ。上手くやるさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 241,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いつも通りの物言いで、力強い言葉を返せば、",
+					{"rt2"},
+					"トウリは気持ちのいい笑みを零した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 244,
+	},
+	block_00051 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0500", face="b0019", head="tou_z1b", ex05="tou_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00350", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「そうそう。お客さんから聞いた話なんだけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 249,
+	},
+	block_00052 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0500", face="b0005", head="tou_z1b", ex05="tou_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00351", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「お国のために働く役人で、かなり重要なポジションに",
+					{"rt2"},
+					"いる人がお忍びで珠賀良区に何度も来ているらしいの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 255,
+	},
+	block_00053 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1b0510", face="b0006", head="tou_z1b", ex05="tou_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00352", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「もしかしたら、今日も来るかもよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 260,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「へぇ……頭の片隅に置いとく」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 263,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"デカい魚が釣れるかもしれない。",
+					{"rt2"},
+					"思わずにやつくと、トウリにくすりと笑われた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 266,
+	},
+	block_00056 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0500", face="a0004", head="tou_z1a", ex05="tou_z1a0000", lv=4, id=13},
+		{"fgact", ch="トウリ", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00353", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「じゃーいってらっしゃいませ、",
+					{"rt2"},
+					"お帰りをお待ちしてまーす」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 273,
+	},
+	block_00057 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0003", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0500", face="a0032", head="tou_z1a", ex05="tou_z1a0000", lv=4, id=13},
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+			},
+			vl02 = {
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+			},
+			vl03 = {
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+			},
+			vl04 = {
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+			},
+			vl05 = {
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+			},
+			vl06 = {
+				{"fgact", ch="トウリ", act="うなづく", lv=4, id=13},
+				{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0500", face="a0033", head="tou_z1a", ex05="tou_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00354", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「あ、今の、お金持ちの家にいるメイドさんみたい",
+					{"rt2"},
+					"じゃなかった？　ご・しゅ・じ・ん・様っ♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 287,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「全然。属性的にもメイドなのか妹なのか、",
+					{"rt2"},
+					"どっちかにしなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 291,
+	},
+	block_00059 = {
+		{"fg", ch="トウリ", size="z1", mode=3, path=":fg/tou/z1/", file="tou_z1a0510", face="a0035", head="tou_z1a", ex05="tou_z1a0010", lv=4, id=13},
+		{"fgact", ch="トウリ", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tou_00355", ch="tou"},
+			},
+			ja = {
+				{
+					name = {"トウリ"},
+					"「むぅーっ。妹メイドだもんね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 297,
+	},
+	block_00060 = {
+		{"bg", y=100, speed=150000, file="zbg003a", path=":bg/", x2=640, y2=100, x=-640, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"店を後にして、あらかじめ決めていた",
+					{"rt2"},
+					"ポイントへと移動する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 304,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"既にメンバーは集まっていたようだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 306,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それぞれがまったく知らない人のフリをしながら、",
+					{"rt2"},
+					"所定の位置で待機していた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 309,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………ふぁ、あー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 312,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大きなあくびと共に、大きく腕を伸ばす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 314,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"合図となる仕草をもって各自が動き始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 316,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はごく自然な様子を装い、",
+					{"rt2"},
+					"大歓楽街を散歩するかのように歩き始めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 319,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00001", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「凪じゃん、おっつー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 322,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いくらかも経たないうちに、大歓楽街の花形に",
+					{"rt2"},
+					"話しかけられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 325,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"胸元が大きくはだけた服装はとても扇情的で",
+					{"rt2"},
+					"目のやり場に困る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 328,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、道行く男を捕まえる効果は抜群だろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 330,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00002", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「今日はいい天気だねー。散歩日和ってヤツ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 333,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「こんな日くらい散歩しとかないと、身体が硬く",
+					{"rt2"},
+					"なっちまうからなー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 337,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00003", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「あははやめてー、爺さんみたいじゃん。",
+					{"rt2"},
+					"硬くするのは大事な息子さんだけにしておいてよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 341,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「はいはい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 344,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"スリをする時に最も重要なのは、『興味の誘引』だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 346,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たとえば俺が一人で道を歩いていて、",
+					{"rt2"},
+					"目の前から歩いてくる男に近づいていったとする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 349,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"不審なヤツが近づいてきたな、と注意する可能性が高い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 351,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"警戒心が強くなった相手からスるとなれば、",
+					{"rt2"},
+					"難易度と危険性が格段に高くなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 354,
+	},
+	block_00079 = {
+		{"bg", file="bg003a", path=":bg/"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00004", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「あ！　そこのカッコイイおじさまぁ！",
+					{"rt2"},
+					"寄っていってよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 360,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから協力者を作り、街に溶け込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 362,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"女遊びをするために大歓楽街を歩いている男に風俗嬢が",
+					{"rt2"},
+					"声をかけても、警戒されることはまずない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 365,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は風俗嬢の知り合いとして容易く男に近づけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 367,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00001", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「んんぅ～……？　ふぅーーむ、いい身体してるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 370,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00005", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「でしょう？　もし今お店に入ってくれたら、",
+					{"rt2"},
+					"色々サービスしちゃうよぉ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 374,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ええマジかよ！　羨ましいなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 377,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"舐め回すように眺められても嫌な顔一つしない",
+					{"rt2"},
+					"仕事人に、俺もすかさず乗っかっていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 380,
+	},
+	block_00087 = {
+		{"bg", y=25, file="zbg003a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ここのサービス、マジで凄いんですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 385,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00002", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「ん、む……凄い、とは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 388,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「女の肉に溺れる感覚、味わったことあります？",
+					{"rt2"},
+					"ないんだったら、男なら一度は味わっておかないと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 392,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00006", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「やぁん、もう……でもこの子の言う通り、",
+					{"rt2"},
+					"凄いよぉうちのお店」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 396,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"男は目をさまよわせるも、風俗嬢が胸元をチラリと",
+					{"rt2"},
+					"広げて見せたことで、心を決めたようだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 399,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00003", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「これで他と変わらないサービスだったら、",
+					{"rt2"},
+					"どうなるか分かるな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 403,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00004", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「お前らでは想像出来ないくらいの権力を",
+					{"rt2"},
+					"私は持っている。だから、店ごと潰すのも簡単だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 407,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00007", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「あらら……おっけ～、なら料金は後払いでいいよぉ？",
+					{"rt2"},
+					"それだけの自信があるからね！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 411,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00008", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「その代わり、満足したらきっちり払ってねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 414,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00005", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「ふくくっ、もちろんだ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 417,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_mnr_00006", ch="mnr"},
+			},
+			ja = {
+				{
+					name = {"身なりのいい男"},
+					"「おいお前、若いのに詳しいな。",
+					{"rt2"},
+					"ここの住人か？　礼を言うぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 421,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いえいえ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 424,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"気にするなと手振りで示すも、男はそれを見ぬままに",
+					{"rt2"},
+					"店の中へと入っていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 427,
+	},
+	block_00100 = {
+		{"bg", file="bg003a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「こっちこそ、ありがとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 432,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"結果、一目で高級と分かる革製の長財布が",
+					{"rt2"},
+					"俺の手元にあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 435,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"興味を誘引して、視線を誘導し、",
+					{"rt2"},
+					"隙だらけになったところで迅速に盗み取る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 438,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"男は財布の有無など気にする事なく、",
+					{"rt2"},
+					"素晴らしいサービスを受けるだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 446,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"事後に財布がないと気づくが、",
+					{"rt2"},
+					"紛失の届け出なんて出した所で意味は無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 449,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すべては自己責任、それが珠賀良区にある唯一の掟。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 451,
+	},
+	block_00106 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"bg", x=-400, y=25, file="zbg003a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00009", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「お金、ないんですかあ……？",
+					{"rt2"},
+					"それなら、つけときますからぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 463,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"困ったタイミングにおいて、女達が口を挟み込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 465,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00010", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「代わりにごひいきにして下さいますぅ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 468,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00011", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「おじさまのテクニック、凄すぎて私、",
+					{"rt2"},
+					"癖になっちゃったぁ……ふふふふふ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 472,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"これで顧客のできあがりだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 474,
+	},
+	block_00111 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"bg", file="bg003a", path=":bg/", sync=0},
+		{"cgdel", id=-1, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なおかつ払うべきお金は後で、こちらが盗んだ財布から",
+					{"rt2"},
+					"負担する流れになっているから店が損することはない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 485,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"風俗の女達と、俺達はまさに共生関係なのである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 487,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00012", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「うふふふ……♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 490,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最後、男を追いかけるように店に入っていった",
+					{"rt2"},
+					"風俗嬢が、俺に向かってウィンクをしてくれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 493,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ふう～……男って、バカだよなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 496,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この街にいるお姉さま方は皆本当に綺麗な人ばかりで、",
+					{"rt2"},
+					"しかもいちいちエロい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 499,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな人達に好意的に接して貰えるだけじゃない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 501,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"直接的な誘惑までされるのだから、",
+					{"rt2"},
+					"だまされても仕方がないよな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 504,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は同じようなやり方で、色々な風俗嬢達と挨拶を",
+					{"rt2"},
+					"交わしていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 507,
+	},
+	block_00120 = {
+		{"bg", y=100, speed=150000, file="zbg003a", path=":bg/", x2=-640, y2=100, x=640, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_smf_00001", ch="smf"},
+			},
+			ja = {
+				{
+					name = {"ＳＭ専門の風俗嬢"},
+					"「こういう店だから色んな客がいるんだけど、",
+					{"rt2"},
+					"アンタにもやってあげようか？　目覚めさせてあげる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 513,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「勘弁してくれ。俺にそんな趣味はないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 516,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_cos_00001", ch="cos"},
+			},
+			ja = {
+				{
+					name = {"コスプレ専門の嬢"},
+					"「学生服着て痴漢プレイってお客さん、最近多いのよ。",
+					{"rt2"},
+					"逆痴漢プレイ希望者も結構いたり……凪もやってく？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 520,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺は純粋なの！　難しいのはよく分かりません！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 523,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_koi_00001", ch="koi"},
+			},
+			ja = {
+				{
+					name = {"恋人プレイ専門の嬢"},
+					"「凪ぃ～。今日こそ相手して貰うよぉ～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 526,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「マテ！　いきなり飛びついてくんな！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 529,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_koi_00002", ch="koi"},
+			},
+			ja = {
+				{
+					name = {"恋人プレイ専門の嬢"},
+					"「私、仕事以外じゃ凪にしかしないつもりだし……",
+					{"rt2"},
+					"凪に襲われるなら、激しくて痛いのも大歓迎だよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 533,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺は不要なしがらみは作らない主義なの！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 536,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_koi_00003", ch="koi"},
+			},
+			ja = {
+				{
+					name = {"恋人プレイ専門の嬢"},
+					"「えー。ピーチ・フィールズって、珠賀良区での",
+					{"rt2"},
+					"恋愛は禁止っていうルールがあるのは知ってるけどぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 540,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_koi_00004", ch="koi"},
+			},
+			ja = {
+				{
+					name = {"恋人プレイ専門の嬢"},
+					"「素直に従うなんて、凪らしくないよ～。",
+					{"rt2"},
+					"いいから一度やってみよ、癖になるからさ～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 544,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さよならぁまたなぁあ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 547,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（まったくもってけしからん……）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 550,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（皆さん色気たっぷりのワガママボディで、",
+					{"rt2"},
+					"誘惑しないで下さい）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 554,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（豊満な胸とか艶やかな肢体とかを押し付けないで！",
+					{"rt2"},
+					"お願いします……）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 558,
+	},
+	block_00134 = {
+		{"bg", file="bg099a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いつもと変わらないやり取りを風俗嬢と交わしながら、",
+					{"rt2"},
+					"お客を捕まえては盗み取っていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 563,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今日も今日とて、お恵みを頂いて回るのだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 565,
+	},
+	block_00136 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="01_05過去編_04"},
+		{"text"},
+		linkback = "block_00135",
+		line = 569,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

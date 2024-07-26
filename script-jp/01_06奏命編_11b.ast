@@ -1,0 +1,187 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="願ってもない話だが……"},
+		{"bgm", file="bgm13"},
+		{"bg", x=600, y=150, time=500, file="zev_kan_c02_06", path=":ev/ev_kan_c02/", set="ev_kan_c02", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「願ってもない話だが……俺にはその気が今はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 14,
+	},
+	block_00001 = {
+		{"bg", sync=0, face=1, file="zev_kan_c02_08", time=400, path=":ev/ev_kan_c02/", set="ev_kan_c02", ax=1280, ay=720, bx=-640, by=-360, x=600, y=150},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00579", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「ふむ……いいでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 19,
+	},
+	block_00002 = {
+		{"bg", sync=0, face=1, file="zev_kan_c02_07", time=400, path=":ev/ev_kan_c02/", set="ev_kan_c02", ax=1280, ay=720, bx=-640, by=-360, x=600, y=150},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00580", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたには、他に気になる子がいるみたいね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 24,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いや、そういう訳じゃ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 27,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ただ軽々しく承諾したり、保留したりするような",
+					{"rt2"},
+					"話じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 31,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「気のある素振りをするのなら、",
+					{"rt2"},
+					"それくらいの覚悟が必要だと思ったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 35,
+	},
+	block_00006 = {
+		{"bg", time=500, file="ev_kan_c02_09", path=":ev/ev_kan_c02/", set="ev_kan_c02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00581", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたって存外、真面目なのね。保留しておけば後で",
+					{"rt2"},
+					"状況に合わせて都合良く答えを変えられたのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 41,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「実際にそうされたら、会長はどうするんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 44,
+	},
+	block_00008 = {
+		{"bg", sync=0, face=1, file="ev_kan_c02_10", time=400, path=":ev/ev_kan_c02/", set="ev_kan_c02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00582", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「即刻見切りをつけるわね。ふふふ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 49,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「まったく怖い人だよ、アンタは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 52,
+	},
+	block_00010 = {
+		{"excall", file="01_06奏命編_12"},
+		{"text"},
+		linkback = "block_00009",
+		line = 55,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

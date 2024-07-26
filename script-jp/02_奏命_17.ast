@@ -1,0 +1,2384 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="貴方だからこそ"},
+		{"bg", time=2000, file="bg013e", path=":bg/"},
+		{"bgm", file="bgm13"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"翌朝。",
+					{"rt2"},
+					"俺が起きると、すでに奏命の姿はなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 17,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"仕事を片付けるために早く出たらしい。",
+					{"rt2"},
+					"おそらく俺と会話する時間を作るためだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 20,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命に大切にされていると実感すると同時に、",
+					{"rt2"},
+					"不甲斐なくも思う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 23,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今の俺は奏命の傍にいることしかできない。",
+					{"rt2"},
+					"その上、身体のこともある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 26,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"正直、話すのはまだ怖い。",
+					{"rt2"},
+					"だけど、奏命は真っすぐ俺と向き合ってくれている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 29,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それなのに、俺が逃げ出すわけにはいかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 31,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"双子と一緒に朝食をとってから、",
+					{"rt2"},
+					"俺は一人、学園へと向かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 34,
+	},
+	block_00007 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg025a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="奏命", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1a0200", face="a0052", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"fgact", ch="奏命", act="おじぎ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0009", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02195", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「おはよう、凪。",
+					{"rt2"},
+					"今朝は朝食を一緒にできなくて悪かったわね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 53,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「何言ってんだ。",
+					{"rt2"},
+					"時間を作ってほしいって頼んだのは俺だぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 57,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ごめんな、疲れてるのに早起きさせて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 60,
+	},
+	block_00010 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0002", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0001", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02196", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「この程度、負担にも感じないわ。",
+					{"rt2"},
+					"それで、話というのは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 67,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「この間、ピーチ・フィールズで",
+					{"rt2"},
+					"バアさんと俺が二人で話してたよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 71,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あれは俺を母親と会わせるためのものだった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 74,
+	},
+	block_00013 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0019", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02197", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪のお母様……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 79,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「つっても、遺伝子上のな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 82,
+	},
+	block_00015 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0210", face="a0001", head="kan_z1a", ex05="kan_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02198", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「……詳しく話しなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 88,
+	},
+	block_00016 = {
+		{"bg", time=500, file="bg025a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それから俺は奏命にあの日聞いたことを話した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 92,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"桜元学園の学園長が、俺の母親であること。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 94,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がデザイナーチャイルドであること。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 96,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"国がなんらかの研究で",
+					{"rt2"},
+					"つくった子供達を利用していたこと。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 99,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バアさんが何かしらの手段で俺たちを引き取り、",
+					{"rt2"},
+					"ピーチ・フィールズを開いたこと。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 105,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「後は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 108,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"これは言ってもいいんだろうか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 110,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は奏命の父親を完全に悪だとは思えない。",
+					{"rt2"},
+					"だって、そうじゃなきゃ俺は生まれなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 113,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"でも、奏命は現一色家当主として……、",
+					{"rt2"},
+					"そして娘として、この事実を受け止められるのか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 116,
+	},
+	block_00025 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg025a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0210", face="a0001", head="kan_z1a", ex05="kan_z1a0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0210", face="a0053", head="kan_z1a", ex05="kan_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02199", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「今度は私の事を考えて口を噤んだわね。",
+					{"rt2"},
+					"事実を知らない方が私にはリスクになる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 129,
+	},
+	block_00026 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0001", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02200", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「得た情報は全て伝えて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 134,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「研究の承認をしたのは……その……",
+					{"rt2"},
+					"先代の一色家当主だったそうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 138,
+	},
+	block_00028 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0018", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02201", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「お父様が……？",
+					{"rt2"},
+					"そんなことがあったなんて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 144,
+	},
+	block_00029 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0022", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02202", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「どういうことかしら？",
+					{"rt2"},
+					"その情報は私には引き継がれていない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 150,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「子供に聞かせるには刺激的すぎるから、とか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 153,
+	},
+	block_00031 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0009", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"fgact", ch="奏命", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02203", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「馬鹿言わないで、お父様がそんな理由で",
+					{"rt2"},
+					"私に秘密をつくるなんてありえない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 160,
+	},
+	block_00032 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0014", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02204", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「承認したということは、必要を感じたから。",
+					{"rt2"},
+					"なのにどうして……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 166,
+	},
+	block_00033 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0010", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02205", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「……私に隠す必要があった？",
+					{"rt2"},
+					"あるいは、私には伝える必要がなかった……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 172,
+	},
+	block_00034 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0001", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02206", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「まぁいいわ。",
+					{"rt2"},
+					"お父様の考えについては置いておきましょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 178,
+	},
+	block_00035 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0001", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02207", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「空と花には国の研究というものがどういうものか、",
+					{"rt2"},
+					"早急に調べるように指示する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 184,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ。",
+					{"rt2"},
+					"奏命に任せれば間違いない、よろしく頼む」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 188,
+	},
+	block_00037 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0002", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"fgact", ch="奏命", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02208", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「進展があればすぐに報告するわ。",
+					{"rt2"},
+					"貴重な情報をどうもありがとう。助かったわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 195,
+	},
+	block_00038 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0014", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02209", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「……だけど、",
+					{"rt2"},
+					"凪はまだ話したいことがあるみたいね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 201,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「実は…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 204,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 207,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"言わなきゃいけないのに、言葉が出てこない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 209,
+	},
+	block_00042 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, zoom=120, file="zbg025a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="奏命", size="z2", mode=3, resize=1, path=":fg/kan/z2/", file="kan_z2a0200", face="a0001", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命の手が俺の頬をそっと包む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 218,
+	},
+	block_00043 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0052", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02210", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「話しなさい。私はあなたを伴侶と定めた瞬間から",
+					{"rt2"},
+					"すべてを受け入れる覚悟よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 224,
+	},
+	block_00044 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0004", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0002", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02211", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「誤ったのならやり直せばいい。壁があったのなら",
+					{"rt2"},
+					"乗り越えればいい。そのためなら私も協力するわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 231,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 234,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さっき、俺はデザイナーチャイルドだって",
+					{"rt2"},
+					"言ったろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 238,
+	},
+	block_00047 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0001", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そのせいで一部の機能に制限がかかってるそうだ。",
+					{"rt2"},
+					"俺は……子供を作る能力がほとんどないらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 244,
+	},
+	block_00048 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0018", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02212", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「え……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 249,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――俺は、屋上で伝えられたことを包み隠さず話した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 251,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「努力でどうにかなる部類なら良かったんだがな。",
+					{"rt2"},
+					"機能的な問題だとどうしようもない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 255,
+	},
+	block_00051 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", face="b0022", head="kan_z2b", ex05="kan_z2b0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02213", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「……このところ様子がおかしかったのは、",
+					{"rt2"},
+					"それが原因だったのね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 261,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「一色家のために、跡継ぎは残さないといけない。",
+					{"rt2"},
+					"わかってるからこそ、言えなかったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 265,
+	},
+	block_00053 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", face="b0053", head="kan_z2b", ex05="kan_z2b0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", face="b0001", head="kan_z2b", ex05="kan_z2b0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02214", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪の気持ちは分かったわ。",
+					{"rt2"},
+					"その上で言いましょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 272,
+	},
+	block_00054 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0024", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02215", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「うろたえる必要はないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 277,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「でも……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 280,
+	},
+	block_00056 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0052", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0002", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02216", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪、私を見なさい。そうよ……、いい子ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 286,
+	},
+	block_00057 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0010", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02217", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「学園長は『機能が制限されている。",
+					{"rt2"},
+					"子供を作る能力はほとんどない』」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 292,
+	},
+	block_00058 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0001", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02218", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「そう言ったのよね？",
+					{"rt2"},
+					"それであなたはどうしたの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 298,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうしたって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 301,
+	},
+	block_00060 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0024", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0053", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+				{"fgact", ch="奏命", act="いいえ", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02219", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「データの提出は命じたの？　ほとんどなんて、",
+					{"rt2"},
+					"あいまいな情報は当てにできないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 309,
+	},
+	block_00061 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0001", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02220", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「そもそも、あなたが産まれてから",
+					{"rt2"},
+					"何年経ったと思っているの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 315,
+	},
+	block_00062 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0002", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02221", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「科学の進歩は飛躍的よ。",
+					{"rt2"},
+					"そしてヴァルハラには最先端技術が揃っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 321,
+	},
+	block_00063 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0024", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0015", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02222", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「一時の感情に振り回されて、",
+					{"rt2"},
+					"行く道を見失うなんて……愚かね、凪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 328,
+	},
+	block_00064 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0001", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02223", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「一番大切なものはなに？",
+					{"rt2"},
+					"あなたの欲は、その程度の物なの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 334,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……ああ、本当にその通りだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 337,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「奏命を大切にしたいって思って、",
+					{"rt2"},
+					"自分の欲を見失ってたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 341,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺は奏命の夫になる。",
+					{"rt2"},
+					"おまえと生き続けて、子供もつくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 345,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それが俺のやりたいこと。",
+					{"rt2"},
+					"そして、やるべきことだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 349,
+	},
+	block_00069 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg025a", path=":bg/", sync=0},
+		{"fg", ch="奏命", size="no", mode=3, resize=1, path=":fg/kan/no/", file="kan_nob0200", face="b0052", head="kan_nob", ex05="kan_nob0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0200", face="b0009", head="kan_nob", ex05="kan_nob0000", lv=3, id=13},
+				{"fgact", ch="奏命", act="おじぎ", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02224", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「その通りよ。まったく、手間のかかる子ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 362,
+	},
+	block_00070 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0200", face="b0024", head="kan_nob", ex05="kan_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02225", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「今の私は優秀な子を産むために、",
+					{"rt2"},
+					"優秀な男を欲しているわけじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 368,
+	},
+	block_00071 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", face="b0002", head="kan_nob", ex05="kan_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02226", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたの子が欲しいのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 373,
+	},
+	block_00072 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", face="b0004", head="kan_nob", ex05="kan_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02227", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「そして、私たちなりの愛情を注いで",
+					{"rt2"},
+					"育てていきたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 379,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……もしだめだったときは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 382,
+	},
+	block_00074 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", face="b0006", head="kan_nob", ex05="kan_nob0010", lv=3, id=13},
+		{"fgact", ch="奏命", act="いいえ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02228", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「私に不可能はないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 388,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「その自信は見習わないとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 391,
+	},
+	block_00076 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0052", head="kan_noa", ex05="kan_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0054", head="kan_noa", ex05="kan_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02229", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「ならば私を真似なさい。私を見て学びなさい。",
+					{"rt2"},
+					"あなたは私と対等になるのでしょう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 398,
+	},
+	block_00077 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0002", head="kan_noa", ex05="kan_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02230", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「出来る自分を誇れ。未来は、信頼できる相手、",
+					{"rt2"},
+					"すなわちあなた自身に託されているのだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 404,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「肝に銘じておくよ。深くな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 407,
+	},
+	block_00079 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0010", head="kan_noa", ex05="kan_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02231", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「さて、話も決まったことだし、",
+					{"rt2"},
+					"学園長にアポを取らないとね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 413,
+	},
+	block_00080 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0052", head="kan_noa", ex05="kan_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02232", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪に任せていいかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 418,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おお、大丈夫……なんだが、ちょっと待ってくれ。",
+					{"rt2"},
+					"緊張の糸が切れたみたいだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 422,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"近くの椅子に座ると、奏命が歩み寄ってきて、",
+					{"rt2"},
+					"無言で隣に座った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 427,
+	},
+	block_00083 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg025a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="奏命", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1a0200", face="a0001", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうした？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 437,
+	},
+	block_00084 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0053", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02233", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「今のうちに聞いておこうと思って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 442,
+	},
+	block_00085 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0024", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02234", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「身体のことを知って、",
+					{"rt2"},
+					"凪は私に捨てられると思った？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 450,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「奏命が俺を捨てることはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 453,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「と思いつつ、子供のために別の男を囲ったりしたら",
+					{"rt2"},
+					"どうしようとは思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 457,
+	},
+	block_00088 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", face="a0053", head="kan_z1a", ex05="kan_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02235", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「なるほど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 462,
+	},
+	block_00089 = {
+		{"quake", mode="mw"},
+		{"se", file="seコミ_つねる", id=1},
+		{"fgact", ch="奏命", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いだだだだ！　全力で足を踏むな！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 469,
+	},
+	block_00090 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0024", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0009", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02236", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「踏むに決まっているでしょう。",
+					{"rt2"},
+					"まったく、酷い婚約者ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 476,
+	},
+	block_00091 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0005", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02237", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪はもっと私を信用するべきだわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 481,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「奏命のことは信用してるさ。",
+					{"rt2"},
+					"ただ、俺と家なら家を選ぶと思ってるだけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 485,
+	},
+	block_00093 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", face="b0006", head="kan_z1b", ex05="kan_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02238", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「甘いわね。私は両取りするわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 490,
+	},
+	block_00094 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どっちか一つって言われたら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 495,
+	},
+	block_00095 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0010", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02239", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「その場合はふざけたことを言ってくる",
+					{"rt2"},
+					"相手の方を処理するわね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 501,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「質問の意味がねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 504,
+	},
+	block_00097 = {
+		{"fg", ch="奏命", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", face="b0025", head="kan_z1b", ex05="kan_z1b0000", lv=4, id=13},
+		{"fgact", ch="奏命", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02240", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「限定的な選択肢に行動を縛られるのは",
+					{"rt2"},
+					"愚かなことよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 511,
+	},
+	block_00098 = {
+		{"se", file="se衣擦れ", id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, zoom=120, file="zbg025a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="奏命", size="z2", mode=3, resize=1, path=":fg/kan/z2/", file="kan_z2b0200", face="b0025", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命がそっと俺の肩に寄り掛かってくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 522,
+	},
+	block_00099 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0053", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0052", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02241", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「この際だからきちんと伝えておくわ。",
+					{"rt2"},
+					"凪、あなたは私にとって特別な人よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 529,
+	},
+	block_00100 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0002", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", face="b0025", head="kan_z2b", ex05="kan_z2b0000", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02242", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「私とは違うものを持っている。生きてきた人生が",
+					{"rt2"},
+					"違いすぎるのだから、当たり前なのかしら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 536,
+	},
+	block_00101 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0052", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02243", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたを手放したいとは微塵も思わない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 543,
+	},
+	block_00102 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0002", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02244", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「叶うならずっと手の届く距離に置いておきたい。",
+					{"rt2"},
+					"話していたい。視界に入っていて欲しい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 549,
+	},
+	block_00103 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0054h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0052h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02245", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「――私は、あなたを愛している。",
+					{"rt2"},
+					"私の男は、凪だけよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 556,
+	},
+	block_00104 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0002h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0004h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02246", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「だからあなたも、迷わないで。",
+					{"rt2"},
+					"私だけを見ていなさい。そして、信じて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 563,
+	},
+	block_00105 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0009h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"視線が絡み合い、",
+					{"rt2"},
+					"気づけば呼び合うように唇を重ねていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 568,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最初は触れるだけだったキスは、",
+					{"rt2"},
+					"唇が重なるたびに、より深いものへと変わっていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 571,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命が下唇を甘く食み、",
+					{"rt2"},
+					"口を開けてほしいとせがんでくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 574,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ッ……！！　かな、め……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 577,
+	},
+	block_00109 = {
+		{"lvo", ch="kan", file="fem_kan_03268", loop=1},
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0014h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02247", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「いいから……好きにさせて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 583,
+	},
+	block_00110 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0009h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02248", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あ……ちゅ、ちゅ、んんっ、",
+					{"rt2"},
+					"凪……ちゅ……はあっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 589,
+	},
+	block_00111 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0002h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02249", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「気持ちを伝えるって……はぁ……んっ……",
+					{"rt2"},
+					"大切なことだったのね……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 595,
+	},
+	block_00112 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0008h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02250", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたへの想いを口にしただけで……",
+					{"rt2"},
+					"胸が熱くて、たまらない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 601,
+	},
+	block_00113 = {
+		{"lvo", ch="kan", file="fem_kan_03269", loop=1},
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0009h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02251", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「ちゅっ……ちゅっ、ちゅぱ……ん……、",
+					{"rt2"},
+					"もっと、舌を絡ませて……んん……ふ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 608,
+	},
+	block_00114 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0009h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02252", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「はぁ……んっ……ちゅっ、ちゅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 613,
+	},
+	block_00115 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0023h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0210", face="a0008h", head="kan_z2a", ex05="kan_z2a0010", lv=5, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02253", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「ふふ、ふ……まるで盛った獣ね……今の私は、",
+					{"rt2"},
+					"理性が保てていない……ちゅ、ちゅぱ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 620,
+	},
+	block_00116 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0014h", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02254", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「でもそれが、嬉しくもある……。",
+					{"rt2"},
+					"全部、あなたが教えてくれたの……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 626,
+	},
+	block_00117 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0004h", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02255", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「愛しているわ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 631,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「奏命……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 634,
+	},
+	block_00119 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0002h", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02256", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「んっ……あなたも、私を求めているのね……、",
+					{"rt2"},
+					"嬉しいわ……ここで……あなたを感じさせて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 640,
+	},
+	block_00120 = {
+		{"lvo", ch="kan", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「でもここじゃ、痛いんじゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 645,
+	},
+	block_00121 = {
+		{"fg", ch="奏命", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", face="a0052h", head="kan_z2a", ex05="kan_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02257", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「備品のタオルがあるから、それを敷きましょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 650,
+	},
+	block_00122 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"se", file="se衣擦れ", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命は収納スペースから大きなタオル取り出した。",
+					{"rt2"},
+					"受け取って、そいつを床に敷いてやる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 661,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奏命は制服を緩めてから、",
+					{"rt2"},
+					"タオルの上に仰向けに寝転がった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 664,
+	},
+	block_00124 = {
+		{"se", stop=1, time=500, id=1},
+		{"excall", file="02_奏命_18h4"},
+		{"text"},
+		linkback = "block_00123",
+		line = 667,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

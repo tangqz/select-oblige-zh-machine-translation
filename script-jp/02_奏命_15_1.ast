@@ -1,0 +1,3488 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="明かされる血縁"},
+		{"bg", file="bg024a", path=":bg/"},
+		{"bgm", file="bgm06"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バアさんと話してから三日後、約束の時。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 17,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バアさんからの指示通り、",
+					{"rt2"},
+					"俺は一人、屋上で突っ立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 20,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いったい何があるんだろうか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 22,
+	},
+	block_00003 = {
+		{"se", file="seドア(マンション、屋上開き)", id=1},
+		{"ex", time=800, func="wait"},
+		{"fg", ch="真智", size="no", mode=1, path=":fg/mac/no/", file="mac_noa0200", face="a0014", head="mac_noa", ex05="mac_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00014", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "？？？"},
+					"「あ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 31,
+	},
+	block_00004 = {
+		{"msgoff"},
+		{"bg", y=30, file="zbg024a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="真智", size="z1", mode=3, resize=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"目に入ってきたのは、寮の管理人さんだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 41,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"管理人さんは俺がいることに気づくと、",
+					{"rt2"},
+					"表情を驚きに染めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 44,
+	},
+	block_00006 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「こんにちは、",
+					{"rt2"},
+					"寮の管理人もこんなところにくるんですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 50,
+	},
+	block_00007 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0012", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00015", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「はい……、いえ……、ええと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 56,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あー……覚えてないかもしれないけど",
+					{"rt2"},
+					"ワン・ズ・ギフトの当選者です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 60,
+	},
+	block_00009 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0001", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00016", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「いえ……あなたのことは、覚えています。",
+					{"rt2"},
+					"忘れた日はありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 67,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"妙な言いまわしだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 69,
+	},
+	block_00011 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0018", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00017", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「待たせたようで、すみません。",
+					{"rt2"},
+					"……来るべきか、悩んでいたんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 76,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「えー……と？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 79,
+	},
+	block_00013 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0020", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0022", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00018", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「ああ……、",
+					{"rt2"},
+					"あの人、本当になにも言ってないんですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 86,
+	},
+	block_00014 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00019", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「お膳立てしたなんていうから、てっきり……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 92,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ええと、寮の管理人さんですよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 95,
+	},
+	block_00016 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="いいえ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0001", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00020", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「いいえ。あれは嘘です。",
+					{"rt2"},
+					"本当の役職は桜元学園の学園長をしています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 103,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「はいっ！？",
+					{"rt2"},
+					"学園長って、なんでそんな人が……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 107,
+	},
+	block_00018 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0002", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00021", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「身構える必要はありません、",
+					{"rt2"},
+					"楽にしてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 113,
+	},
+	block_00019 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0015", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0052", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00022", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智", "寮の管理人"},
+					"「私はただの経営者。",
+					{"rt2"},
+					"あなたが機嫌を取る必要のない相手です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 120,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「は、はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 123,
+	},
+	block_00021 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg024a", path=":bg/", sync=0},
+		{"fg", ch="真智", size="no", mode=3, resize=1, path=":fg/mac/no/", file="mac_noa0200", face="a0001", head="mac_noa", ex05="mac_noa0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00023", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「自己紹介が遅れました。私の名前は",
+					{"txruby", text="あしはな"},
+					"葦華",
+					{"txruby"},
+					{"txruby", text="まち"},
+					"真智",
+					{"txruby"},
+					"」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 133,
+	},
+	block_00022 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0011", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0002", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00024", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「姉さんがどのように話しているのか分かりませんが、",
+					{"rt2"},
+					"私はあなたの保護者の妹でもあります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 140,
+	},
+	block_00023 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「バアさんの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 145,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、桜元学園の学園長なんて立場の人間を",
+					{"rt2"},
+					"こんなところに呼び出せたのか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 148,
+	},
+	block_00025 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0053", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00025", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「自己紹介も終わったところで本題へ入りましょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 153,
+	},
+	block_00026 = {
+		{"bgm", stop=1},
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0020", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00026", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 160,
+	},
+	block_00027 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0022", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00027", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……ええと、布波能さんは、",
+					{"rt2"},
+					"どこまで知っているのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 166,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……？　どういうことですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 169,
+	},
+	block_00029 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0013", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"fgact", ch="真智", act="いいえ", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0014", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00028", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……質問を変えましょう。",
+					{"rt2"},
+					"姉さんからどこまで聞いていますか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 177,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「えーっと…………？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 180,
+	},
+	block_00031 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0019", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00029", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「何一つ思い当たるところはない、と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 185,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうなりますね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 188,
+	},
+	block_00033 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0013", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0012", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00030", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「…………すべてを私の口から話せということですか、",
+					{"rt2"},
+					"姉さん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 196,
+	},
+	block_00034 = {
+		{"bgm", file="bgm13"},
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0014", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00031", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……私は、あなたに負い目があります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 203,
+	},
+	block_00035 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0011", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00032", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だからこそ、私はあの日、身分を偽って",
+					{"rt2"},
+					"学園に来たあなたに会いに行ったのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 209,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「負い目？　……もしかして」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 212,
+	},
+	block_00037 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0012", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0013", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00033", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたはピーチ・フィールズで育てられた孤児。",
+					{"rt2"},
+					"ずっと劣悪な環境である珠賀良区で育ってきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 219,
+	},
+	block_00038 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0014", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00034", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「その出生および環境に、私は関与しています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 224,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「出生および環境……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 227,
+	},
+	block_00040 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0210", face="a0013", head="mac_noa", ex05="mac_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が片眉をあげれば、しばしの沈黙。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 231,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"瞳を地面にそらして、何事かを考える女性。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 233,
+	},
+	block_00042 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0001", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00035", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ここまで言えば、",
+					{"rt2"},
+					"もう想像はついたかもしれませんが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 239,
+	},
+	block_00043 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=30, file="zbg024a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="真智", size="z1", mode=3, resize=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00036", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたの母親は私です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 249,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 252,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……いやいや」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 255,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「冗談です？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 258,
+	},
+	block_00047 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00037", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「生憎、冗談は苦手です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 263,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうなんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 266,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「えーっと…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 269,
+	},
+	block_00050 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0012", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00038", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……すみません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 275,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いや……謝られても」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 278,
+	},
+	block_00052 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00039", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 283,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「うーーーーーーーーーーーーーん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 286,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……唐突すぎるなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 289,
+	},
+	block_00055 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00040", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ええ。そうでしょうね。",
+					{"rt2"},
+					"私もこんな風に告げる気はありませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 296,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………父親は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 299,
+	},
+	block_00057 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0053", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00041", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「わかりません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 305,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「わからないって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 308,
+	},
+	block_00059 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0001", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0012", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00042", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたの出生は通常とは違う。",
+					{"rt2"},
+					"私はあなたの母親ですが、産んではいません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 315,
+	},
+	block_00060 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0014", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00043", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だから、父親についても知りません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 320,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あーごめん。なんだ？　産んでない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 323,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「子供っていうのは、産まれるものじゃないの？",
+					{"rt2"},
+					"産む人がいるから、母親って名乗る人がいるわけで……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 327,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……えええ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 330,
+	},
+	block_00064 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00044", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「順を追って説明していきます。",
+					{"rt2"},
+					"少しずつ整理してください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 336,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あーーーーうん。頼んだ、あいや、頼みます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 339,
+	},
+	block_00066 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0002", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0023", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00045", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「敬語じゃなくても大丈夫ですよ、",
+					{"rt2"},
+					"私に気遣いは無用です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 346,
+	},
+	block_00067 = {
+		{"bg", y=100, speed=150000, file="zbg024a", path=":bg/", x2=640, y2=100, x=-640, ax=1280, ay=720, bx=-640, by=-360},
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00046", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「私は…………優秀な人材でした。",
+					{"rt2"},
+					"天才とも呼ばれていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 355,
+	},
+	block_00068 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0019", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0053", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00047", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「一色さんほどではありませんが、国内であれば、",
+					{"rt2"},
+					"指折り数える中に入る才覚だと自負してます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 362,
+	},
+	block_00069 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0012", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00048", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だけど、私は家庭や子供というものに",
+					{"rt2"},
+					"興味がありませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 368,
+	},
+	block_00070 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00049", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「私は一人でも十分に満たされていた。",
+					{"rt2"},
+					"生きていく上で他者が必要なかったんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 375,
+	},
+	block_00071 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0001", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00050", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「そんな私に、ある研究者が声をかけてきました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 380,
+	},
+	block_00072 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0014", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00051", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「その才覚は後世に残すべきものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 385,
+	},
+	block_00073 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0009", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00052", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「家庭を作り、子を成し、育て上げる。",
+					{"rt2"},
+					"その手間がなければキミもそう考えるはずだ……と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 392,
+	},
+	block_00074 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0053", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00053", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「私は研究者の合理的な考えに共感を覚えました。",
+					{"rt2"},
+					"自らの遺伝子が残り、進化する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 399,
+	},
+	block_00075 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0002", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00054", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「それはとても興味深く、面白いものです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 404,
+	},
+	block_00076 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0014", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00055", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だから私は優秀な子孫を残そうとする、",
+					{"rt2"},
+					"国の研究に協力した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 410,
+	},
+	block_00077 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00056", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「私の卵子を提供したのです。研究に賛同した誰かの",
+					{"rt2"},
+					"優秀な精子と掛け合わせるために」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 417,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……国の研究、ですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 420,
+	},
+	block_00079 = {
+		{"fg", ch="真智", size="z1", mode=1, path=":fg/mac/z1/", file="mac_z1a0210", face="a0001", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00057", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「一色家の、先代がお認めになった計画です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 425,
+	},
+	block_00080 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=30, file="zbg024a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0001", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「先代って、奏命の父親が……？",
+					{"rt2"},
+					"なら奏命も知ってるのか……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 436,
+	},
+	block_00081 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0014", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"fgact", ch="奏命", act="おじぎ"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00058", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「どうでしょう……。一色奏命さんには、",
+					{"rt2"},
+					"引き継がれていないのかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 443,
+	},
+	block_00082 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0024", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00059", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あるいは研究の概要は知っていても、",
+					{"rt2"},
+					"詳細は知らないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 449,
+	},
+	block_00083 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0002", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00060", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「そのあたりのことは",
+					{"rt2"},
+					"あなたが直接聞いたほうがいいでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 455,
+	},
+	block_00084 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00061", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「当時の私は認識が甘かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 461,
+	},
+	block_00085 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0012", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00062", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「子供が、人が生まれるということを",
+					{"rt2"},
+					"正しく理解していませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 467,
+	},
+	block_00086 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00063", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「時間が経ち……自分のしたことの",
+					{"rt2"},
+					"重大さに気づいたときにはもう遅かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 473,
+	},
+	block_00087 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00064", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「調べたときにわかったのは、生まれた子供たちが",
+					{"rt2"},
+					"ある研究の材料として扱われていたという事実」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 480,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「研究の材料？　俺が……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 483,
+	},
+	block_00089 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0024", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00065", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「優秀な遺伝子を組み合わせ、育てるだけでは、",
+					{"rt2"},
+					"彼らは満足できなかったのでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 489,
+	},
+	block_00090 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0026", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00066", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「研究者達は遺伝子を操作した上で、",
+					{"rt2"},
+					"あなた達を生みだした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 495,
+	},
+	block_00091 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0001", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00067", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたは研究者の理想の下に作られた、",
+					{"rt2"},
+					"デザイナーチャイルドです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 501,
+	},
+	block_00092 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00068", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「さらに、研究者達はまだ小さかったあなたたちを",
+					{"rt2"},
+					"物品の如く扱い、研究を重ねようとしていました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 507,
+	},
+	block_00093 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0026", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0012", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00069", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「見過ごせなかった。でも自ら研究に協力した以上、",
+					{"rt2"},
+					"私にはどうすることも出来ませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 514,
+	},
+	block_00094 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00070", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だから私は姉に頼んだのです。",
+					{"rt2"},
+					"その子たちを救ってほしいと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 521,
+	},
+	block_00095 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00071", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「どんな手段を用いたのかはわかりません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 527,
+	},
+	block_00096 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0053", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00072", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ですが姉は研究材料として扱われていた子供の",
+					{"rt2"},
+					"一部を引き取りました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 533,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「じゃあ、バアさんが今まで、",
+					{"rt2"},
+					"俺たちを育ててくれてたのは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 537,
+	},
+	block_00098 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00073", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「そちらは私のあずかり知らぬ部分です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 542,
+	},
+	block_00099 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0002", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00074", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「私としてはあなたたちが引き取られ、親となり得る",
+					{"rt2"},
+					"心ある男女の元で各々育てられることを望んでいた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 548,
+	},
+	block_00100 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0010", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00075", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だけど姉さんはピーチ・フィールズを開き、あなた",
+					{"rt2"},
+					"たちを育て続けた。その心は推し量れていません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 560,
+	},
+	block_00101 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0025", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00076", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「昔からあの人のことは、よくわからないから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 565,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 568,
+	},
+	block_00103 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg024a", path=":bg/", sync=0},
+		{"fg", ch="真智", size="no", mode=3, resize=1, path=":fg/mac/no/", file="mac_noa0200", face="a0001", head="mac_noa", ex05="mac_noa0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00077", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「だけど、今あなたにこうして、私の口から過去を",
+					{"rt2"},
+					"伝えるべきだと考えた理由は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 579,
+	},
+	block_00104 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0012", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00078", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あの人らしい強引な手段で、このような場を設けた",
+					{"rt2"},
+					"姉の気持ちは、わかります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 585,
+	},
+	block_00105 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0013", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00079", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「きっと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 590,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「バアさんはこう考えたのかな。",
+					{"rt2"},
+					"俺が自分のルーツを知れるようにと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 594,
+	},
+	block_00107 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0014", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「学園長に会えばルーツを知ることができる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 599,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どんな風に生まれ、",
+					{"rt2"},
+					"珠賀良区のピーチ・フィールズに辿り着いたか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 603,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「出生について奏命の父親が関係していたと",
+					{"rt2"},
+					"知った時にどうするか、どうなるか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 607,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「すべてを知った上で、奏命と結婚するかどうかを",
+					{"rt2"},
+					"考えさせたかったんだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 611,
+	},
+	block_00111 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0012", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"fgact", ch="真智", act="うなづく", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00080", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 617,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「でも、ふたを開けてみれば別に重要な話じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 620,
+	},
+	block_00113 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg001a", path=":bg/", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうして生まれて、",
+					{"rt2"},
+					"どうしてピーチ・フィールズに辿り着いたか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 633,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうでもいいじゃないか。その研究がなければ、",
+					{"rt2"},
+					"俺は生まれなかったかもしれないんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 637,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どんな経緯があったとしても、生きて、ここに居る。",
+					{"rt2"},
+					"俺は俺なりに満足して生きてきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 641,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もちろん珠賀良区での生活は不自由もあったし、",
+					{"rt2"},
+					"負の感情を持ったことだってある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 645,
+	},
+	block_00117 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="ev_tou_c02_01", path=":ev/ev_tou_c02/", set="ev_tou_c02", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「けれど俺は、過去を後悔はしていない。",
+					{"rt2"},
+					"珠賀良区で得たもの、得た絆、本当の家族……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 658,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「すべてに満足している。",
+					{"rt2"},
+					"だから俺は、家族のために、ここへ来た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 662,
+	},
+	block_00119 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="ev_kan_c02_02", path=":ev/ev_kan_c02/", set="ev_kan_c02", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そして……奏命と婚約して、",
+					{"rt2"},
+					"自分自身も幸せを得られた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 675,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いいじゃないか。最高だ。何も悪くない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 678,
+	},
+	block_00121 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"msgoff"},
+		{"cgdel", id=-1, sync=0},
+		{"bg", file="bg024a", path=":bg/", sync=0},
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0001", head="mac_noa", ex05="mac_noa0000", lv=3, id=13, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「これが俺の本心だ。",
+					{"rt2"},
+					"別に開き直っている訳じゃないぞ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 691,
+	},
+	block_00122 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0011", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00081", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「布波能凪さん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 696,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あんたもそんな暗い顔するなよ。",
+					{"rt2"},
+					"色々あったんだろうけど、気にする必要はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 700,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だって俺は、こんなにも幸せなんだからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 703,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、俺の言葉を聞いたうえで尚、",
+					{"rt2"},
+					"目の前の人は表情を変えなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 706,
+	},
+	block_00126 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0014", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00082", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「いいえ、布波能凪さん、聞いて下さい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 711,
+	},
+	block_00127 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0013", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00083", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「本当は、こんなこと……",
+					{"rt2"},
+					"言いたくはないのだけれど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 718,
+	},
+	block_00128 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0014", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0012", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00084", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「残念ながら、あなたは一色家に……。",
+					{"rt2"},
+					"一色奏命の伴侶に、相応しくないのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 725,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いやいや、それは当事者同士が決めることだろ？",
+					{"rt2"},
+					"人の価値観に決められる筋合いは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 729,
+	},
+	block_00130 = {
+		{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0022", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+		{"fgact", ch="真智", act="いいえ", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="no", mode=3, path=":fg/mac/no/", file="mac_noa0200", face="a0020", head="mac_noa", ex05="mac_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00085", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「価値観や感情云々の問題ではありません。",
+					{"rt2"},
+					"この国の未来を閉ざす可能性がある話なのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 737,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……ん、んん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 740,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「急にデカい話になったが……どういうことなんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 743,
+	},
+	block_00133 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=30, file="zbg024a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="真智", size="z1", mode=3, resize=1, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00086", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたはデザイナーチャイルドだという話を、",
+					{"rt2"},
+					"先ほどしましたね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 754,
+	},
+	block_00134 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0012", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00087", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたのその身体には、遺伝子を操作された影響が",
+					{"rt2"},
+					"残っています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 760,
+	},
+	block_00135 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00088", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「具体的には……生殖機能に制限がかけられている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 766,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「生殖機能の、制限……？　それじゃ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 769,
+	},
+	block_00137 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0014", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00089", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「子供を成すのは非常に困難だと言えます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 774,
+	},
+	block_00138 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0011", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0013", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00090", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたと結婚する上で、一色さんは後継者のことが",
+					{"rt2"},
+					"頭にあったはずです。それが当主としての務め……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 781,
+	},
+	block_00139 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0012", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00091", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ですから……あなたは、一色さんとは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 786,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それ以上、この話は続かなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 788,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"続ける意味がないと判断したのか、その先を",
+					{"rt2"},
+					"言葉にするのはあまりに酷だと思ったのか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 791,
+	},
+	block_00142 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00092", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「申し訳、ありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 797,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 800,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なんで謝る？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 803,
+	},
+	block_00145 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00093", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……すみません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 808,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だからなんで謝る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 811,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あんたは合理的に、研究に協力しただけだ。",
+					{"rt2"},
+					"おかげで俺が生まれた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 815,
+	},
+	block_00148 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「生まれて、バアさんに育てられて、運良く",
+					{"rt2"},
+					"他にないチャンスに恵まれて、桜元学園に来た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 821,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「気のいいヤツらに会えて、友達も、",
+					{"rt2"},
+					"恋人もできてさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 825,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「今は正直、楽しいよ。",
+					{"rt2"},
+					"これがあんたの行動の結果だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 829,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だからあんたは謝らなくていい。謝られても困る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 832,
+	},
+	block_00152 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0015", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00094", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「…………ああ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 838,
+	},
+	block_00153 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0002", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00095", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「あなたは……強い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 843,
+	},
+	block_00154 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0023", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00096", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「もう少し、年相応になってもいいのでは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 848,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「悪いね。俺は兄貴分なんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 851,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「取り乱すのは俺の役割じゃない――なんて、",
+					{"rt2"},
+					"格好つけておこうかな、ははは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 855,
+	},
+	block_00157 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0210", face="a0002", head="mac_z1a", ex05="mac_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あー……だけど、悪い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 860,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「今はもう、話すのはいいかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 863,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちょっと、考えたい。一人で」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 866,
+	},
+	block_00160 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0001", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00097", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「はい。私からすべき話は、すべて終わりました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 872,
+	},
+	block_00161 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00098", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「……私という人間は、あなたにとって、",
+					{"rt2"},
+					"いまさらの存在でしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 878,
+	},
+	block_00162 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00099", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「ノイズでしか、ないかもしれませんが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 883,
+	},
+	block_00163 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0025", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0001", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00100", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「困ったことがあれば、遠慮なく声をかけてください。",
+					{"rt2"},
+					"何かはしてみせます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 890,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「んー……まあ、はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 893,
+	},
+	block_00165 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0014", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00101", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「それが私の、あなたへの責任でもありますから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 898,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「考えときます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 901,
+	},
+	block_00167 = {
+		{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0013", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+		{"fgact", ch="真智", act="うなづく", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真智", size="z1", mode=3, path=":fg/mac/z1/", file="mac_z1a0200", face="a0011", head="mac_z1a", ex05="mac_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mac_00102", ch="mac"},
+			},
+			ja = {
+				{
+					name = {"真智"},
+					"「はい。……それでは、失礼します」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 908,
+	},
+	block_00168 = {
+		{"fg", ch="真智", mx=-40, mode=-1, lv=4, id=13},
+		{"se", file="seドア(マンション、屋上閉じ)", id=1},
+		{"ex", time=500, func="wait"},
+		{"bg", time=250, file="bg099a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は一人きりの屋上でベンチに座りながら",
+					{"rt2"},
+					"空を見上げた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 921,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「バアさんめ、やってくれたな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 924,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"知りたくない事実だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 926,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"同時に今知っておくべきだったとも痛感する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 928,
+	},
+	block_00172 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", speed=200000, file="zbg099a", path=":bg/", x2=640, y2=0, x=-640, y=0, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「当たり前に恋をして、当たり前に結婚して、",
+					{"rt2"},
+					"当たり前に子供ができる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 936,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そういうもんだと思ってたが、",
+					{"rt2"},
+					"見通しが甘かったな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 940,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……奏命」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 943,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それでも俺は、奏命と一緒に……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 946,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なんて、言ったら怒るか？　いや喜んでくれたり？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 949,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ははは、わからん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 952,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だってなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 955,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「一色家の……当主だもんな、奏命は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 958,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 961,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さて、どうしたもんか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 966,
+	},
+	block_00182 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=002, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="02_奏命_15_2"},
+		{"text"},
+		linkback = "block_00181",
+		line = 972,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
