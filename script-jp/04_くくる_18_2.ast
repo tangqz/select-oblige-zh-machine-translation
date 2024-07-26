@@ -1,0 +1,1543 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"bg", rule="002r", vague=40, file="bg024b", path=":bg/"},
+		{"fg", ch="くくる", size="no", mx=-40, mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0026", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"bgm", file="bgm13"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"屋上で休憩していると、",
+					{"rt2"},
+					"どこか沈んだ雰囲気のくくるがやってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 10,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あれ？　くくる？　どうしたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 13,
+	},
+	block_00002 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0013", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02399", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……なんでもない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 18,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"（なんか急に機嫌が悪いな）",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 21,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるが呼びに来てくれたし、",
+					{"rt2"},
+					"そろそろ部室に戻って勉強するかなー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 25,
+	},
+	block_00005 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0026", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02400", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……ん。そうして」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 30,
+	},
+	block_00006 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=30, file="zbg024b", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0026", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なんだよ、さっきまであんなにやる気だったのに。",
+					{"rt2"},
+					"急に機嫌悪いじゃんか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 41,
+	},
+	block_00007 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0014", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02401", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「やる気はある。機嫌も別に悪くない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 46,
+	},
+	block_00008 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0011", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0012", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+				{"fgact", ch="くくる", act="いいえ", lv=4, id=13},
+			},
+			vl02 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0013", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02402", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ただ、七に言われたことが色々あって……",
+					{"rt2"},
+					"考えたらうぅー……！　ってなる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 55,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「珍しいな。何を言われたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 58,
+	},
+	block_00010 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0026", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02403", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「これはわたしが一人で答えを出すべきことだから、",
+					{"rt2"},
+					"言いたくない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 64,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……そっか。力が必要になったら言えよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 67,
+	},
+	block_00012 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0013", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02404", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 72,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちなみに、七と気まずいとかはないんだよな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 75,
+	},
+	block_00014 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0052", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02405", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それはへーき。意見の対立には慣れてる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 80,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「本当に家族レベルに仲いいよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 83,
+	},
+	block_00016 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0002", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"fgact", ch="くくる", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02406", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うん。七はとても大切な人。",
+					{"rt2"},
+					"今のわたしには大切な人がたくさん増えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 90,
+	},
+	block_00017 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0004", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02407", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「モンステラが起動したら、わたしと同じように、",
+					{"rt2"},
+					"大切な人をたくさんつくってほしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 96,
+	},
+	block_00018 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0021", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0009", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02408", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……これが七の言ってたこと？",
+					{"rt2"},
+					"わかるけど、わかりたくない……でも……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 103,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「はいはい、行くぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 106,
+	},
+	block_00020 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0012", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"fgact", ch="くくる", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02409", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うぅー……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 112,
+	},
+	block_00021 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", y=-360, speed=60000, rule=139, vague=40, file="zbg017c", path=":bg/", x2=0, y2=360, x=0, ax=1280, ay=720, bx=-640, by=-360},
+		{"bgm", file="bgm08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"部活が終わると、",
+					{"rt2"},
+					"くくるが珍しく俺の部屋に行きたいと言い出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 124,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるの部屋じゃなくてよかったのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 127,
+	},
+	block_00023 = {
+		{"fg", ch="くくる", size="no", mode=1, resize=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0052", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02410", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「気分転換がしたいから、凪の部屋の方がいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 132,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それならいいが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 135,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"七のやつ、くくるに何を話したんだ？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 137,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"体調のことであれば七に付きっ切りになるだろうし、",
+					{"rt2"},
+					"そうじゃないとしたら……うーん……？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 140,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"考えながら暗闇を歩いていると、",
+					{"rt2"},
+					"電灯の後ろに人影が見えた気がした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 143,
+	},
+	block_00028 = {
+		{"bgm", stop=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg017c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0001", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……くくる、ちょっと待ってくれ。",
+					{"rt2"},
+					"あそこに誰かいる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 155,
+	},
+	block_00029 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0001", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0018", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02411", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん……もしかして、うずくまってる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 161,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「急病だったらまずい、ちょっと見に行ってみよう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 164,
+	},
+	block_00031 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg017c", path=":bg/", sync=0},
+		{"fg", ch="ファイブ", size="no", mode=3, path=":fg/fiv/no/", file="fiv_noa0200", face="a0012", head="fiv_noa", y=100, lv=3, id=13, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"bgm", file="bgm18"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ファイブ……！？",
+					{"rt2"},
+					"おい、ファイブ、大丈夫か！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 178,
+	},
+	block_00032 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_noa0210", face="a0020", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_noa0210", face="a0022", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02412", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「もしかしてまた体調が……？",
+					{"rt2"},
+					"早くメンテナンスに連れて行ったほうがいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 185,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ……おい、ファイブ？　聞こえてるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 188,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"うずくまっているファイブに向かって手を伸ばす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 190,
+	},
+	block_00035 = {
+		{"se", file="seスパンキング", id=1},
+		{"quake", size=2},
+		{"fg", ch="ファイブ", size="no", mode=3, path=":fg/fiv/no/", file="fiv_noa0200", face="a0009", head="fiv_noa", y=100, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00560", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「だめですの……今は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 199,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おいっ……どうしたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 202,
+	},
+	block_00037 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-200, file="zbg017c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="ファイブ", size="z1", mode=3, resize=1, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0009", head="fiv_z1a", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しゃがみ込み、ファイブの顔を覗き込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 212,
+	},
+	block_00038 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0011", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして、目が合った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 216,
+	},
+	block_00039 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0025", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00561", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「……ああ、やっとわたしを見てくれた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 223,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……ファイブ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 226,
+	},
+	block_00041 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0012", head="fiv_z1a", lv=4, id=13},
+		{"fgact", ch="ファイブ", act="いいえ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0026", head="fiv_z1a", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00562", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「ううん、わたしはわたしっ！",
+					{"rt2"},
+					"ねぇ、どうして同じなのにそっちを選ぶの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 234,
+	},
+	block_00042 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0014", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0009", head="fiv_z1a", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00563", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「同じ身体を持ってるから？　だけど人は危ない。",
+					{"rt2"},
+					"だって、いつかは絶対いなくなる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 241,
+	},
+	block_00043 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0051", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00564", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「だけどわたしは永遠の存在。",
+					{"rt2"},
+					"あなたを一人にすることはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 247,
+	},
+	block_00044 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0022", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02413", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……この子、なにを言ってるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 252,
+	},
+	block_00045 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0024", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0054", head="fiv_z1a", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00565", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「その子は何も知らない。",
+					{"rt2"},
+					"だけどわたしは全部知ってる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 259,
+	},
+	block_00046 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0001", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00566", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「二人でモンステラのＡＩのために頑張ったし、",
+					{"rt2"},
+					"そのために珠賀良区にだって遊びに行った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 265,
+	},
+	block_00047 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0004", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00567", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「それはその子が好きだからという理由だけじゃない。",
+					{"rt2"},
+					"あなたがオートマタに魅力を感じたから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 271,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺やくくるが過ごしてきた時間、",
+					{"rt2"},
+					"その内容を何故か言い当てられていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 274,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その発言に驚愕するが、ファイブはまるで",
+					{"rt2"},
+					"聞こえていないかのように言葉を紡ぎ続ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 277,
+	},
+	block_00050 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0005", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00568", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「その点、わたしは完璧な存在。",
+					{"rt2"},
+					"最期まで、あなたを一人にしない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 283,
+	},
+	block_00051 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0051", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00569", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「その子みたいな悩みを、わたしは持たない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 288,
+	},
+	block_00052 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0021", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02414", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「――――ッ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 293,
+	},
+	block_00053 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0014", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00570", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「ねぇ、同じなら、いいでしょう？",
+					{"rt2"},
+					"大切な家族を失ったのはわたしも同じ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 299,
+	},
+	block_00054 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0002", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00571", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「だから優しくして、愛して、わたしを見て。",
+					{"rt2"},
+					"わたしはその子と違って独りぼっち」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 305,
+	},
+	block_00055 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0026", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00572", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「なら、一つくらいくれてもいいはず」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 310,
+	},
+	block_00056 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg017c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0021", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくる、これってもしかして……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 320,
+	},
+	block_00057 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0026", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"fgact", ch="くくる", act="いいえ", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0021", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02415", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「間違いないと思う。わたしの話をしてる。",
+					{"rt2"},
+					"ううん、わたしの思考や感情をトレースしてる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 328,
+	},
+	block_00058 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0022", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02416", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「だけど、どうして……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 333,
+	},
+	block_00059 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-200, file="zbg017c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0024", head="fiv_z1a", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0022", head="fiv_z1a", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00573", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「わたしは何も知らないんだね。",
+					{"rt2"},
+					"だからわたしが出てきた。わたしが……、私……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 345,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ファイブが頭を抱える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 347,
+	},
+	block_00061 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0012", head="fiv_z1a", lv=4, id=13},
+		{"fgact", ch="ファイブ", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00574", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「あぁ……いや……違う……、違う……、",
+					{"rt2"},
+					"私は、あなたじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 354,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その瞳には動揺が垣間見え、",
+					{"rt2"},
+					"何かを恐れているようにも見えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 357,
+	},
+	block_00063 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0018", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00575", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「わ、私は何を言ってますの……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 362,
+	},
+	block_00064 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0020", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0027", head="fiv_z1a", lv=4, id=13},
+				{"fgact", ch="ファイブ", act="いいえ", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00576", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「一体なんのことですの……事故、家族？",
+					{"rt2"},
+					"違う違うっ、この記憶はなんなんですの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 370,
+	},
+	block_00065 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0026", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00577", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「私はオートマタとして生み出された…………。",
+					{"rt2"},
+					"唯一無二の存在、完全自律型自動人形Ｎ型０５番」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 376,
+	},
+	block_00066 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0011", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00578", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「あれ、でも……あれ？　私は、わたしなのに……。",
+					{"rt2"},
+					"わたし、私、ワタシ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 382,
+	},
+	block_00067 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0022", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00579", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「私は、誰……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 387,
+	},
+	block_00068 = {
+		{"msgoff"},
+		{"fg", ch="ファイブ", my=40, mode=-1, lv=4, id=13},
+		{"ex", time=0, func="wait"},
+		{"se", file="se倒れる", id=1},
+		{"quake"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"糸の切れた人形のように、ファイブが崩れ落ちる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 398,
+	},
+	block_00069 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ファイブ！？　大丈夫か、俺の声が聞こえるか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 403,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00580", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「エラー、エラー、エラー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 406,
+	},
+	block_00071 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=20, file="zbg017c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0011", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくる！",
+					{"rt2"},
+					"ファイブがどうなっているか分かるか！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 418,
+	},
+	block_00072 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0022", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02417", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「不明なことが多すぎる。",
+					{"rt2"},
+					"本来なら政府に戻す必要があるけど、信用できない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 424,
+	},
+	block_00073 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0026", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02418", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「科学部の部室に連れて行って検査しよう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 429,
+	},
+	block_00074 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0011", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02419", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしは先に戻って用意しておく。凪はゆっくり、",
+					{"rt2"},
+					"その子を揺らさないように連れてきて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 435,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ、任せておけ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 438,
+	},
+	block_00076 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg017c", path=":bg/", sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ファイブのことを背負い、慎重に歩く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 446,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺に身体を預けているファイブからは、",
+					{"rt2"},
+					"相変わらずエラーという声だけが聞こえてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 449,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"焦燥感に駆られながらも、俺は部室を目指した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 451,
+	},
+	block_00079 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"excall", file="04_くくる_18_3"},
+		{"text"},
+		linkback = "block_00078",
+		line = 457,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

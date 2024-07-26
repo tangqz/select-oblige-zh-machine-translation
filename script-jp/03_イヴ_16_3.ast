@@ -1,0 +1,2400 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"bg", file="black", path=":bg/"},
+		{"bgm", file="bgm18"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉がその場を去ると、",
+					{"rt2"},
+					"イヴはそっと立ち上がり歩き出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 8,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人の波をかき分け、俺はイヴを追いかける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 10,
+	},
+	block_00002 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg017b", path=":bg/", sync=0},
+		{"fg", ch="イヴ", size="no", mode=3, path=":fg/eve/no/", file="eve_noa0210", face="a0009", head="eve_noa", ex05="eve_noa0010", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イヴッ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 21,
+	},
+	block_00003 = {
+		{"fg", ch="イヴ", size="no", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0015", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02712", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「あ、凪……。ごめん、負けちゃった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 26,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"力なく、イヴが笑う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 28,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 31,
+	},
+	block_00006 = {
+		{"fg", ch="イヴ", size="no", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0009", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="no", mode=3, path=":fg/eve/no/", file="eve_nob0200", face="b0015", head="eve_nob", ex05="eve_nob0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02713", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「えと……ここじゃ人目につくし、屋上にいこっか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 37,
+	},
+	block_00007 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg024b", path=":bg/", sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"bgm", file="bgm13"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"屋上の扉を開ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 52,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"運動部総括の試合があったからか、ひと気はなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 54,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ少しぼんやりしているイヴを、隣に座らせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 57,
+	},
+	block_00010 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-400, y=30, file="zbg024b", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="イヴ", size="z1", mode=3, resize=1, path=":fg/eve/z1/", file="eve_z1b0200", face="b0009", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さっき、謝ってたけどさ……。",
+					{"rt2"},
+					"そんなこと言う必要ないって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 68,
+	},
+	block_00011 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0023", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02714", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ううん、謝らないといけないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 73,
+	},
+	block_00012 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0009", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02715", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「あれだけ大口を叩いておいて",
+					{"rt2"},
+					"あっさり負けちゃったんだからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 79,
+	},
+	block_00013 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0025", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02716", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「せっかく凪の彼女になって初めての試合だったのに、",
+					{"rt2"},
+					"情けない姿を見せちゃったなー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 85,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いつもの調子を保とうとしているのが伝わってくるが、",
+					{"rt2"},
+					"やはり声に元気がない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 91,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「情けないと思ったならやり直せばいいさ。",
+					{"rt2"},
+					"イヴは努力の天才だろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 95,
+	},
+	block_00016 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0009", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02717", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「努力の天才かー……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 100,
+	},
+	block_00017 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0014", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02718", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「凪さ、私って本当にやり直せると思う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 105,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「たった一回負けただけだろ？　弱気になるなって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 108,
+	},
+	block_00019 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0022", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02719", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「凪にはそう見えたかもしれないけど、",
+					{"rt2"},
+					"私にとっては全然違う意味があったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 114,
+	},
+	block_00020 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0011", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02720", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「どうして私に勝てたら運動部総括の座を譲るって",
+					{"rt2"},
+					"形式にしたか分かる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 120,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうだなー……努力の成果を確かめるためとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 123,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イヴは努力を欠かさないから、",
+					{"rt2"},
+					"定期的に強い相手と試合をする必要があったみたいな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 127,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「運動部総括っていう景品が懸かってたら、",
+					{"rt2"},
+					"相手の気合も変わってくるだろうし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 133,
+	},
+	block_00024 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0015", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02721", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「んー、そういう意味もあったのかも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 138,
+	},
+	block_00025 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0052", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02722", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「私が運動部総括っていう座を守りたかった一番の理由",
+					{"rt2"},
+					"は、自分の強さを肌で感じ続けたかったから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 144,
+	},
+	block_00026 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0200", face="a0015", head="eve_z1a", ex05="eve_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02723", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ほら、運動部総括として勝ち続けている間は、",
+					{"rt2"},
+					"自分は優れた人間だって証明出来るでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 150,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「身分証明書みたいな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 153,
+	},
+	block_00028 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0002", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02724", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「そうそう、そんな感じ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 159,
+	},
+	block_00029 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0052", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0015", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02725", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「努力をすればトップに立てる。努力は裏切らない。",
+					{"rt2"},
+					"その事実が、私を支えてくれていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 166,
+	},
+	block_00030 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0053", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0014", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02726", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「私の価値の裏付けでもあった。",
+					{"rt2"},
+					"……なのに、なくなっちゃった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 173,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「やめろよ、もう諦めたみたいな言い方はさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 176,
+	},
+	block_00032 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0009", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"困ったようにはにかみつつも、",
+					{"rt2"},
+					"視線を合わせようとしない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 181,
+	},
+	block_00033 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0052", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02727", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「もちろん夢を捨てるつもりはないよ。",
+					{"rt2"},
+					"凪との約束もあるしね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 187,
+	},
+	block_00034 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0010", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0009", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02728", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ただ、汐莉に負けて、やっぱり自分は",
+					{"rt2"},
+					"凡人なんだと再認識させられた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 194,
+	},
+	block_00035 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0015", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02729", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「まさかこんな短期間に追い抜かれちゃうなんて、",
+					{"rt2"},
+					"嫌になっちゃうよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 200,
+	},
+	block_00036 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0009", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02730", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ううん、違う。",
+					{"rt2"},
+					"いずれこの時が来るのはわかってたの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 206,
+	},
+	block_00037 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0010", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02731", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「圧倒的な才能を持つものと戦えば、私は負ける。",
+					{"rt2"},
+					"その時にまた、立ち上がれるかどうか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 212,
+	},
+	block_00038 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0002", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0013", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02732", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「努力は好き。でも、やっぱり……、",
+					{"rt2"},
+					"努力って苦しいよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 219,
+	},
+	block_00039 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0009", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02733", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「どうして私には才能がないんだろ。",
+					{"rt2"},
+					"才能があれば、もっと上手にできたかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 225,
+	},
+	block_00040 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0016", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02734", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「恋のせいでダメになったなんて、",
+					{"rt2"},
+					"絶対に言わせなかったのに……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 231,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺はイヴみたいに努力してこなかったから、",
+					{"rt2"},
+					"……多分、イヴの気持ちがわかってない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 235,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だけど、またやり直せるかっていう質問には",
+					{"rt2"},
+					"答えられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 239,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イヴは、絶対に運動部総括へ返り咲く。",
+					{"rt2"},
+					"勝ちたいと本当に望むならな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 245,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「やりたくないならいいよ。やめちまえ。",
+					{"rt2"},
+					"汐莉に任せて引退だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 249,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「誰が何を言ってきても、俺が守ってやる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 252,
+	},
+	block_00046 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0009", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"イヴは目を閉じ、静かに首を横に振った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 256,
+	},
+	block_00047 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0026", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02735", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ううん。負けっぱなしは嫌。",
+					{"rt2"},
+					"運動部総括の座は諦めない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 262,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おし、なら一緒に頑張ろうぜ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 265,
+	},
+	block_00049 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0015", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0004", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02736", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ありがとうね……凪がいて本当に良かったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 271,
+	},
+	block_00050 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0210", face="b0003", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02737", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「前までの私だったら多分挫けていたと思う。",
+					{"rt2"},
+					"凪は私のヒーローだね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 277,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「んな訳あるか！　どこからどう見ても",
+					{"rt2"},
+					"正義のヒーローには見えないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 281,
+	},
+	block_00052 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0019", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02738", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「じゃあダークヒーロー？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 286,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「うーん……ヒーローは無しで。",
+					{"rt2"},
+					"俺はただのイヴの彼氏だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 290,
+	},
+	block_00054 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0002", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02739", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「ふふっ、それが一番嬉しい言葉かもしれないね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 295,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とりあえず言いたかったことは伝えられた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 297,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"イヴの諦めないという意志を知れただけで十分だ。",
+					{"rt2"},
+					"これでやるべきことは定まったからな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 300,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして、この場所に俺はもういるべきじゃない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 302,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「冷えてきたし、俺は部屋に戻るけど",
+					{"rt2"},
+					"イヴはどうする？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 306,
+	},
+	block_00059 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1a0210", face="a0004", head="eve_z1a", ex05="eve_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02740", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「私はもう少しだけここにいるかな。",
+					{"rt2"},
+					"わざわざ追いかけてきてくれてありがとうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 312,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「何言ってるんだ、当たり前だろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 315,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「風邪を引いても良くないから、",
+					{"rt2"},
+					"ほどほどにしておくんだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 319,
+	},
+	block_00062 = {
+		{"fg", ch="イヴ", size="z1", mode=3, path=":fg/eve/z1/", file="eve_z1b0200", face="b0002", head="eve_z1b", ex05="eve_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02741", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「うん！　また明日からよろしくね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 324,
+	},
+	block_00063 = {
+		{"bg", file="bg099b", path=":bg/"},
+		{"se", file="seドア(マンション、屋上閉じ)", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"屋上の扉を閉め、俺は壁にもたれかかる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 334,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"イヴが座っているのは、壁を挟んだすぐのところだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 336,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しばらくそうしていると、微かな音が聞こえ始めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 338,
+	},
+	block_00066 = {
+		{"fg", ch="イヴ", size="z1", mode=1, path=":fg/eve/z1/", file="eve_z1b0210", face="b0016", head="eve_z1b", ex05="eve_z1b0010", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_eve_02742", ch="eve"},
+			},
+			ja = {
+				{
+					name = {"イヴ"},
+					"「うぅっ、ぐすっ……すん、ぐずっ…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 343,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"……無事でいられるはずがないんだよな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 345,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大切なものを奪われて平然としていられるほど、",
+					{"rt2"},
+					"人間は単純な生き物じゃない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 348,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今は俺が傍にいるよりも、一人の時間が必要だろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 350,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そしてきっとイヴなら",
+					{"rt2"},
+					"自分の足で立ち上がれると信じている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 353,
+	},
+	block_00071 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg022a", path=":bg/", sync=0},
+		{"extrans", time=2000},
+		{"bgm", file="bgm23"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"運動部総括決定戦の翌日。",
+					{"rt2"},
+					"俺は学生会室に繋がる廊下で突っ立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 370,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"現在この部屋の中では、運動部総括の座の譲渡が",
+					{"rt2"},
+					"行われているらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 373,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこまではいいんだが、何故か部外者である俺も",
+					{"rt2"},
+					"呼び出しをくらっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 376,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今は譲渡が終わるまで、途中で捕まえたファイブと",
+					{"rt2"},
+					"雑談して時間を潰しているところだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 379,
+	},
+	block_00075 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=20, file="zbg022a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="ファイブ", size="z1", mode=3, resize=1, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0011", head="fiv_z1a", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00460", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「あれからイウヴァリー様の様子はいかがですの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 390,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「本人の心境がどんなものかは分からないけど、",
+					{"rt2"},
+					"とくに目立った変化はないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 394,
+	},
+	block_00077 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0012", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00461", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「そうですの……イウヴァリー様は大丈夫でしょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 399,
+	},
+	block_00078 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0022", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00462", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「私も見ていましたが、衆目に晒されている中で、",
+					{"rt2"},
+					"あの仕打ちは見るに堪えないものがありました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 405,
+	},
+	block_00079 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0013", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00463", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「心に負った傷がどれほど深いものであるのか、",
+					{"rt2"},
+					"私には想像もつきませんの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 411,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………まぁな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 414,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だけど、いくら傷が深くてもイヴなら立ち直れる。",
+					{"rt2"},
+					"少なくとも俺はそう信じている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 418,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「このまま潔く諦めるような人間じゃないさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 421,
+	},
+	block_00083 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0011", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00464", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「そちらも心配ですが、個人的には凪様の方も",
+					{"rt2"},
+					"心配ですの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 427,
+	},
+	block_00084 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0012", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00465", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「あの件はイウヴァリー様が傷つけられただけではなく",
+					{"rt2"},
+					"凪様の負担にもなっているはずですの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 433,
+	},
+	block_00085 = {
+		{"fg", ch="ファイブ", size="z1", mode=3, path=":fg/fiv/z1/", file="fiv_z1a0200", face="a0009", head="fiv_z1a", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_fiv_00466", ch="fiv"},
+			},
+			ja = {
+				{
+					name = {"ファイブ"},
+					"「ですからあまり無理はせずにご自愛くださいませ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 438,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「わかってるよ。ありがとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 441,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ファイブとの話が一区切りついたと同時に学生会室の",
+					{"rt2"},
+					"扉が開く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 444,
+	},
+	block_00088 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg022a", path=":bg/", sync=0},
+		{"fg", ch="ファイブ", size="no", mode=3, resize=1, path=":fg/fiv/no/", file="fiv_noa0200", face="a0011", head="fiv_noa", x=-230, lv=3, id=9, sync=0},
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0006", head="sio_noa", ex05="sio_noa0000", x=230, lv=3, id=10, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"用件を終えたであろう汐莉はこちらを一瞥して、",
+					{"rt2"},
+					"ニコリと微笑んだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 457,
+	},
+	block_00089 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0005", head="sio_noa", ex05="sio_noa0010", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00355", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「心配しなくても、ちゃーんともらいましたよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 462,
+	},
+	block_00090 = {
+		{"fg", ch="汐莉", mx=40, mode=-1, lv=3, id=10},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただそれだけの言葉を残して行ってしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 467,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"追いかけて、引き留めたかったがそれよりも早く、",
+					{"rt2"},
+					"スピーカーで名前を呼ばれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 470,
+	},
+	block_00092 = {
+		{"fg", ch="奏命", size="no", mode=1, path=":fg/kan/no/", file="kan_noa0200", face="a0053", head="kan_noa", ex05="kan_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02900", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「凪、入りなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 475,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は話し相手になってくれていたファイブと別れて、",
+					{"rt2"},
+					"学生会室へ入室した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 478,
+	},
+	block_00094 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg025a", path=":bg/", sync=0},
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0053", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9, sync=0},
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0009", head="kuk_noa", ex05="kuk_noa0000", x=230, lv=3, id=10, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一歩足を踏み入れた時、重苦しい空気が漂っているのを",
+					{"rt2"},
+					"察知する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 492,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"新しい運動部総括の誕生。",
+					{"rt2"},
+					"桜元学園の生徒会としては喜ぶべきことなんだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 495,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、この場では誰もが祝い事と捉えていないのが",
+					{"rt2"},
+					"俺にとっては嬉しかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 498,
+	},
+	block_00097 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0001", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02901", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「本日を以ってイヴから運動部総括の役職を引継ぎ、",
+					{"rt2"},
+					"大屋汐莉がその席に座ることになったわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 504,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「大丈夫だ、言われなくても分かってる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 507,
+	},
+	block_00099 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0009", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02902", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「もう受け入れてはいるのね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 512,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「わざわざそんな確認のために俺を呼んだのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 515,
+	},
+	block_00101 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0025", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02903", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「まさか。あなたを呼んだのは指導の件があったから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 520,
+	},
+	block_00102 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0001", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02904", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あなたの指導をイヴが担当していたのは、",
+					{"rt2"},
+					"彼女が運動部総括だったから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 526,
+	},
+	block_00103 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0200", face="b0009", head="kan_nob", ex05="kan_nob0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02905", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「残念だけど、今のイヴに指導の資格はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 531,
+	},
+	block_00104 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0200", face="b0001", head="kan_nob", ex05="kan_nob0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02906", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「指導が必要であれば私たちのどちらかが",
+					{"rt2"},
+					"引き継ぐけど、どうしましょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 537,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イヴはすぐに運動部総括に戻る。",
+					{"rt2"},
+					"だから変更の必要はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 541,
+	},
+	block_00106 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0002", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"fgact", ch="奏命", act="うなづく", lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0014", head="kan_noa", ex05="kan_noa0010", x=-230, lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02907", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「わかったわ。",
+					{"rt2"},
+					"……ちなみにイヴの様子はどう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 549,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「大丈夫、だと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 552,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ただ喪失した自信を取り戻すまでは",
+					{"rt2"},
+					"時間がかかるかもしれないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 556,
+	},
+	block_00109 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0052", head="kuk_noa", ex05="kuk_noa0000", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00798", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そう。それなら安心した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 561,
+	},
+	block_00110 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0052", head="kuk_nob", ex05="kuk_nob0010", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00799", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「自信を取り戻す方法は簡単。",
+					{"rt2"},
+					"負けた相手に勝てばいいだけ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 567,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ、俺もそう思う……それが一番だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 571,
+	},
+	block_00112 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0010", head="kuk_nob", ex05="kuk_nob0010", x=230, lv=3, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0015", head="kuk_nob", ex05="kuk_nob0010", x=230, lv=3, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00800", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「私情を挟むべきじゃないけど、",
+					{"rt2"},
+					"わたしはあの大屋って子は好きになれそうにない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 578,
+	},
+	block_00113 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0052", head="kuk_noa", ex05="kuk_noa0000", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00801", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「イヴに運動部総括に戻ってほしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 583,
+	},
+	block_00114 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0004", head="kan_noa", ex05="kan_noa0010", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02908", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「ふふっ、くくるは本当に素直ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 588,
+	},
+	block_00115 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0010", head="kuk_noa", ex05="kuk_noa0000", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00802", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「会長だってそう思ってるんじゃないの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 593,
+	},
+	block_00116 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0019", head="kan_noa", ex05="kan_noa0010", x=-230, lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0210", face="a0005", head="kan_noa", ex05="kan_noa0010", x=-230, lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02909", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「好き嫌いを言葉にしていい立場ではないもの。",
+					{"rt2"},
+					"桜元学園という組織を第一に考えるのが私の役目」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 600,
+	},
+	block_00117 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0010", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0004", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02910", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「……けれど、運動部総括として頑張るイヴのことは",
+					{"rt2"},
+					"好きだったと言っておこうかしら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 607,
+	},
+	block_00118 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0015", head="kuk_nob", ex05="kuk_nob0000", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00803", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「もうイヴの方が良かったって言ってる気がする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 612,
+	},
+	block_00119 = {
+		{"fg", ch="奏命", size="no", mode=3, path=":fg/kan/no/", file="kan_noa0200", face="a0002", head="kan_noa", ex05="kan_noa0000", x=-230, lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_02911", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"奏命"},
+					"「あら、大屋汐莉については",
+					{"rt2"},
+					"何も言及していないけれど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 618,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さっきまでの張りつめていた空気が霧散する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 620,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺だけじゃない、やっぱり皆がイヴに",
+					{"rt2"},
+					"戻って来てほしがっているんだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 623,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここでの話は今度イヴに伝えるべきかな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 625,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しばらくは学生会へ来る機会もないだろうし、",
+					{"rt2"},
+					"喜んでくれそうだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 628,
+	},
+	block_00124 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0052", head="kuk_nob", ex05="kuk_nob0000", x=230, lv=3, id=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_00804", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしはイヴがここへ帰って来るのを待ってる。",
+					{"rt2"},
+					"そのためなら協力も惜しまないからよろしく」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 634,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ、折を見て伝えておくよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 637,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"学生会の二人がイヴを待っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 639,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そのことを知れば、",
+					{"rt2"},
+					"イヴも少しは自信を取り戻すだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 642,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"このメンバーで話す機会を作ってくれたことに",
+					{"rt2"},
+					"感謝しつつ、俺は学生会室を後にした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 645,
+	},
+	block_00129 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", file="catch01", id=9, lv=9, time=500, path=":cg/"},
+		{"bgm", file="bgm94", loop=0},
+		{"ex", time=6000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_イヴ_17_1"},
+		{"text"},
+		linkback = "block_00128",
+		line = 650,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,3553 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"savetitle", text="研究デート"},
+		{"bg", rule="083r", vague=40, file="bg003c", path=":bg/"},
+		{"bgm", file="bgm19"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"桜元学園を出て、俺達はくくるの呼んだタクシーに乗り、",
+					{"rt2"},
+					"珠賀良区へと向かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 16,
+	},
+	block_00001 = {
+		{"se", file="se車のドア閉じる", id=1},
+		{"fg", ch="くくる", size="no", mx=-40, mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0052", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0051", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01119", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ほむ、ここが珠賀良区……大人の空間だ……。",
+					{"rt2"},
+					"いい刺激になりそう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 26,
+	},
+	block_00002 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0022", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01120", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ところで、どうしてこんなに見られてるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 31,
+	},
+	block_00003 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「学生服のまま来たからな。",
+					{"rt2"},
+					"着替えるべきだったか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 37,
+	},
+	block_00004 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0010", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0052", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01121", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああ、そういう……。",
+					{"rt2"},
+					"理由が分かれば問題ない、へーき」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 44,
+	},
+	block_00005 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0009", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01122", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「でも、想像してたより人が多い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 49,
+	},
+	block_00006 = {
+		{"se", file="se衣擦れ", id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0019", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人の波に流されそうになる、くくるの手を掴む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 60,
+	},
+	block_00007 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0022", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01123", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「むぅ……結局また繋ぐことになるとは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 65,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「デートなんだからいいだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 68,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それにここは夜からが本番だし、",
+					{"rt2"},
+					"くくるが一人で歩くには危ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 72,
+	},
+	block_00010 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0026", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01124", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ならデートの時間か日付を変えるべきだった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 77,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「すみませんねぇ、勉強時間を減らしてくれたら",
+					{"rt2"},
+					"もっと早く来れたんだけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 81,
+	},
+	block_00012 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0024", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"fgact", ch="くくる", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01125", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それはダメ。ＡＩの育成も大事だけど、",
+					{"rt2"},
+					"凪の勉強も大切。欠かすのは論外」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 88,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ありがたくて泣けてくるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 91,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「でも、くくるがこんなにも俺の勉強について",
+					{"rt2"},
+					"熱心に考えてくれるとは思ってなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 95,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「案外、教育とかも向いてるんじゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 98,
+	},
+	block_00016 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0014", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"褒めたつもりだったんだが、",
+					{"rt2"},
+					"何故かくくるは微妙な表情を浮かべる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 103,
+	},
+	block_00017 = {
+		{"bg", y=360, speed=60000, file="zbg003c", path=":bg/", x2=0, y2=-360, x=0, ax=1280, ay=720, bx=-640, by=-360},
+		{"fg", ch="くくる", size="no", mode=1, resize=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0022", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01126", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「教育に熱心っていうよりは、",
+					{"rt2"},
+					"凪の指導をおろそかにした時の会長が怖い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 110,
+	},
+	block_00018 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0023", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01127", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「引き受けたからには成果を出さないとだし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 115,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ、なるほどな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 118,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「なら俺はくくるのためにも勉強を頑張らないとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 121,
+	},
+	block_00021 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0051", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01128", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「心配とかはしてないけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 126,
+	},
+	block_00022 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0052", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01129", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「凪にはやる気があるし、放任という方針も",
+					{"rt2"},
+					"凪の勉強スタイルにかみ合ってる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 132,
+	},
+	block_00023 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0006", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01130", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「集中して勉強する時間をわたしが提供すれば、",
+					{"rt2"},
+					"学力は自然と向上していくはず」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 138,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そう言われるとやる気がでるな。",
+					{"rt2"},
+					"もっと褒めてくれてもいいぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 142,
+	},
+	block_00025 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0024", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01131", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「見たままを伝えただけで、",
+					{"rt2"},
+					"褒めたつもりはなかったんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 148,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そこでうまく持ち上げられないのが",
+					{"rt2"},
+					"くくるって感じだよな～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 152,
+	},
+	block_00027 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0009", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0018", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01132", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そういうのはトウリの仕事。",
+					{"rt2"},
+					"わぷ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 159,
+	},
+	block_00028 = {
+		{"se", file="se抱きつく", id=1},
+		{"cgdel", id=-1},
+		{"bg", time=250, rule=280, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0018", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13, sync=0},
+		{"extrans", rule=280, time=250, vague=40},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの手を引き、",
+					{"rt2"},
+					"わざとぶつかってこようとする男を避ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 172,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そういや、さっきから思ってたんだけど、",
+					{"rt2"},
+					"くくる、なんかつけてるか？　いい匂いがする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 176,
+	},
+	block_00030 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0052", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01133", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「気づいてたんだ。",
+					{"rt2"},
+					"何も言わないからわかってないのかと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 182,
+	},
+	block_00031 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0003", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01134", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「デートはおしゃれをするものなんでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 187,
+	},
+	block_00032 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0005", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0034", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+				{"fgact", ch="くくる", act="うんうん", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01135", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「でも今日は学生服だから、香水をつけてみた。",
+					{"rt2"},
+					"どう？　興奮してムラムラする？　抱きたくなった？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 195,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もうちょっと刻んでくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 198,
+	},
+	block_00034 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0006", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01136", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゃあ、ドキドキする？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 203,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それはする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 206,
+	},
+	block_00036 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0053", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0003", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01137", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「凪には香りが効果的、と……。",
+					{"rt2"},
+					"この匂いはどう？　好き？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 213,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「好き、だと思うな。ずっと嗅いでいたくなるし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 216,
+	},
+	block_00038 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0004", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01138", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「なら、凪と恋愛学習するときは",
+					{"rt2"},
+					"この香水をつけることにする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 222,
+	},
+	block_00039 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0005", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01139", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「条件付けしておいたほうが、セックスするときも",
+					{"rt2"},
+					"そういう気分になりやすいだろうし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 228,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さっきからびみょーに、",
+					{"rt2"},
+					"ときめきポイントがずれてるんだよなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 232,
+	},
+	block_00041 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0006", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01140", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「多少の誤差ならすぐに修正できそう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 237,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうかぁ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 240,
+	},
+	block_00043 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0036", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01141", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「デートの最中にムラムラとかドキドキしたら",
+					{"rt2"},
+					"教えてね。データとるから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 246,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"うーん、このデート。",
+					{"rt2"},
+					"いい雰囲気にはならなさそうだな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 249,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ま、急に相手を意識しろってのも無理な話か。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 251,
+	},
+	block_00046 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, resize=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0010h", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0011h", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01142", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「…………、あの、凪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 262,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……ん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 265,
+	},
+	block_00048 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0014h", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01143", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「指で手の甲をなでるの、やめてほしい。",
+					{"rt2"},
+					"なんか、ぞわぞわする……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 271,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「わ、悪い。触り心地がよくて、無意識に……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 274,
+	},
+	block_00050 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0022h", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0009h", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01144", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「嫌ではないんだけど……",
+					{"rt2"},
+					"あまりやられると、感じちゃうから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 281,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「感っ……！？",
+					{"rt2"},
+					"わ、わかった。もうやらない。約束する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 285,
+	},
+	block_00052 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0002h", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01145", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「こんな風に歩いてる時なら困るけど、",
+					{"rt2"},
+					"二人きりの時はやってもいいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 291,
+	},
+	block_00053 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ぐぅぅっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 296,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この鈍感スナイパーは俺をどうしたいんだ……！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 298,
+	},
+	block_00055 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0036", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01146", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あ、ドキドキした？　それともムラムラ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 303,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「これマジでいうのか？　羞恥プレイがすぎるだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 306,
+	},
+	block_00057 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0035", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01147", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「協力するならちゃんとして。中途半端が一番悪い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 311,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「うぅ……ドキドキも、ムラムラも……",
+					{"rt2"},
+					"どっちも、しました……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 315,
+	},
+	block_00059 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0010", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0034", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01148", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ほむほむ……、今の会話のどの部分で？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 321,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それは許してくれ……。",
+					{"rt2"},
+					"口に出したら心が死にそうだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 325,
+	},
+	block_00061 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0009", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01149", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「むぅ……、面倒くさいな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 330,
+	},
+	block_00062 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0011", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01150", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「詳細なデータを取るのに凪の羞恥が邪魔、",
+					{"rt2"},
+					"もっとわたしと親しくなれば言えるようになる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 336,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうだろうな。恋人や結婚相手にも",
+					{"rt2"},
+					"思ったことを言わない人はいるらしいぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 340,
+	},
+	block_00064 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0010", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01151", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それも羞恥という感情からくるものだから、",
+					{"rt2"},
+					"尊重すべきなんだろうけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 346,
+	},
+	block_00065 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0051", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01152", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あ、でも凪じゃなくてわたしがドキドキすれば、",
+					{"rt2"},
+					"解決することか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 352,
+	},
+	block_00066 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0034", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="くくる", act="うなづく", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01153", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「よし、凪。早速ドキドキさせて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 363,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺の指導役は無茶ぶりが上手だなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 366,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちなみにくくるはどういうことで",
+					{"rt2"},
+					"ドキドキするんだ？　参考にしたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 370,
+	},
+	block_00069 = {
+		{"cgdel", id=-1},
+		{"bg", time=500, file="white", path=":bg/"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="ev_kuk_h01_03", path=":ev/ev_kuk_h01/", set="ev_kuk_h01", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans", time=500},
+		{"fg", ch="くくる", size="no", mode=1, resize=1, path=":fg/kuk/no/", file="kuk_noa0210", face="a0010h", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01154", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「参考……ドキドキ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 383,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうした？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 386,
+	},
+	block_00071 = {
+		{"cgdel", id=-1},
+		{"bg", time=500, file="white", path=":bg/"},
+		{"cgdel", id=-1, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0022h", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="くくる", act="いいえ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0009h", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01155", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「なんでもない。",
+					{"rt2"},
+					"というか、凪の言っていることを理解した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 399,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ほー、俺には言えないようなドキドキなのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 402,
+	},
+	block_00073 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0026h", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01156", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うるさい。そもそも今回は",
+					{"rt2"},
+					"健全なデートで恋愛感情が発生するかの実験」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 408,
+	},
+	block_00074 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0024h", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01157", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わざとドキドキさせるよりは、",
+					{"rt2"},
+					"自然にドキドキが発生したほうがいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 414,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるがドキドキさせろって言ったんだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 417,
+	},
+	block_00076 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0026h", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0024", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01158", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あれはナシ。",
+					{"rt2"},
+					"ほら、普通のデートって何するの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 424,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"無理やり話を変えたな……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 426,
+	},
+	block_00078 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, resize=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0001", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「基本は一緒に過ごして、",
+					{"rt2"},
+					"相手をよく知る時間なんじゃないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 437,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だから、ぶらつくだけでもいいと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 440,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ここに来るのが初めてなら街並みを眺めるだけでも",
+					{"rt2"},
+					"楽しいだろうし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 444,
+	},
+	block_00081 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0010", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0023", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01159", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「確かに……凪には悪いけど珠賀良区って",
+					{"rt2"},
+					"もっと寂れてる印象があった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 451,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるが思い浮かべてるのは大歓楽街より奥だな。",
+					{"rt2"},
+					"外のやつが立ち入ることはほとんどない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 455,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「この辺りは外のやつ向けの店も多い、",
+					{"rt2"},
+					"もし気になる店があったら教えてくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 459,
+	},
+	block_00084 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0200", face="b0052", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=13},
+		{"fgact", ch="くくる", act="うなづく", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01160", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 465,
+	},
+	block_00085 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"二人で話しながら歩いていると、不意に声をかけられた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 473,
+	},
+	block_00086 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-400, y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00029", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「あー、やっぱり凪だー！　久しぶり～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 482,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「久しぶり～って……言うほどではないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 485,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00030", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「そうだっけ？　毎日顔を合わせてたから、",
+					{"rt2"},
+					"少し見なかっただけで久しぶりに感じちゃう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 489,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"クスリと笑ってから、",
+					{"rt2"},
+					"店の姉ちゃんはくくるへと視線を向けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 492,
+	},
+	block_00090 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=400, y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0001", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00031", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「で、この子は誰？　もしかして彼女？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 502,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さてはその話がしたくて声をかけて来たな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 505,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00032", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「だいせいかーい。で、で？　どうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 508,
+	},
+	block_00093 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0024", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"fgact", ch="くくる", act="いいえ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01161", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「違う。恋人じゃない。",
+					{"rt2"},
+					"友人で協力者といったところ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 515,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00033", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「えー、今どきの子は女友達とも手をつなぐの？",
+					{"rt2"},
+					"それとも、そういうプレイとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 519,
+	},
+	block_00095 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0006", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01162", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「必要になればセックスもする。",
+					{"rt2"},
+					"いわゆるセフレ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 525,
+	},
+	block_00096 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちょっ、くくるさん！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 530,
+	},
+	block_00097 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, resize=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0006", head="kuk_noa", ex05="kuk_noa0000", x=-230, lv=3, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00034", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「あー、そういう？　いや、わかるよ。",
+					{"rt2"},
+					"恋人じゃなくてセフレのほうがいいって時あるよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 541,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00035", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「身体の相性は最高なのに、",
+					{"rt2"},
+					"ノリが合わない相手とかさー……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 545,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00036", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「性格だけどうにかなんないかなーと思ったり。",
+					{"rt2"},
+					"でもそういう相手とのセックスがいいんだよねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 549,
+	},
+	block_00100 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0052", head="kuk_nob", ex05="kuk_nob0010", x=-230, lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0051", head="kuk_nob", ex05="kuk_nob0010", x=-230, lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01163", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「お姉さん、経験豊富なの？",
+					{"rt2"},
+					"良ければ色々教えてほしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 556,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00037", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「やーん、可愛いっ！",
+					{"rt2"},
+					"いいよぉ、お姉さんになんでも聞いて～」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 560,
+	},
+	block_00102 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0019", head="kuk_z1b", ex05="kuk_z1b0010", x=-280, lv=4, id=9, sync=0},
+		{"extrans", time=250},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「まてまてまてっ！　悪い知識を入れようとするな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 571,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00038", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「えー？　喋る棒のくせに生意気言うじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 574,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00039", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「凪ってば童貞だと思ってたのにさぁ、",
+					{"rt2"},
+					"こーんなかわいい子を毒牙にかけたんでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 578,
+	},
+	block_00105 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0001", head="kuk_z1b", ex05="kuk_z1b0010", x=-280, lv=4, id=9},
+		{"fgact", ch="くくる", act="いいえ", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01164", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「違う。まだセックスはしていない。",
+					{"rt2"},
+					"わたしの目的のために、凪に依頼しているだけ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 585,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00040", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「んん……？　ごめん、あたしがばかすぎるのかな。",
+					{"rt2"},
+					"よくわかんない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 589,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いや、今回ばかりはこっちが悪い……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 592,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「詳しいことは言えないが今日はデートしに来たんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 595,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺としてはセフレとか、",
+					{"rt2"},
+					"そういうのじゃなく普通の恋人になりたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 599,
+	},
+	block_00110 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0010", head="kuk_z1b", ex05="kuk_z1b0000", x=-280, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01165", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしはセフレでいいんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 604,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00041", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「なんか難しそうだねぇ。",
+					{"rt2"},
+					"でも、そういうことならお喋りはまた今度」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 608,
+	},
+	block_00112 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0009", head="kuk_z1b", ex05="kuk_z1b0000", x=-280, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01166", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「残念」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 613,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_tos_00042", ch="tos"},
+			},
+			ja = {
+				{
+					name = {"年若い風俗嬢"},
+					"「凪と恋人にならなかったら、また聞きに来てね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 616,
+	},
+	block_00114 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, resize=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0001", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと姉ちゃんは店へと戻っていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 625,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"好き勝手話して去っていくとは、",
+					{"rt2"},
+					"台風のようなやつだな……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 628,
+	},
+	block_00116 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0052", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01167", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ねぇ、聞いてもいい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 633,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ん？　どうした改まって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 636,
+	},
+	block_00118 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0051", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01168", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああいうお店の人たちと、",
+					{"rt2"},
+					"どうやって知り合いになったの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 642,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「おまえ、まだ諦めてないのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 645,
+	},
+	block_00120 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0052", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+		{"fgact", ch="くくる", act="いいえ", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01169", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「違う。凪について知ろうとしてるだけ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 651,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言われると悪い気がしない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 653,
+	},
+	block_00122 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0052", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あー……昔、仕事で世話になったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 663,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 666,
+	},
+	block_00124 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0011", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01170", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……終わり？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 671,
+	},
+	block_00125 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0014", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01171", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしは凪が珠賀良区で",
+					{"rt2"},
+					"どういう生活を送ってきたのか知りたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 677,
+	},
+	block_00126 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0200", face="a0009", head="kuk_z1a", ex05="kuk_z1a0000", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01172", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「人から物を盗むスキルが備わってるっていうのは、",
+					{"rt2"},
+					"それが必要な環境に身を置いてたということ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 683,
+	},
+	block_00127 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0011", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01173", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ここは比較的安全そうだけど、",
+					{"rt2"},
+					"凪はもっと危険な生活をしてた。違う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 689,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうなんだけどさ……あまり綺麗な話じゃない。",
+					{"rt2"},
+					"それでも聞きたいか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 693,
+	},
+	block_00129 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0001", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"fgact", ch="くくる", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01174", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「当然」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 699,
+	},
+	block_00130 = {
+		{"bg", y=-100, speed=120000, file="zbg003c", path=":bg/", x2=-640, y2=-100, x=640, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はくくるにこの場所での生活について話した。",
+					{"rt2"},
+					"仕事のこと、家族のこと、ピーチ・フィールズのことを。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 704,
+	},
+	block_00131 = {
+		{"fg", ch="くくる", size="no", mode=1, resize=1, path=":fg/kuk/no/", file="kuk_nob0210", face="b0011", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01175", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「孤児院は困窮してるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 709,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「最低限、生きられる環境はバアさんが用意してくれた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 712,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「多くを望まず、弱者として生きることを選べば、",
+					{"rt2"},
+					"特に稼ぐ必要はなかっただろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 716,
+	},
+	block_00134 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0019", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01176", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゃあ、自分で選んだんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 721,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ある程度歳を重ねた時に、バアさんに聞かれた。",
+					{"rt2"},
+					"どういう生き方をするのかってな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 725,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「誰かの庇護下で、幸せに……けれど、",
+					{"rt2"},
+					"弱いまま生きていくのは、俺は嫌だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 729,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「せめて、身近な人だけでも支えられるような",
+					{"rt2"},
+					"生き方をしたいと思ったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 733,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「一人でも生きていける手段を教えてくれ、",
+					{"rt2"},
+					"それが汚いものでも構わないってバアさんに伝えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 737,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それで色々と教わって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 740,
+	},
+	block_00140 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0001", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01177", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「その中の一つとして、スリの技術も習ったんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 745,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「数ある中の一つでしかないが、思いのほか役に立った。",
+					{"rt2"},
+					"まぁ珠賀良区で、子供が稼ぐ手段なんて限られてるしな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 749,
+	},
+	block_00142 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0011", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01178", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「後悔したことは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 754,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「んー……ないかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 757,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「やりたくはないし、誰にもやらせたくないって",
+					{"rt2"},
+					"気持ちはあるけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 761,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「綺麗事だけじゃ生きられないのが社会だ。",
+					{"rt2"},
+					"だからこそ、信念が必要になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 765,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「バアさんに衣食住を与えられたから、生きられた。",
+					{"rt2"},
+					"俺も、大切な人達に与えたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 769,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そう考えるに至ったのは、これまでの日々が",
+					{"rt2"},
+					"あったからだ。だから、後悔はしてないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 773,
+	},
+	block_00148 = {
+		{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0053", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_nob0200", face="b0052", head="kuk_nob", ex05="kuk_nob0000", lv=3, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01179", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……そっか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 779,
+	},
+	block_00149 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0002", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01180", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「凪のそういうところ、好きだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 789,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……なんか照れるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 792,
+	},
+	block_00151 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0052", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0051", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01181", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「少しだけど、デートっぽくなってきたね。",
+					{"rt2"},
+					"ちなみに凪はいつからピーチ・フィールズにいるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 799,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「物心つく前だとは思うんだが……",
+					{"rt2"},
+					"正直なところよく覚えてないんだよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 803,
+	},
+	block_00153 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0011", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01182", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「寂しくはなかった？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 808,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それはないな。",
+					{"rt2"},
+					"バアさんや、トウリ。他にも家族がたくさんいるし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 812,
+	},
+	block_00155 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0015", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01183", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……そっか、そうだよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 817,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるは俺の家族の話を聞くの、嫌じゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 820,
+	},
+	block_00157 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg003c", path=":bg/", sync=0},
+		{"fg", ch="くくる", size="no", mode=3, resize=1, path=":fg/kuk/no/", file="kuk_noa0200", face="a0011", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0023", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01184", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「…………凪、もしかして七に聞いた？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 831,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「前に軽くな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 834,
+	},
+	block_00159 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0015", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01185", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そう。",
+					{"rt2"},
+					"それならはっきりさせておいた方がいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 840,
+	},
+	block_00160 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0052", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01186", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしがしたくないのは、わたしの両親の話だけ。",
+					{"rt2"},
+					"人の家族の話を聞くのは気にならない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 846,
+	},
+	block_00161 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0200", face="a0002", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01187", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「前は聞いてもつまらないと思ってたけど、",
+					{"rt2"},
+					"友達の家族の話はわりと楽しく聞ける」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 852,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それならよかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 855,
+	},
+	block_00163 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0023", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01188", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「とはいえ、凪の生い立ちについて聞いておきながら",
+					{"rt2"},
+					"わたしがなにも提供しないのはフェアじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 861,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「無理しなくてもいいんだぞ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 864,
+	},
+	block_00165 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0024", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+		{"fgact", ch="くくる", act="いいえ", lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_noa0210", face="a0052", head="kuk_noa", ex05="kuk_noa0010", lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01189", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そういうわけにもいかない。",
+					{"rt2"},
+					"凪にもわたしを知ってもらわないと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 872,
+	},
+	block_00166 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0002", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01190", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああ、そうだ。両親の話はできないけど、",
+					{"rt2"},
+					"七やオートマタの話ならいっぱいできるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 878,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「じゃあそっちのほうを聞かせてもらうかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 881,
+	},
+	block_00168 = {
+		{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0004", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=9},
+		{"fgact", ch="くくる", act="うなづく", lv=3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=3, path=":fg/kuk/no/", file="kuk_nob0210", face="b0003", head="kuk_nob", ex05="kuk_nob0010", lv=3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01191", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「任せて。わたしが桜元学園に入学したとき、",
+					{"rt2"},
+					"七はまだ科学部の部長で……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 889,
+	},
+	block_00169 = {
+		{"se", file="seコミ_空腹", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるが話し始めると、",
+					{"rt2"},
+					"隣から可愛らしい高音が聞こえてきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 896,
+	},
+	block_00170 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=25, file="zbg003c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0019h", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………もしかして今のって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 906,
+	},
+	block_00171 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0010h", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0026h", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01192", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……わたしのお腹の音だけど。",
+					{"rt2"},
+					"…………なに？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 913,
+	},
+	block_00172 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「恥ずかしいからって圧をかけてくるなよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 918,
+	},
+	block_00173 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0210", face="b0009h", head="kuk_z1b", ex05="kuk_z1b0010", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0024", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01193", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「むぅ……。なら開き直って要求する。",
+					{"rt2"},
+					"ご飯の美味しいところに連れて行って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 925,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「はいはい、かしこまりました。",
+					{"rt2"},
+					"食いたいものとかあるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 929,
+	},
+	block_00175 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0052", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01194", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「美味しければなんでもいいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 934,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「んー……このあたりにうまい定食屋があるから、",
+					{"rt2"},
+					"そこに行ってみるか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 938,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「外装も内装も汚いけど、安いし味は保証する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 941,
+	},
+	block_00178 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0001", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01195", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「値段は気にしないけど味は大事」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 946,
+	},
+	block_00179 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1a0210", face="a0014", head="kuk_z1a", ex05="kuk_z1a0010", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01196", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「問題はトウリの料理で",
+					{"rt2"},
+					"わたしの舌が肥えているということ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 952,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「何を言ってるんだ。",
+					{"rt2"},
+					"トウリの料理で舌が肥えてるのはこっちも同じだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 956,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「その俺が美味しいって言ってるんだから、",
+					{"rt2"},
+					"間違いないだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 960,
+	},
+	block_00182 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0005", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0200", face="b0004", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_01197", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「説得力のあるプレゼン。楽しみになってきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 966,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「よし、じゃあこっちだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 969,
+	},
+	block_00184 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"se", file="seドアベル1", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"定食屋に移動し、席に着く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 977,
+	},
+	block_00185 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そしてくくるにメニューを渡し、",
+					{"rt2"},
+					"注文を任せたわけなのだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 982,
+	},
+	block_00186 = {
+		{"excall", file="04_くくる_05_2"},
+		{"text"},
+		linkback = "block_00185",
+		line = 983,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,7721 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", y=-100, speed=120000, file="zbg019d", path=":bg/", x2=640, y2=-100, x=-640, ax=1280, ay=720, bx=-640, by=-360},
+		{"bgm", file="bgm14"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"カフェの前で俺たちは皆と別れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 15,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ファイブとモンステラの二人は、",
+					{"rt2"},
+					"くくるとはまだ一緒に住んでいない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 18,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最初はファイブとモンステラもくくるの部屋で",
+					{"rt2"},
+					"生活を送る予定だったが、奏命に却下されたのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 21,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いつ何時、誰がファイブとモンステラを",
+					{"rt2"},
+					"狙うかもわからない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 27,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"より強固な警備が必要だということで、",
+					{"rt2"},
+					"一色家に身を置いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 30,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"必要な事とはいえ、",
+					{"rt2"},
+					"俺達にも家族と一緒に生活をするという夢がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 33,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なので俺の卒業後は一色家の管理下にある土地に",
+					{"rt2"},
+					"家を買い、そこに家族全員で移り住む予定だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 36,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"トウリの店や、その店で働くスタッフの寮なんかも、",
+					{"rt2"},
+					"近くに建てる方向で話を進めている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 39,
+	},
+	block_00008 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-150, file="zbg019d", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z1", mode=3, resize=1, path=":fg/kuk/z1/", file="kuk_z1b0500", face="b0009", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13, sync=0},
+		{"extrans"},
+		{"fgact", ch="くくる", act="おじぎ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0500", face="b0002", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02727", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はふぅ……、",
+					{"rt2"},
+					"なんか凪と二人の時間は久しぶりだね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 53,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「このところは定期試験の勉強で",
+					{"rt2"},
+					"時間が取れなかったしな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 57,
+	},
+	block_00010 = {
+		{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0500", face="b0004", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="z1", mode=3, path=":fg/kuk/z1/", file="kuk_z1b0500", face="b0002", head="kuk_z1b", ex05="kuk_z1b0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02728", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、凪はよく頑張った。わたしも良く教えた。",
+					{"rt2"},
+					"だからそろそろ癒しがほしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 64,
+	},
+	block_00011 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-150, zoom=120, file="zbg019d", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"extrans", time=500},
+		{"fg", ch="くくる", size="z2", mx=40, mode=3, resize=1, path=":fg/kuk/z2/", file="kuk_z2b0500", face="b0002", head="kuk_z2b", ex05="kuk_z2b0000", lv=5, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう口にして、こちらへしなだれかかって来る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 74,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「奇遇だな、俺もそう考えてたところだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 77,
+	},
+	block_00013 = {
+		{"fg", ch="くくる", size="z2", mode=3, path=":fg/kuk/z2/", file="kuk_z2b0500", face="b0004", head="kuk_z2b", ex05="kuk_z2b0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02729", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふふ、いい気の合い方。",
+					{"rt2"},
+					"今日はお互いに甘やかしあおう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 83,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ。任せとけ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 86,
+	},
+	block_00015 = {
+		{"se", file="se衣擦れ", id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg019d", path=":bg/", sync=0},
+		{"extrans", time=500},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"抱き着いてきたくくるを抱え上げて、",
+					{"rt2"},
+					"ベッドへと向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 98,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ベッドにくくるを降ろし、",
+					{"rt2"},
+					"そのまま押し倒そうとすると……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 101,
+	},
+	block_00017 = {
+		{"se", file="se倒れる(ベッド)", id=1},
+		{"cgdel", id=-1},
+		{"bg", time=250, rule=280, file="black", path=":bg/", vague=40},
+		{"bg", y=504, zoom=120, file="zbg019d", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="くくる", size="z2", mode=3, path=":fg/kuk/z2/", file="kuk_z2a0500", face="a0006", head="kuk_z2a", ex05="kuk_z2a0000", lv=5, id=13, sync=0},
+		{"extrans", rule=280, time=250, vague=40},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「え……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 113,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"逆に押し倒された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 115,
+	},
+	block_00019 = {
+		{"bgm", stop=1},
+		{"savetitle", text="ただ愛しい人を"},
+		{"bg", file="black", path=":bg/"},
+		{"fg", ch="くくる", size="no", mode=1, resize=1, path=":fg/kuk/no/", file="kuk_noa0500", face="a0006", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="くくる", size="no", mode=1, path=":fg/kuk/no/", file="kuk_noa0500", face="a0052", head="kuk_noa", ex05="kuk_noa0000", lv=3, id=200},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02730", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「今日はわたしがご奉仕してあげる……。",
+					{"rt2"},
+					"んっ……しょっ……と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 136,
+	},
+	block_00020 = {
+		{"se", file="se衣擦れ", id=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"bg", zoom=100, speed=5800, file="zev_kuk_h08_01", path=":ev/ev_kuk_h08/", x2=500, y2=-280, x=-550, y=200, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"ex", time=5000, func="wait"},
+		{"bg", file="ev_kuk_h08_01", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", stop=1, id=1, time=500},
+		{"bgm", file="bgm16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02731", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「凪、こういうの好きだよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 152,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"股間をすりあわせつつ、少し挑発してくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 154,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「べ、別に……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 157,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"言葉とは裏腹に肉棒はまんまと挑発に乗り、",
+					{"rt2"},
+					"むくむくと大きくなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 160,
+	},
+	block_00024 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_02", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02732", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ほらね、やっぱり」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 165,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ぐぬぬ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 168,
+	},
+	block_00026 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_03", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02733", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「悔しがる必要なんてない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 173,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02734", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「正直な反応をしてくれたおかげで、",
+					{"rt2"},
+					"凪好みのシチュエーションを提供出来るから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 177,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"つまりは、より気持ち良くなれるってことか……？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 179,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一瞬、脳内を性欲で支配されそうになるが、",
+					{"rt2"},
+					"頭を振って正常な思考を取り戻す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 182,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるに主導権を握らせたままなのは負けた気がする。",
+					{"rt2"},
+					"なんとか反撃をしたいところだ……よし。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 185,
+	},
+	block_00031 = {
+		{"se", file="se衣擦れ", id=1},
+		{"bg", time=500, file="ev_kuk_h08_05", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", stop=1, id=1, time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02735", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ……？　いきなり、なに……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 194,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"スカートをめくってお尻を視姦することにする！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 196,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるのお尻は、魅力的だからな。",
+					{"rt2"},
+					"こんなのにすりすりされたら勃起して当然だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 200,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02736", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふうん……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 203,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「こうしてよく見ると、小ぶりできゅっと締まって、",
+					{"rt2"},
+					"美味しそうだな。食べちゃいたいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 207,
+	},
+	block_00036 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_06", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02737", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふえ……何その歯が浮くような誉め言葉。",
+					{"rt2"},
+					"凪、ちょっと……おじさんくさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 213,
+	},
+	block_00037 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_08", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その台詞に多少、思うところはあるが、",
+					{"rt2"},
+					"そんなのは気にしない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 218,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは、そう言いつつも、",
+					{"rt2"},
+					"目を伏せながら頬を赤らめているからだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 221,
+	},
+	block_00039 = {
+		{"bg", zoom=120, x=-780, y=280, time=500, file="zev_kuk_h08_08", path=":ev/ev_kuk_h08/", set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「恥ずかしいんだな？　くくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 226,
+	},
+	block_00040 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_06", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02738", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「へ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 231,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「分かるぞ、照れ隠ししてるのが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 234,
+	},
+	block_00042 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_04", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02739", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ううん……わざとだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 239,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「へ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 242,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"思わずくくるとまったく同じ反応をしてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 244,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02740", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「女性側が興奮してる素振りを見せてないと、",
+					{"rt2"},
+					"男性側は萎えちゃうはず。そうでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 248,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「知った風な口ぶりを……。",
+					{"rt2"},
+					"まったく以ってその通りだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 252,
+	},
+	block_00047 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_07", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02741", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、そうでしょ？　わたしにはお見通し」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 257,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうは言いつつも、まだ頬を染めているくくる。",
+					{"rt2"},
+					"照れ隠ししているのはこちらもお見通しだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 260,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ふふっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 263,
+	},
+	block_00050 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_05", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02742", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……？　その含み笑いは何……？　納得がいかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 268,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いやさ、くくるってほんと可愛いなって思って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 271,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02743", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「っ！？　むぅ…………えいっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 274,
+	},
+	block_00053 = {
+		{"bg", time=500, file="ev_kuk_h08_05", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恥ずかしさを誤魔化すように、",
+					{"rt2"},
+					"ごしごしとお尻で肉棒を擦ってくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 279,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くおっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 282,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02744", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「思い知らせる。",
+					{"rt2"},
+					"わたしとシてる時に余裕があるなんて許さない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 286,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「別に余裕がある訳ではないんだけどな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 289,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だけど、くくるの手のひらの上で",
+					{"rt2"},
+					"転がされるつもりはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 293,
+	},
+	block_00058 = {
+		{"se", file="se衣擦れ", id=1},
+		{"bg", time=500, file="ev_kuk_h08_09", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", stop=1, id=1, time=500},
+		{"lvo", ch="kuk", file="fem_kuk_03092", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02745", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ……あぁ、ううぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 303,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるのパンツを脱がせると、弄る前から濡れていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 305,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もう濡れてるな。",
+					{"rt2"},
+					"俺のち◯こを擦って気持ち良くなってくれたんだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 309,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02746", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、んん……あっ、んんぅっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 312,
+	},
+	block_00062 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_10", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02747", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「別に、濡れてるから気持ち良くなってるとは、",
+					{"rt2"},
+					"限らないから……んんっ、あぁぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 318,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ほんとにそうなのか？",
+					{"rt2"},
+					"こうしてる間にどんどん溢れてきてるけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 322,
+	},
+	block_00064 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_09", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02748", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁ……んっ……ぁぁ……。",
+					{"rt2"},
+					"わざわざ、言葉にしなくてもいい、あぁんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 328,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるはお尻をゆらゆらと揺らしながら、",
+					{"rt2"},
+					"肉棒に擦りつけてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 331,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"愛液で肉棒がてらてらと濡れていき、",
+					{"rt2"},
+					"滑りが良くなっていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 334,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もう準備万端みたいだ……。",
+					{"rt2"},
+					"そろそろ、いいか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 338,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02749", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「う、んっ……こらえ性が、ないんだから……",
+					{"rt2"},
+					"はぁっ……んっ……ふぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 342,
+	},
+	block_00069 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_10", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02750", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「でも、どうしても入りたいなら、仕方ない……",
+					{"rt2"},
+					"許して……あげる……んんぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 348,
+	},
+	block_00070 = {
+		{"se", file="seエロ_ペニス挿入前", id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"強がるくくるの腰に手を添えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 352,
+	},
+	block_00071 = {
+		{"se", stop=1, id=2, time=500},
+		{"se", file="seエロ_ペニス挿入", id=2},
+		{"bg", time=500, file="ev_kuk_h08_13", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", stop=1, id=2, time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"濡れそぼった膣に肉棒を押し当て、腰を突き上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 361,
+	},
+	block_00072 = {
+		{"lvo", ch="kuk", stop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03101", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02751", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、んんんんんっ……！",
+					{"rt2"},
+					"あぁっ、ああぁあっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 368,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02752", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぅっ……いきなり、奥まで届いてるっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 371,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの身体がこわばり、膣内が締まる。",
+					{"rt2"},
+					"挿入しただけで甘イキしたようだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 374,
+	},
+	block_00075 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_11", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02753", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふぅう……んんっ……はあっ……",
+					{"rt2"},
+					"ああっ……はあっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 380,
+	},
+	block_00076 = {
+		{"bg", zoom=120, x=-780, y=280, time=500, file="zev_kuk_h08_11", path=":ev/ev_kuk_h08/", set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくる……もしかして、もうイったのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 385,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02754", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はうっ……んんっ、はあっ、あぁっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 388,
+	},
+	block_00078 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_14", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02755", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そんなはず、ないっ……。",
+					{"rt2"},
+					"勝手な、解釈はやめてほしいっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 394,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そう言われてもな……。",
+					{"rt2"},
+					"言葉よりも身体の反応を信じるつもりだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 398,
+	},
+	block_00080 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="zev_kuk_h08_12", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"se", file="seエロ_ピストン：中", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03102", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02756", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んふぁっ！　んんっ、今はちょっとダメっ……！",
+					{"rt2"},
+					"もう少し、落ち着いてからっ……あっ、あふっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 407,
+	},
+	block_00081 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_15", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02757", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああんっ、はぅっ……腰が、激しく動いてっ……！",
+					{"rt2"},
+					"ひやぁっ、ひうんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 413,
+	},
+	block_00082 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_13", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02758", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁっ、あっ、んんっ……ぁああっ、んぅっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 418,
+	},
+	block_00083 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やっぱりイってたんじゃないかと内心で思いつつ、",
+					{"rt2"},
+					"くくるの呼吸が落ち着くのを少し待ってみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 424,
+	},
+	block_00084 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_14", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02759", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「えっ……どうして止めるの……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 429,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いや、少し休む時間が必要かと思ってさ。",
+					{"rt2"},
+					"いきなりイキっぱなしじゃつらいだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 433,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02760", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁ、はぁっ……全然、大丈夫っ……。",
+					{"rt2"},
+					"そもそも、まだ気持ち良くなってないから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 437,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02761", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「だから、もっと続けてほしい……。",
+					{"rt2"},
+					"動いてない方が、切ないから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 441,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"コクリと頷いて、再び腰を揺すり始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 443,
+	},
+	block_00089 = {
+		{"bg", time=500, file="ev_kuk_h08_11", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"lvo", ch="kuk", file="fem_kuk_03102", loop=1},
+		{"se", file="seエロ_ピストン：中", id=2, loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02762", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、あっ、あぁっ……はうっ、んっ、んんっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 450,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"丸見えになった結合部から、",
+					{"rt2"},
+					"くちゅくちゅと水音が聞こえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 455,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの小さな性器に肉棒が出し入れされる光景は、",
+					{"rt2"},
+					"とんでもない破壊力だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 458,
+	},
+	block_00092 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_15", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02763", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃんっ、ああぁっ……！",
+					{"rt2"},
+					"それでいいっ……はぅっ、ああぁんっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 464,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02764", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしに、遠慮なんてしないでっ……！",
+					{"rt2"},
+					"んっ、あぁっ……はあっ、んんぅっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 468,
+	},
+	block_00094 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_13", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02765", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ、ぁあっ……凪の、太いっ……んっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 473,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺の、なんだってっ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 476,
+	},
+	block_00096 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_11", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02766", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、あぁっ、んんっ……！",
+					{"rt2"},
+					"んっ、んんぅっ、あっ、ああっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 482,
+	},
+	block_00097 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_14", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02767", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふっ、くぅぅ……はぁっ、あっ……",
+					{"rt2"},
+					"おち◯ちんっ……もっと欲しいっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 488,
+	},
+	block_00098 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_15", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02768", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「もっと、激しくっ……ひぅっ、あああんっ……。",
+					{"rt2"},
+					"欲望をっ、ぶつけてぇっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 494,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ絶頂の余韻が続いているのか、",
+					{"rt2"},
+					"くくるの膣内は、より締め付けてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 497,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それに応えるようにして、俺も責めたてていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 499,
+	},
+	block_00101 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", zoom=100, speed=120000, file="zev_kuk_h08_15", path=":ev/ev_kuk_h08/", x2=500, y2=-280, x=-550, y=200, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"se", file="seエロ_ピストン：強", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03103", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02769", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、んぁっ、ぅあっ……んっ、あんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 508,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02770", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、んうぅっ……！",
+					{"rt2"},
+					"いいよっ、そんな感じっ……あぁ、あふっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 512,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02771", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「エッチしてる時っ、たくましくてっ……！",
+					{"rt2"},
+					"あぁんっ、ひゃぁっ……凄く、好きかもっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 516,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「じゃあくくるのことを気持ち良くして、",
+					{"rt2"},
+					"もっと好きになってもらわないとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 520,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02772", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「出来るならっ、そうしてぇっ……あぁんっ！",
+					{"rt2"},
+					"わたしも、その方がっ……んんっ、嬉しいっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 524,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02773", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ、あっ、んぅっ……！",
+					{"rt2"},
+					"あぁっ、ぁああっ、うあぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 528,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が一方的に責めているように見えるが、それは違う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 530,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの膣内は常に収縮を繰り返し、",
+					{"rt2"},
+					"ひだが肉棒を愛撫するように絡みついてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 533,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"快感が押し寄せてきているのは俺も同じことだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 535,
+	},
+	block_00110 = {
+		{"bg", file="ev_kuk_h08_12", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02774", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃっ……！？　うんっ、もう、ダメかもっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 541,
+	},
+	block_00111 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_14", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02775", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたし、もうっ……イっちゃうかも、しれない……！",
+					{"rt2"},
+					"一緒にイキたいっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 547,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺も、もう少しだっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 550,
+	},
+	block_00113 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_11", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02776", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁっ、んっ、んんぅっ……あっ、あぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 555,
+	},
+	block_00114 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_14", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02777", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゃあっ、頑張って我慢、するからっ……ああぁっ！",
+					{"rt2"},
+					"あんっ……絶対にっ、一緒にぃっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 561,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02778", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ、んぅっ……凄いっ、あぁっ……！",
+					{"rt2"},
+					"気持ち、いいよっ……はあぁ、あうんっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 565,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくると同じく絶え間ない気持ち良さを感じつつ、",
+					{"rt2"},
+					"俺も絶頂まで間近という状態になる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 568,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるっ、そろそろイクぞ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 571,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02779", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああんっ、うんっ……きてっ！",
+					{"rt2"},
+					"精液っ、わたしにちょうだいっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 575,
+	},
+	block_00119 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_13", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02780", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うぅんっ、あぅっ……もう、我慢出来ないっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 580,
+	},
+	block_00120 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_15", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02781", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、ああああぁんっ……イっちゃうっ！",
+					{"rt2"},
+					"もう、ダメっ……あぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 586,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"タイミングを合わせてくれるくくるに感謝しつつ、",
+					{"rt2"},
+					"溜めていた欲望をまき散らす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 589,
+	},
+	block_00122 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h08_16", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", file="seエロ_射精中出し5", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02782", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁっ、はああぁっ……んぁあああああぁぁっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 598,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02783", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁっ、すごっ……出てる、はあぁっ、はぁっ……！",
+					{"rt2"},
+					"わたしの、なかっ……いっぱいにっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 602,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02784", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「どうしようっ……気持ちいいのっ、収まらなっ……！",
+					{"rt2"},
+					"あぁっ、んあぁっ、ひぅっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 606,
+	},
+	block_00125 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", time=500, file="ev_kuk_h08_23", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一滴残らず、膣内に収めた後、",
+					{"rt2"},
+					"くくるの身体はしばらくの間、痙攣を続けていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 612,
+	},
+	block_00126 = {
+		{"bg", zoom=120, x=-780, y=280, time=500, file="zev_kuk_h08_23", path=":ev/ev_kuk_h08/", set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「大丈夫か……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 617,
+	},
+	block_00127 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_19", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02785", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁっ、はぁ……ちょっと待って。",
+					{"rt2"},
+					"少しずつ、落ち着いてきたぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 623,
+	},
+	block_00128 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_21", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02786", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「いっぱい我慢してたからかな……んっ、はぁ……。",
+					{"rt2"},
+					"すっごく気持ち良くなっちゃった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 629,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それは何よりだ。まだ続けられるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 632,
+	},
+	block_00130 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_24", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02787", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「すぅ、はぁ……もちろん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 637,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02788", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「せっかくの機会なのにこれで終わりじゃ、",
+					{"rt2"},
+					"もったいないから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 641,
+	},
+	block_00132 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_18", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02789", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「だけど、さっきはやられ放題で納得いかなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 646,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02790", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「次はわたしが凪に奉仕させてもらう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 649,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ご奉仕ってどうやって？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 652,
+	},
+	block_00135 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_17", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02791", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それはね……こうするのっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 657,
+	},
+	block_00136 = {
+		{"se", file="seエロ_挿入、ヌメリ3", id=2},
+		{"bg", time=500, file="ev_kuk_h08_17", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは下半身を上げてから、",
+					{"rt2"},
+					"一気に自分の膣へと突き入れる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 663,
+	},
+	block_00137 = {
+		{"se", stop=1, id=2, time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"予想外の行為に、達したばかりの逸物が反応してしまう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 667,
+	},
+	block_00138 = {
+		{"se", file="seエロ_ピストン：弱", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03101", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02792", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んふっ、ああぁっ……こんな感じでっ、",
+					{"rt2"},
+					"わたしが、奉仕してあげるっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 674,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02793", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「今回はちゃんと……あっ、ふうっ……。",
+					{"rt2"},
+					"わたしの力で、気持ち良くさせるっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 678,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02794", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「エッチな経験が少なくてもっ……。",
+					{"rt2"},
+					"ちゃんと知識は増やしてる、からっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 682,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どこか普段とは違う妖しい笑みを浮かべるくくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 684,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その雰囲気の通り、",
+					{"rt2"},
+					"膣のひだを巧みに肉棒に擦りつけてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 687,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"締め付けも相まって、かなりの刺激が襲い掛かる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 689,
+	},
+	block_00144 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h08_19", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", file="seエロ_ピストン：中", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03102", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02795", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁっ、んんぁ……うぅっ、ああっ……。",
+					{"rt2"},
+					"んぅ、ぁああっ、うっ、んぁああっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 699,
+	},
+	block_00145 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_21", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02796", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あんっ、んふぅっ、んんっ……。",
+					{"rt2"},
+					"気持ち、いい顔してるっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 705,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02797", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしの奉仕っ、気に入ってくれたんだっ……。",
+					{"rt2"},
+					"ああっ、ひゃんっ……あぁっ、んんぅっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 709,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どうやら知識を増やしてるっていうのは、",
+					{"rt2"},
+					"嘘じゃないらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 712,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"このまま気持ち良くしてもらうのも悪くないが、",
+					{"rt2"},
+					"俺もくくるのことを喜ばせたい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 715,
+	},
+	block_00149 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_20", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"quake"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02798", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んああぁっ！　わたしの奉仕の、番なのにっ……！",
+					{"rt2"},
+					"あっ、うぅっ、あぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 722,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「一方的に動いてもらうのも申し訳なくてな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 725,
+	},
+	block_00151 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_21", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02799", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んあぁっ、凪らしいっ……んんっ、あぅっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 730,
+	},
+	block_00152 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_20", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02800", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ぁああっ、んんぁっ……んんっ、うぁっ……！",
+					{"rt2"},
+					"あぁっ、んぅっ、ああぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 736,
+	},
+	block_00153 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_22", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02801", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぅっ……ああぅ、ひうんっ……！",
+					{"rt2"},
+					"凄いっ、奥まで届いてるっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 742,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"口では不満そうな言葉を発するが、",
+					{"rt2"},
+					"その表情は悦びの色に染まっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 745,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さらなる媚声を聞くために、",
+					{"rt2"},
+					"くくるの動きに合わせて腰を突き上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 748,
+	},
+	block_00156 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_23", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02802", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃああぁんっ！　んんっ……ひぅっ！",
+					{"rt2"},
+					"んあぁっ、あぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 754,
+	},
+	block_00157 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02803", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「いきなりっ、そんなに強くされたらぁっ……！",
+					{"rt2"},
+					"ああぁっ、ふぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 758,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02804", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああぁんっ……んんっ、んうぅっ！",
+					{"rt2"},
+					"感じ、ちゃうっ、ああぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 762,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自分の上でこれだけ喘いでくれるのは、",
+					{"rt2"},
+					"なんとも男冥利に尽きる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 765,
+	},
+	block_00160 = {
+		{"bg", zoom=120, x=-780, y=280, time=500, file="zev_kuk_h08_21", path=":ev/ev_kuk_h08/", set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02805", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「どうしよっ……うぅんっ、さっきイったばかりで、",
+					{"rt2"},
+					"すぐにまたっ……ひぅっ、ああぁんっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 771,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「無理に我慢しなくていいぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 774,
+	},
+	block_00162 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_20", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02806", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、あああぁっ……はぁん、あうっ！",
+					{"rt2"},
+					"あぁっ、んっ、んああぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 780,
+	},
+	block_00163 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_21", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02807", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゃあっ、すぐにイっちゃうからねっ……？",
+					{"rt2"},
+					"ああぁっ、ふああぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 786,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの宣言通り、膣内の締め付けがさらに強くなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 788,
+	},
+	block_00165 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h08_20", time=400, path=":ev/ev_kuk_h08/", zoom=120, set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360, x=-780, y=280},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02808", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぅっ、んんっ……もう、ダメっ！",
+					{"rt2"},
+					"また、すぐにっ……あっ、うあぁぁっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 794,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今にも達しそうなくくるを確認して、",
+					{"rt2"},
+					"ラストスパートをかける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 797,
+	},
+	block_00167 = {
+		{"lvo", ch="kuk", stop=1},
+		{"se", stop=1, id=2, time=500},
+		{"bg", time=500, file="ev_kuk_h08_20", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", file="seエロ_ピストン：強", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03103", loop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああっ、このままいこう！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 806,
+	},
+	block_00168 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_22", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02809", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うんっ……！　また一緒にっ、ああぁっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 811,
+	},
+	block_00169 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_23", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02810", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああぁんっ、ひうぅっ……！",
+					{"rt2"},
+					"んぅっ、んああぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 817,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02811", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、ああああぁっ！",
+					{"rt2"},
+					"ひゃあぁっ、んあああああぁぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 821,
+	},
+	block_00171 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h08_26", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"se", file="seエロ_射精中出し5", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02812", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああぁっ、ああああああぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 830,
+	},
+	block_00172 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_25", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02813", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんんぅっ……あぁっ、はぁっ、はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 835,
+	},
+	block_00173 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるが身体を弓なりにのけ反らせた瞬間、",
+					{"rt2"},
+					"熱く火照った膣に精液を流し込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 840,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一緒に絶頂出来たことに快感を覚えつつ、",
+					{"rt2"},
+					"くくるの体重を感じながら余韻に浸る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 843,
+	},
+	block_00175 = {
+		{"bg", time=500, file="ev_kuk_h08_28", path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02814", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ、あっ、はあぁっ、はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 848,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02815", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁ、はふぅ……凄い、感じさせられちゃった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 851,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02816", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふあぁっ、ふぅ……二回も連続で中出しされて、",
+					{"rt2"},
+					"お腹の中がたぷたぷしてる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 855,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「まだまだ夜はこれからだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 858,
+	},
+	block_00179 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h08_29", time=400, path=":ev/ev_kuk_h08/", set="ev_kuk_h08"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02817", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、はぁ……言われなくても、わかってる……。",
+					{"rt2"},
+					"どうして聞き直すの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 864,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「どうしてって今の二連戦で疲れてるだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 867,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02818", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「疲れてなんてない。",
+					{"rt2"},
+					"もっと愛してたいから続けて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 871,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言われても、もともとくくるは体力がない方だし、",
+					{"rt2"},
+					"今も疲労の色は濃い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 874,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここは夫という立場として、",
+					{"rt2"},
+					"無理をさせる訳にはいかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 877,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは空気を察したのか、",
+					{"rt2"},
+					"可愛く上目遣いで見つめてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 880,
+	},
+	block_00185 = {
+		{"bg", zoom=120, x=-780, y=280, time=500, file="zev_kuk_h08_27", path=":ev/ev_kuk_h08/", set="ev_kuk_h08", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02819", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「本当に大丈夫だから。",
+					{"rt2"},
+					"ここでやめたら不機嫌になるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 886,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"可愛くはあるが、",
+					{"rt2"},
+					"これは冗談で言ってるようには見えない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 889,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夫として妻を喜ばせる責務もあるので、",
+					{"rt2"},
+					"あまり負担をかけない体勢に変えることにした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 892,
+	},
+	block_00188 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"se", file="seエロ_ペニス挿入", id=2},
+		{"bg", zoom=100, speed=5000, file="zev_kuk_h09_02", path=":ev/ev_kuk_h09/", x2=340, y2=-300, x=-510, y=180, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360},
+		{"ex", time=5000, func="wait"},
+		{"bg", file="ev_kuk_h09_02", path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるを抱きかかえるようにして、",
+					{"rt2"},
+					"腰を突き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 906,
+	},
+	block_00189 = {
+		{"se", stop=1, id=2, time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02820", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぅううっ……っ！",
+					{"rt2"},
+					"一気に、入ってきたぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 912,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02821", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁあっ、あぁあっ、ああぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 915,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02822", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「押し付けられて、奥までおち◯ちん入ってきて……！",
+					{"rt2"},
+					"お腹の奥が熱いぃいっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 919,
+	},
+	block_00192 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_01", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02823", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、ぁあっ……んっ、んっ……。",
+					{"rt2"},
+					"落ちそうで、ちょっと怖いっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 925,
+	},
+	block_00193 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「大丈夫だ、俺がしっかり支えてるからなっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 928,
+	},
+	block_00194 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02824", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「う、んっ……お願い、だからね……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 931,
+	},
+	block_00195 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"不安そうにするくくるのために、",
+					{"rt2"},
+					"より強く身体を抱える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 934,
+	},
+	block_00196 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_02", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"lvo", ch="kuk", file="fem_kuk_03101", loop=1},
+		{"se", file="seエロ_ピストン：弱", id=2, loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02825", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、んんっ、んぅ……はぁっ、うあぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 941,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02826", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ちょっとっ、不思議な感覚っ……ああんっ！",
+					{"rt2"},
+					"んぅ、はあぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 945,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02827", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああっ、んっ……体位が違うだけでっ……！",
+					{"rt2"},
+					"こんなに、違うんだっ……んんっ、あぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 949,
+	},
+	block_00199 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02828", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、ふあぁっ……んんっ、んああぁぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 952,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ギュッと抱きついてくる、",
+					{"rt2"},
+					"くくるのことを激しく突き上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 955,
+	},
+	block_00201 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h09_03", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"se", file="seエロ_ピストン：中", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03102", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02829", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁんっ！　あっ、あっ！　あぁああっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 964,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02830", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしっ、この体勢好きかもっ……んっ、はあぁ！",
+					{"rt2"},
+					"あぁんっ、凄く、感じちゃって……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 968,
+	},
+	block_00203 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは小さくて軽いから、",
+					{"rt2"},
+					"この体位はとてもやりやすい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 971,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それと同時に目の前で乱れる、",
+					{"rt2"},
+					"くくるの姿がたまらなく興奮させてくれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 974,
+	},
+	block_00205 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h09_04", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"se", file="seエロ_ピストン：強", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03103", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02831", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、ううっ、んっ！　ひっ、んんっ！",
+					{"rt2"},
+					"これっ、味わったことのない、感覚っ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 984,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02832", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はうっ、んっ、あ、あ、あぁあっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 987,
+	},
+	block_00207 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02833", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぅううッ……イクっ！　イっちゃうよぉおっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 990,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺もっ……出すぞっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 993,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02834", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「う、んっ……！　凪の、ちょうだいっ……！",
+					{"rt2"},
+					"んんぁっ、うぅっ……ぁあああああぁぁっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 997,
+	},
+	block_00210 = {
+		{"lvo", ch="kuk", stop=1},
+		{"se", stop=1, id=2, time=500},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h09_05", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"se", file="seエロ_射精中出し5", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"se", file="seエロ_ピストン：中", id=2, loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02835", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっぁあぁあぁああぁああああっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1007,
+	},
+	block_00211 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奥深くに一気に精を注ぎ込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1011,
+	},
+	block_00212 = {
+		{"lvo", ch="kuk", file="fem_kuk_03102", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02836", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁうっ、んっ……ぁっ……。",
+					{"rt2"},
+					"んっ、はあっ、ぁぁあっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1017,
+	},
+	block_00213 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"射精しながらも、腰の動きを止めない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1019,
+	},
+	block_00214 = {
+		{"bg", time=500, file="ev_kuk_h09_06", path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02837", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぁっ、動き、止めないのっ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1024,
+	},
+	block_00215 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02838", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「このまま、するんだっ……ああっ、あふっ……！",
+					{"rt2"},
+					"望む、ところっ……あぁっ、んあっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1028,
+	},
+	block_00216 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_07", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02839", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ぁあっ、んっ……ひっ、っっ……。",
+					{"rt2"},
+					"んっ、んっ、んぅうっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1034,
+	},
+	block_00217 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"頭の中がはじけ飛びそうなくらい強い快楽。",
+					{"rt2"},
+					"好きな人とセックスする快楽を夢中で貪る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1037,
+	},
+	block_00218 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_08", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02840", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひっ、いぃっ……あ、ひぃぃっ……！",
+					{"rt2"},
+					"いいっ……んっ、はひぃい、うううっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1043,
+	},
+	block_00219 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02841", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぁっ、んっ……だめぇ……腰つきっ……！",
+					{"rt2"},
+					"すごいぃっ……あぁ、んんっ、ああぁんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1047,
+	},
+	block_00220 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは絶頂が続いているらしく、",
+					{"rt2"},
+					"言葉がしどろもどろなまま、喘ぎだけを強めていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1050,
+	},
+	block_00221 = {
+		{"bg", zoom=120, x=-650, y=240, time=500, file="zev_kuk_h09_09", path=":ev/ev_kuk_h09/", set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02842", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぅうっ……はぁっ、あぅぅっ……",
+					{"rt2"},
+					"好き、大好きぃぃいいっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1056,
+	},
+	block_00222 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるっ……俺も、好きだっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1059,
+	},
+	block_00223 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h09_10", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02843", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁっ、んんっ……あっ、嬉しいっ……！",
+					{"rt2"},
+					"あっ、んんっ、うあぁっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1065,
+	},
+	block_00224 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h09_07", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02844", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はふっ……んっ……はぁー……はぁっ、はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1070,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やがてくくるの痙攣は止まり、",
+					{"rt2"},
+					"腕の中で一生懸命息を整えようとしている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1073,
+	},
+	block_00226 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h09_09", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="zev_kuk_h09_06", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+				{"quake", size=2},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02845", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁ、あぁっ……意識、飛んじゃうかと思った……。",
+					{"rt2"},
+					"んぅうっ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1081,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうはさせまいと、ぐりぐりと奥をえぐる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1083,
+	},
+	block_00228 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h09_08", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02846", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「やぁっ……あんっ、ぁあっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1088,
+	},
+	block_00229 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h09_09", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02847", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぁっ、はぁ、んぅっ……。",
+					{"rt2"},
+					"まだ、止まらないのっ？　あぅ、ふあぁっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1094,
+	},
+	block_00230 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"甘い声を漏らすものだから、",
+					{"rt2"},
+					"ついつい激しく突き立てたくなってしまう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1097,
+	},
+	block_00231 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、激しくした後なので、",
+					{"rt2"},
+					"ゆっくりとなぞるように肉棒を動かす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1100,
+	},
+	block_00232 = {
+		{"se", file="seエロ_挿入、ヌメリ2", id=1},
+		{"bg", sync=0, face=1, file="zev_kuk_h09_10", time=400, path=":ev/ev_kuk_h09/", zoom=120, set="ev_kuk_h09", ax=1280, ay=720, bx=-640, by=-360, x=-650, y=240},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02848", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃ、ぅうんっ……んんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1106,
+	},
+	block_00233 = {
+		{"se", stop=1, id=1, time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02849", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぅっ、エッチな動きっ……はぁ、あぅっ……。",
+					{"rt2"},
+					"たまらなく、なっちゃう……ひぅ、ひゃんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1112,
+	},
+	block_00234 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"膣壁を優しく撫で上げることで、",
+					{"rt2"},
+					"くくるはビクンと身体を跳ねさせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1115,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1118,
+	},
+	block_00236 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02850", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、はあぁ……凪も……そろそろ、かなっ……？",
+					{"rt2"},
+					"んあぁっ、やんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1122,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"きゅっきゅと膣を締めてくる感覚に、",
+					{"rt2"},
+					"もっと欲しくなってしまい、スピードを速めていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1125,
+	},
+	block_00238 = {
+		{"se", stop=1, id=2, time=500},
+		{"lvo", ch="kuk", stop=1},
+		{"bg", time=500, file="ev_kuk_h09_11", path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"se", file="seエロ_ピストン：強", id=2, loop=1},
+		{"lvo", ch="kuk", file="fem_kuk_03103", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02851", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃぁああぁあっ、あんっ……あっ、あっ、あっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 1134,
+	},
+	block_00239 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02852", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひっ、んんんっ、激しいっ……あんっ、あうっ！",
+					{"rt2"},
+					"んっ、やっ、あうっ、んっ、ぁあぁっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 1138,
+	},
+	block_00240 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_10", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02853", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ゆっくり、してっ……凪っ……！",
+					{"rt2"},
+					"あんっ、あっ、はぅうううっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 1144,
+	},
+	block_00241 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「悪いっ……止められないっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 1147,
+	},
+	block_00242 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_11", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02854", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ひゃ、あぁああっ……そん、なっ！",
+					{"rt2"},
+					"あんっ、あぁあっ、ひっ……んんっ、ぅうううっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 1153,
+	},
+	block_00243 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02855", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁあっ、またイっちゃうっ……！",
+					{"rt2"},
+					"凪もイってくれないならっ、止めてぇっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1157,
+	},
+	block_00244 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02856", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああんっ！　んっ、んっ！　ひっ、ううぅっ！",
+					{"rt2"},
+					"あっあんっ！　あ、あ、あぁあっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1161,
+	},
+	block_00245 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺も、一緒にイクよっ、くくるっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1164,
+	},
+	block_00246 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02857", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あああっ……それならっ、良かったっ……！",
+					{"rt2"},
+					"あんっ、んっ、ううぅっ、あ、あ、あ、あ、あっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1168,
+	},
+	block_00247 = {
+		{"lvo", ch="kuk", stop=1},
+		{"se", stop=1, id=2, time=500},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h09_13", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"se", file="seエロ_射精中出し5", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02858", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぁあぁああぁぁあっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1177,
+	},
+	block_00248 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"またしても、奥深くに射精する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00247",
+		linknext = "block_00249",
+		line = 1181,
+	},
+	block_00249 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02859", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁあっ、ぁああっ……ドクドク……してるっ……。",
+					{"rt2"},
+					"んんっ、はあ、ぁああっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00248",
+		linknext = "block_00250",
+		line = 1185,
+	},
+	block_00250 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02860", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あっ、はあぁぁ、ふぁ……んっ、はぁ、はぁ……。",
+					{"rt2"},
+					"全然、止まらない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00249",
+		linknext = "block_00251",
+		line = 1189,
+	},
+	block_00251 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_12", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02861", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はぁあっ……んっ、んんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00250",
+		linknext = "block_00252",
+		line = 1194,
+	},
+	block_00252 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やがて互いの絶頂は落ち着く――が。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00251",
+		linknext = "block_00253",
+		line = 1196,
+	},
+	block_00253 = {
+		{"bg", time=500, file="ev_kuk_h09_14", path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02862", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふぅ、ん、どうしよう……ちょっとだけ困った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00252",
+		linknext = "block_00254",
+		line = 1201,
+	},
+	block_00254 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02863", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「まだ、足りない……、もっと欲しい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00253",
+		linknext = "block_00255",
+		line = 1204,
+	},
+	block_00255 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こちらとしては最初から選択肢なんてなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00254",
+		linknext = "block_00256",
+		line = 1206,
+	},
+	block_00256 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奥さんがこんなに可愛くおねだりしてるんだ。",
+					{"rt2"},
+					"ここで断ったら夫なんて名乗れない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00255",
+		linknext = "block_00257",
+		line = 1209,
+	},
+	block_00257 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「心配しなくていい、俺もだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00256",
+		linknext = "block_00258",
+		line = 1212,
+	},
+	block_00258 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「今日はお互いの体力が尽きるまで愛し合おう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00257",
+		linknext = "block_00259",
+		line = 1215,
+	},
+	block_00259 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h09_15", time=400, path=":ev/ev_kuk_h09/", set="ev_kuk_h09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02864", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん！　凪のそういうところ、好き」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00258",
+		linknext = "block_00260",
+		line = 1220,
+	},
+	block_00260 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"もっとお互いを味わいたい。",
+					{"rt2"},
+					"その気持ちは同じだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00259",
+		linknext = "block_00261",
+		line = 1223,
+	},
+	block_00261 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうして、夜の闇の中に二人の声が消えていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00260",
+		linknext = "block_00262",
+		line = 1225,
+	},
+	block_00262 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――俺たちはそれから何度も色んな体位で愛しあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00261",
+		linknext = "block_00263",
+		line = 1234,
+	},
+	block_00263 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまりにも長い時間だったが、",
+					{"rt2"},
+					"お互いに体力の限界を感じたことで終わりを迎える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00262",
+		linknext = "block_00264",
+		line = 1237,
+	},
+	block_00264 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして締めくくりとして、最後にはくくるが",
+					{"rt2"},
+					"お掃除のフェラをしてくれるということになった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00263",
+		linknext = "block_00265",
+		line = 1240,
+	},
+	block_00265 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="white", path=":bg/"},
+		{"bg", zoom=100, speed=3900, file="zev_kuk_h10_02", path=":ev/ev_kuk_h10/", x2=-50, y2=-360, x=100, y=0, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"ex", time=3000, func="wait"},
+		{"bg", file="ev_kuk_h10_02", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"bgm", file="bgm15"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02865", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「くんくんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00264",
+		linknext = "block_00266",
+		line = 1249,
+	},
+	block_00266 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02866", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「はあ……エッチなにおい。",
+					{"rt2"},
+					"精液と我慢汁でいっぱいだね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00265",
+		linknext = "block_00267",
+		line = 1253,
+	},
+	block_00267 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるの愛液のにおいも混じってるぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00266",
+		linknext = "block_00268",
+		line = 1256,
+	},
+	block_00268 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_04", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02867", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ああ……そういえばそうだった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00267",
+		linknext = "block_00269",
+		line = 1261,
+	},
+	block_00269 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02868", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしたちがいっぱいセックスした証が、",
+					{"rt2"},
+					"おち◯ちんにいっぱいまとわりついてる……くんくん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00268",
+		linknext = "block_00270",
+		line = 1265,
+	},
+	block_00270 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_02", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02869", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あまり嗅いだことがないかも。",
+					{"rt2"},
+					"少しだけ興奮するにおい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00269",
+		linknext = "block_00271",
+		line = 1271,
+	},
+	block_00271 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"小動物のように鼻をひくひくさせながら、",
+					{"rt2"},
+					"肉棒のにおいを堪能するくくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00270",
+		linknext = "block_00272",
+		line = 1274,
+	},
+	block_00272 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その姿を見て、俺は懐かしい記憶を振り返る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00271",
+		linknext = "block_00273",
+		line = 1276,
+	},
+	block_00273 = {
+		{"bg", zoom=90, x=80, y=-50, time=500, file="zev_kuk_h10_02", path=":ev/ev_kuk_h10/", set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「初めてエッチした時も、",
+					{"rt2"},
+					"くくるがこんな風に、においを嗅いでたよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00272",
+		linknext = "block_00274",
+		line = 1282,
+	},
+	block_00274 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_01", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02870", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あの時は色々と調べるつもりでやってたはず……。",
+					{"rt2"},
+					"あれから時間も経って色々と変わった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00273",
+		linknext = "block_00275",
+		line = 1288,
+	},
+	block_00275 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02871", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「わたしたちはお互いのことを好きになって、",
+					{"rt2"},
+					"モンステラは無事に完成して……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00274",
+		linknext = "block_00276",
+		line = 1292,
+	},
+	block_00276 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_05", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02872", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「でも、凪のにおいは変わってない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00275",
+		linknext = "block_00277",
+		line = 1297,
+	},
+	block_00277 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_01", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02873", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「エッチだけど、どこか安心させてくれる。",
+					{"rt2"},
+					"そんな感じがする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00276",
+		linknext = "block_00278",
+		line = 1303,
+	},
+	block_00278 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00277",
+		linknext = "block_00279",
+		line = 1306,
+	},
+	block_00279 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"においについて自分ではよくわからないが、",
+					{"rt2"},
+					"褒められて悪い気分はしない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00278",
+		linknext = "block_00280",
+		line = 1309,
+	},
+	block_00280 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるはにおいを確認した後、",
+					{"rt2"},
+					"可愛がるように亀頭を指で突く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00279",
+		linknext = "block_00281",
+		line = 1312,
+	},
+	block_00281 = {
+		{"bg", time=500, file="ev_kuk_h10_04", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02874", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それにしても、ずっと勃起したままだね。",
+					{"rt2"},
+					"元気すぎる、ふふ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00280",
+		linknext = "block_00282",
+		line = 1318,
+	},
+	block_00282 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「我ながら自慢の息子です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00281",
+		linknext = "block_00283",
+		line = 1321,
+	},
+	block_00283 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_03", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02875", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふふっ、これはさすがのわたしもお手上げかも。",
+					{"rt2"},
+					"特に体力勝負じゃ勝てる気がしない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00282",
+		linknext = "block_00284",
+		line = 1327,
+	},
+	block_00284 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_01", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02876", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「だから今度はこっちで綺麗にしてあげる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00283",
+		linknext = "block_00285",
+		line = 1332,
+	},
+	block_00285 = {
+		{"bg", time=500, file="ev_kuk_h10_06", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう口にして迷いなく肉棒を咥えてみせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00284",
+		linknext = "block_00286",
+		line = 1338,
+	},
+	block_00286 = {
+		{"lvo", ch="kuk", file="fem_kuk_03096", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02877", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、ちゅぷっ、ちゅれろっ……。",
+					{"rt2"},
+					"んんっ、ちゅうっ、ちゅぱっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00285",
+		linknext = "block_00287",
+		line = 1344,
+	},
+	block_00287 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「く、うう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00286",
+		linknext = "block_00288",
+		line = 1347,
+	},
+	block_00288 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02878", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶっ、ぢゅっ、じゅるるるっ……。",
+					{"rt2"},
+					"じゅぼっ、じゅううっ……れろ、れろっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00287",
+		linknext = "block_00289",
+		line = 1351,
+	},
+	block_00289 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ぐっぽりと咥えたまま、",
+					{"rt2"},
+					"舌全体を使って口の中でしっかりと舐めていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00288",
+		linknext = "block_00290",
+		line = 1354,
+	},
+	block_00290 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最初の頃の不慣れな感じは、",
+					{"rt2"},
+					"どこにいってしまったのやら……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00289",
+		linknext = "block_00291",
+		line = 1357,
+	},
+	block_00291 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02879", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んじゅっ、じゅるるっ、じゅばっ、じゅるっ、",
+					{"rt2"},
+					"んっ、れるうううっ、ちゅぅうっ、ぢゅっ、ぢゅっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00290",
+		linknext = "block_00292",
+		line = 1361,
+	},
+	block_00292 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"べろべろと動く舌の感触に腰が引けそうになるも、",
+					{"rt2"},
+					"吸い付く口が逃がしてはくれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00291",
+		linknext = "block_00293",
+		line = 1364,
+	},
+	block_00293 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_07", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02880", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「れろっ、んっ、んぅ、っっ、ちゅううっ、ぢゅぼっ、",
+					{"rt2"},
+					"じゅるっ、じゅれろっ、んっ、んんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00292",
+		linknext = "block_00294",
+		line = 1370,
+	},
+	block_00294 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まさに、お掃除フェラとはこのことか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00293",
+		linknext = "block_00295",
+		line = 1372,
+	},
+	block_00295 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"吸い付いたり、舐めたり、",
+					{"rt2"},
+					"とにかく責め続けられている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00294",
+		linknext = "block_00296",
+		line = 1375,
+	},
+	block_00296 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02881", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゅるっ、じゅぼっ、じゅぶぶっ、んっ、んっ、",
+					{"rt2"},
+					"じゅるるっ、れろっ、じゅぶぅうっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00295",
+		linknext = "block_00297",
+		line = 1379,
+	},
+	block_00297 = {
+		{"bg", zoom=90, x=80, y=-50, time=500, file="zev_kuk_h10_07", path=":ev/ev_kuk_h10/", set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちょっ……手加減してくれっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00296",
+		linknext = "block_00298",
+		line = 1384,
+	},
+	block_00298 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_08", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02882", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ、むぁっ、はむぅ……なんで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00297",
+		linknext = "block_00299",
+		line = 1389,
+	},
+	block_00299 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「出そうになるから！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00298",
+		linknext = "block_00300",
+		line = 1392,
+	},
+	block_00300 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="zev_kuk_h10_04", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02883", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふうん、なら手加減しなくていいね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00299",
+		linknext = "block_00301",
+		line = 1398,
+	},
+	block_00301 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02884", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「さっきまで散々、わたしを好き勝手してたのに、",
+					{"rt2"},
+					"今さらそんな甘えた発言は許さない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00300",
+		linknext = "block_00302",
+		line = 1402,
+	},
+	block_00302 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もしかしてご機嫌斜めか……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00301",
+		linknext = "block_00303",
+		line = 1405,
+	},
+	block_00303 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_03", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02885", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「どうなんだろう。",
+					{"rt2"},
+					"そう思うなら心当たりがあるんじゃない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00302",
+		linknext = "block_00304",
+		line = 1411,
+	},
+	block_00304 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"にやりと笑い、再度フェラを始めるくくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00303",
+		linknext = "block_00305",
+		line = 1413,
+	},
+	block_00305 = {
+		{"bg", time=500, file="ev_kuk_h10_06", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03096", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02886", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ちゅるっ、じゅっ、ちゅばっ、んんっ、",
+					{"rt2"},
+					"んぢゅるうっ……じゅっ、ぢゅっ、ぢゅぼっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00304",
+		linknext = "block_00306",
+		line = 1420,
+	},
+	block_00306 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"容赦のない責めに、",
+					{"rt2"},
+					"なすすべもなく射精へと上り詰めていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00305",
+		linknext = "block_00307",
+		line = 1423,
+	},
+	block_00307 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「やばいっ、マジで、出るからっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00306",
+		linknext = "block_00308",
+		line = 1426,
+	},
+	block_00308 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h10_08", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02887", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んむぁっ、じゃあ、いっぱいかけてっ……。",
+					{"rt2"},
+					"イク寸前にイクって言って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00307",
+		linknext = "block_00309",
+		line = 1433,
+	},
+	block_00309 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_09", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03097", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02888", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、んっ、じゅっ、ちゅばっ、ちゅっ、ちゅぷっ、",
+					{"rt2"},
+					"ちゅるぅっ、じゅぼっ、じゅぼっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00308",
+		linknext = "block_00310",
+		line = 1440,
+	},
+	block_00310 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02889", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふっ、んんっ……、ちゅっ、ぢゅぱっ！　じゅるっ！",
+					{"rt2"},
+					"じゅるるっ、じゅぽっ、じゅぽっ、じゅるっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00309",
+		linknext = "block_00311",
+		line = 1444,
+	},
+	block_00311 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02890", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゅっ、じゅっ、ぢゅるるっ、ぢゅるるるるっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00310",
+		linknext = "block_00312",
+		line = 1447,
+	},
+	block_00312 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あ、あ……イクっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00311",
+		linknext = "block_00313",
+		line = 1450,
+	},
+	block_00313 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h10_10", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"se", file="seエロ_射精外出し2", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02891", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶぁあっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00312",
+		linknext = "block_00314",
+		line = 1458,
+	},
+	block_00314 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるが肉棒を口から離した瞬間、射精をする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00313",
+		linknext = "block_00315",
+		line = 1462,
+	},
+	block_00315 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_11", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02892", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ……んんんっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00314",
+		linknext = "block_00316",
+		line = 1467,
+	},
+	block_00316 = {
+		{"bg", time=500, file="ev_kuk_h10_18", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02893", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あぁあっ……いっぱい、顔に、かかった……。",
+					{"rt2"},
+					"すんすんっ……くんくんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00315",
+		linknext = "block_00317",
+		line = 1473,
+	},
+	block_00317 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02894", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「すぅぅっ、はぁ……まだこんなに出るなんて驚き」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00316",
+		linknext = "block_00318",
+		line = 1476,
+	},
+	block_00318 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"少し驚きながらも精液を顔で受け止めて、",
+					{"rt2"},
+					"濃厚なにおいを、これでもかと吸い込んでいる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00317",
+		linknext = "block_00319",
+		line = 1479,
+	},
+	block_00319 = {
+		{"bg", zoom=90, x=80, y=-50, time=500, file="zev_kuk_h10_17", path=":ev/ev_kuk_h10/", set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02895", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「すぅぅ、はぁ……顔にかけられるの、",
+					{"rt2"},
+					"かなり好きかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00318",
+		linknext = "block_00320",
+		line = 1485,
+	},
+	block_00320 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02896", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「直接的に匂いを感じられるし、",
+					{"rt2"},
+					"これは何度嗅いでも飽きない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00319",
+		linknext = "block_00321",
+		line = 1489,
+	},
+	block_00321 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_13", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02897", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「大好きな人のにおいだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00320",
+		linknext = "block_00322",
+		line = 1494,
+	},
+	block_00322 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「っっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00321",
+		linknext = "block_00323",
+		line = 1497,
+	},
+	block_00323 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_16", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02898", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「あれ……おち◯ちん大きくなった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00322",
+		linknext = "block_00324",
+		line = 1502,
+	},
+	block_00324 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_17", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02899", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「欲張りというか、終わる気がしなくなってきた。",
+					{"rt2"},
+					"これ、本当に勃たなくなる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00323",
+		linknext = "block_00325",
+		line = 1508,
+	},
+	block_00325 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「さすがにいつかは終わると思うけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00324",
+		linknext = "block_00326",
+		line = 1511,
+	},
+	block_00326 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな可愛いことを言われたら、収まる訳がない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00325",
+		linknext = "block_00327",
+		line = 1513,
+	},
+	block_00327 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02900", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「今度はどうして欲しい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00326",
+		linknext = "block_00328",
+		line = 1518,
+	},
+	block_00328 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうだな……さっきは激しめだったから、",
+					{"rt2"},
+					"今度はねっとり舐めてほしいかな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00327",
+		linknext = "block_00329",
+		line = 1522,
+	},
+	block_00329 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「すぐにイクのはもったいないから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00328",
+		linknext = "block_00330",
+		line = 1525,
+	},
+	block_00330 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_12", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02901", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、わかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00329",
+		linknext = "block_00331",
+		line = 1530,
+	},
+	block_00331 = {
+		{"bg", time=500, file="ev_kuk_h10_19", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03094", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02902", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぅっ……んれっ……ちゅうばっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00330",
+		linknext = "block_00332",
+		line = 1538,
+	},
+	block_00332 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h10_21", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_kuk_h10_12", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02903", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んちゅっ……れろろっ……れるうっ……。",
+					{"rt2"},
+					"んむぁっ、ふー……こんな感じ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00331",
+		linknext = "block_00333",
+		line = 1546,
+	},
+	block_00333 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00332",
+		linknext = "block_00334",
+		line = 1549,
+	},
+	block_00334 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"正直、このねっとりなフェラでも、",
+					{"rt2"},
+					"すぐにイキそうなくらいだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00333",
+		linknext = "block_00335",
+		line = 1552,
+	},
+	block_00335 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"敏感になりすぎているのと、くくるが的確に",
+					{"rt2"},
+					"気持ちの良い場所を舐め上げてくれるからだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00334",
+		linknext = "block_00336",
+		line = 1555,
+	},
+	block_00336 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_19", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03095", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02904", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶっ……じゅるっ……。",
+					{"rt2"},
+					"ちゅううっ、れろろ、ちゅぶぅっ……んっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00335",
+		linknext = "block_00337",
+		line = 1562,
+	},
+	block_00337 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「っっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00336",
+		linknext = "block_00338",
+		line = 1565,
+	},
+	block_00338 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_23", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02905", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふむっ、ちゅるぅ、はむぅっ……。",
+					{"rt2"},
+					"気持ち良さそうな顔……れる、れろっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00337",
+		linknext = "block_00339",
+		line = 1571,
+	},
+	block_00339 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02906", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「弱いところ、もっと舐めてあげる……。",
+					{"rt2"},
+					"ちゅる、れるっ、ちゅうぅっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00338",
+		linknext = "block_00340",
+		line = 1575,
+	},
+	block_00340 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ぐっぽりと咥えられたまま、ゆっくり責められると、",
+					{"rt2"},
+					"こんなに快感が大きかったのか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00339",
+		linknext = "block_00341",
+		line = 1578,
+	},
+	block_00341 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それなら、また激しくしてほしいと言えば良かった。",
+					{"rt2"},
+					"じわじわと込み上げる射精感に、焦ってしまう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00340",
+		linknext = "block_00342",
+		line = 1581,
+	},
+	block_00342 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくるっ……それ、やばいっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00341",
+		linknext = "block_00343",
+		line = 1584,
+	},
+	block_00343 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h10_21", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02907", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶっ……ん？　もしかしてイっちゃいそうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00342",
+		linknext = "block_00344",
+		line = 1591,
+	},
+	block_00344 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「あ、ああ……情けない話だけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00343",
+		linknext = "block_00345",
+		line = 1594,
+	},
+	block_00345 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02908", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「かなり感度が良くなってるみたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00344",
+		linknext = "block_00346",
+		line = 1597,
+	},
+	block_00346 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02909", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「それならいっそのこと、",
+					{"rt2"},
+					"一滴残らず絞り出してあげる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00345",
+		linknext = "block_00347",
+		line = 1601,
+	},
+	block_00347 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_22", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03096", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02910", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふぅん……ちゅうっ、ちゅぶっ……れろろっ、",
+					{"rt2"},
+					"んっ、んじゅうっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00346",
+		linknext = "block_00348",
+		line = 1608,
+	},
+	block_00348 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「えっ……！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00347",
+		linknext = "block_00349",
+		line = 1611,
+	},
+	block_00349 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_20", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02911", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶっ、じゅぅっ……じゅるるるっ……んっ……。",
+					{"rt2"},
+					"ちゅうっ……ちゅぶぶっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00348",
+		linknext = "block_00350",
+		line = 1617,
+	},
+	block_00350 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02912", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぶっ……んっ、んっ……。",
+					{"rt2"},
+					"れるるぅ……ちゅうぅうっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00349",
+		linknext = "block_00351",
+		line = 1621,
+	},
+	block_00351 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ちょっ……う、ああっ……イキそうだって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00350",
+		linknext = "block_00352",
+		line = 1624,
+	},
+	block_00352 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h10_22", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_kuk_h10_13", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02913", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んむぅ、じゅる、んぶあっ……なんてね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00351",
+		linknext = "block_00353",
+		line = 1631,
+	},
+	block_00353 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あともう少し、というところでくくるが口を離す。",
+					{"rt2"},
+					"下半身に切ない感覚が走った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00352",
+		linknext = "block_00354",
+		line = 1634,
+	},
+	block_00354 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「え……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00353",
+		linknext = "block_00355",
+		line = 1637,
+	},
+	block_00355 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さっきから『え』しか発することが出来ていない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00354",
+		linknext = "block_00356",
+		line = 1639,
+	},
+	block_00356 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02914", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「まだイかせない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00355",
+		linknext = "block_00357",
+		line = 1644,
+	},
+	block_00357 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"にんまりと上目遣いで見つめてくる。",
+					{"rt2"},
+					"俺はすべてを察した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00356",
+		linknext = "block_00358",
+		line = 1647,
+	},
+	block_00358 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「寸止めっすか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00357",
+		linknext = "block_00359",
+		line = 1650,
+	},
+	block_00359 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02915", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「うん、そーゆーこと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00358",
+		linknext = "block_00360",
+		line = 1653,
+	},
+	block_00360 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_23", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03097", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02916", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んあむっ、じゅっ、じゅぼっ、ぢゅるるっ、",
+					{"rt2"},
+					"んっ、んっ、じゅぅっ、じゅぼっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00359",
+		linknext = "block_00361",
+		line = 1660,
+	},
+	block_00361 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今度は前回と同じように激しいバキューム。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00360",
+		linknext = "block_00362",
+		line = 1662,
+	},
+	block_00362 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺のゆっくり舐めてほしいという要望は、",
+					{"rt2"},
+					"どこへいってしまったのか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00361",
+		linknext = "block_00363",
+		line = 1665,
+	},
+	block_00363 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"引っ込んだ精液が、驚くスピードでせりあがっていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00362",
+		linknext = "block_00364",
+		line = 1667,
+	},
+	block_00364 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ぁあああっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00363",
+		linknext = "block_00365",
+		line = 1670,
+	},
+	block_00365 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="ev_kuk_h10_20", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02917", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んじゅぶあっ！　……まだダメ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00364",
+		linknext = "block_00366",
+		line = 1677,
+	},
+	block_00366 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"再度の寸止め。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00365",
+		linknext = "block_00367",
+		line = 1679,
+	},
+	block_00367 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"脚が自分の意思に反して、",
+					{"rt2"},
+					"がくがくっ！　と震えてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00366",
+		linknext = "block_00368",
+		line = 1682,
+	},
+	block_00368 = {
+		{"bg", zoom=90, x=80, y=-50, time=500, file="zev_kuk_h10_14", path=":ev/ev_kuk_h10/", set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くぅっ……一体何が目的なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00367",
+		linknext = "block_00369",
+		line = 1687,
+	},
+	block_00369 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_12", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02918", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「何が目的と聞かれれば、",
+					{"rt2"},
+					"どんな顔をするのか見たいから？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00368",
+		linknext = "block_00370",
+		line = 1693,
+	},
+	block_00370 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02919", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そして、わたしにとって嬉しい答えが出た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00369",
+		linknext = "block_00371",
+		line = 1696,
+	},
+	block_00371 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_13", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02920", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「……ふふ、寸止めしたら、",
+					{"rt2"},
+					"こんなに可愛い反応するんだ。新発見」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00370",
+		linknext = "block_00372",
+		line = 1702,
+	},
+	block_00372 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ……ぅう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00371",
+		linknext = "block_00373",
+		line = 1705,
+	},
+	block_00373 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"はたしてあと何回これが続くのか……。",
+					{"rt2"},
+					"犬がエサを目の前にして、待てと言われているようだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00372",
+		linknext = "block_00374",
+		line = 1708,
+	},
+	block_00374 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それなのに指先で亀頭をいじくるものだから、",
+					{"rt2"},
+					"イきたいという欲求が収まらない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00373",
+		linknext = "block_00375",
+		line = 1711,
+	},
+	block_00375 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02921", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「可愛いの次は情けない声。",
+					{"rt2"},
+					"イキたくて仕方ないんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00374",
+		linknext = "block_00376",
+		line = 1717,
+	},
+	block_00376 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イキたい……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00375",
+		linknext = "block_00377",
+		line = 1720,
+	},
+	block_00377 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_13", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02922", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ふふ……ダメ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00376",
+		linknext = "block_00378",
+		line = 1725,
+	},
+	block_00378 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_19", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"lvo", ch="kuk", file="fem_kuk_03097", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02923", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ……じゅっ……じゅぶっ……れるるっ、",
+					{"rt2"},
+					"んっ……じゅぼぉっ……ちゅぷぅっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00377",
+		linknext = "block_00379",
+		line = 1732,
+	},
+	block_00379 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「っっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00378",
+		linknext = "block_00380",
+		line = 1735,
+	},
+	block_00380 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ありとあらゆる責めをされ、",
+					{"rt2"},
+					"もう訳がわからなくなってくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00379",
+		linknext = "block_00381",
+		line = 1738,
+	},
+	block_00381 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_22", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02924", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、じゅっ、ぢゅっ、じゅぼっ、れるっ、れろっ、",
+					{"rt2"},
+					"れろろっ、ちゅうぅううっ、じゅるるるるるっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00380",
+		linknext = "block_00382",
+		line = 1744,
+	},
+	block_00382 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イ、イク……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00381",
+		linknext = "block_00383",
+		line = 1747,
+	},
+	block_00383 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", sync=0, face=1, file="zev_kuk_h10_21", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="zev_kuk_h10_13", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02925", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んむあっ……ダメだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00382",
+		linknext = "block_00384",
+		line = 1754,
+	},
+	block_00384 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「くくる、頼む……！　おかしくなりそうなんだよ、",
+					{"rt2"},
+					"イかせてくれ……イキたい……！　イキたい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00383",
+		linknext = "block_00385",
+		line = 1758,
+	},
+	block_00385 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"情けない限りだが、",
+					{"rt2"},
+					"うわごとのように繰り返してしまう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00384",
+		linknext = "block_00386",
+		line = 1761,
+	},
+	block_00386 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_17", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02926", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00385",
+		linknext = "block_00387",
+		line = 1766,
+	},
+	block_00387 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02927", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「そんな苦しそうな顔が見たかった訳じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00386",
+		linknext = "block_00388",
+		line = 1769,
+	},
+	block_00388 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_12", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02928", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「だからいいよ、わかった。",
+					{"rt2"},
+					"次イキたくなったらそのまま出して」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00387",
+		linknext = "block_00389",
+		line = 1775,
+	},
+	block_00389 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_14", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02929", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ただ、これから全力で舐めるから覚悟すること」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00388",
+		linknext = "block_00390",
+		line = 1780,
+	},
+	block_00390 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"許可が降りたことに安堵する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00389",
+		linknext = "block_00391",
+		line = 1782,
+	},
+	block_00391 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、満足気に笑っているくくるを見て、",
+					{"rt2"},
+					"手のひらの上で転がされていたと自覚する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00390",
+		linknext = "block_00392",
+		line = 1785,
+	},
+	block_00392 = {
+		{"bg", time=500, file="ev_kuk_h10_23", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"lvo", ch="kuk", file="fem_kuk_03097", loop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02930", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んあぁむっ……じゅぼっ、んじゅるるっ、",
+					{"rt2"},
+					"んっ、んぶっ、んっ、ちゅうっ、ちゅぶっ、ちゅぶっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00391",
+		linknext = "block_00393",
+		line = 1792,
+	},
+	block_00393 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02931", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んっ、んっ！　じゅぼっ、じゅぼっ！",
+					{"rt2"},
+					"ぢゅううっ、ぢゅぶっ、じゅるるっ、ぢゅぶぶっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00392",
+		linknext = "block_00394",
+		line = 1796,
+	},
+	block_00394 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"激しさを増す。今度こそ、本当に、出していいんだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00393",
+		linknext = "block_00395",
+		line = 1798,
+	},
+	block_00395 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_20", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02932", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「じゅるるるっ、じゅぽっ、じゅぽっ、じゅるるっ……！",
+					{"rt2"},
+					"ふー……、んっ、ちゅっ、じゅるっ、ぢゅるるるる！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00394",
+		linknext = "block_00396",
+		line = 1804,
+	},
+	block_00396 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02933", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「れろぉ……ぢゅっ、じゅぽっ！　じゅぽっ！",
+					{"rt2"},
+					"んぶっ、んっ、んっ……じゅるっ、じゅるるるる！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00395",
+		linknext = "block_00397",
+		line = 1808,
+	},
+	block_00397 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02934", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ぢゅぽっ、ぢゅぽっ！　ぢゅるるるるっ……！",
+					{"rt2"},
+					"じゅっ、んじゅるるっ、じゅぽっ、じゅる、じゅるる！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00396",
+		linknext = "block_00398",
+		line = 1812,
+	},
+	block_00398 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「イクっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00397",
+		linknext = "block_00399",
+		line = 1815,
+	},
+	block_00399 = {
+		{"lvo", ch="kuk", stop=1},
+		{"bg", id=9, lv=9, sync=1, time=100, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=300, alpha=0, file="white", path=":bg/"},
+		{"bg", id=9, lv=9, sync=1, time=500, alpha=255, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_kuk_h10_25", sync=0, time=1000, vague=100, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"se", file="seエロ_射精中出し5", id=9, time=0, vol=100, pan=0},
+		{"ex", time=100, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02935", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんぅぅうぅうぅぅぅうっ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00398",
+		linknext = "block_00400",
+		line = 1823,
+	},
+	block_00400 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ようやく達することが出来たという解放感は、",
+					{"rt2"},
+					"今まで味わったことのないレベルだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00399",
+		linknext = "block_00401",
+		line = 1830,
+	},
+	block_00401 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_24", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02936", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んくっ……ごくっ、ごくっ……んっ、んんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00400",
+		linknext = "block_00402",
+		line = 1835,
+	},
+	block_00402 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるは、ごくんごくんと喉を大きく動かして、",
+					{"rt2"},
+					"嚥下していく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00401",
+		linknext = "block_00403",
+		line = 1838,
+	},
+	block_00403 = {
+		{"bg", time=500, file="ev_kuk_h10_28", path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02937", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んんっ……んむぁっ……はぁ……。",
+					{"rt2"},
+					"ふぅぅ、ごちそうさま」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00402",
+		linknext = "block_00404",
+		line = 1846,
+	},
+	block_00404 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02938", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「焦らしていたおかげかな？",
+					{"rt2"},
+					"凄い、いっぱい出た……ふふっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00403",
+		linknext = "block_00405",
+		line = 1850,
+	},
+	block_00405 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02939", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「全部飲み込むのも一苦労だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00404",
+		linknext = "block_00406",
+		line = 1853,
+	},
+	block_00406 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「自分でも、まだこんなに出るのかって、",
+					{"rt2"},
+					"感心するくらいだからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00405",
+		linknext = "block_00407",
+		line = 1857,
+	},
+	block_00407 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「全部飲み込む必要はなかったんだぞ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00406",
+		linknext = "block_00408",
+		line = 1860,
+	},
+	block_00408 = {
+		{"bg", sync=0, face=1, file="ev_kuk_h10_27", time=400, path=":ev/ev_kuk_h10/", set="ev_kuk_h10"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02940", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「飲みたいから飲んだ。",
+					{"rt2"},
+					"それだけのことだから気にしないで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00407",
+		linknext = "block_00409",
+		line = 1866,
+	},
+	block_00409 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう迷いなく言い放つくくる。",
+					{"rt2"},
+					"男としては嬉しいこと、この上ない台詞だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00408",
+		linknext = "block_00410",
+		line = 1869,
+	},
+	block_00410 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかし、それに反して、",
+					{"rt2"},
+					"俺の下半身が反応することはなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00409",
+		linknext = "block_00411",
+		line = 1872,
+	},
+	block_00411 = {
+		{"bg", zoom=90, x=80, y=-50, time=500, file="zev_kuk_h10_26", path=":ev/ev_kuk_h10/", set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02941", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「んぁ……おち◯ちん、萎んできた。",
+					{"rt2"},
+					"ようやく満足出来たみたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00410",
+		linknext = "block_00412",
+		line = 1878,
+	},
+	block_00412 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「はぁ……これ以上ないくらい満足だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00411",
+		linknext = "block_00413",
+		line = 1881,
+	},
+	block_00413 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02942", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「でも、これからもそれは更新されていくはず」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00412",
+		linknext = "block_00414",
+		line = 1884,
+	},
+	block_00414 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ん……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00413",
+		linknext = "block_00415",
+		line = 1887,
+	},
+	block_00415 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_28", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02943", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「セックスするごとに、今回が一番気持ち良かった。",
+					{"rt2"},
+					"そう言わせたいし、言わせてみせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00414",
+		linknext = "block_00416",
+		line = 1893,
+	},
+	block_00416 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「ああ……そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00415",
+		linknext = "block_00417",
+		line = 1896,
+	},
+	block_00417 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺もくくるの心意気に負けないように、",
+					{"rt2"},
+					"頑張っていかないとな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00416",
+		linknext = "block_00418",
+		line = 1900,
+	},
+	block_00418 = {
+		{"bg", sync=0, face=1, file="zev_kuk_h10_27", time=400, path=":ev/ev_kuk_h10/", zoom=90, set="ev_kuk_h10", ax=1280, ay=720, bx=-640, by=-360, x=80, y=-50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kuk_02944", ch="kuk"},
+			},
+			ja = {
+				{
+					name = {"くくる"},
+					"「ん、凪にも頑張ってもらって、",
+					{"rt2"},
+					"わたしの一番気持ち良かった時を更新してほしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00417",
+		linknext = "block_00419",
+		line = 1906,
+	},
+	block_00419 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くくるの満足そうな顔を見ながら俺も笑う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00418",
+		linknext = "block_00420",
+		line = 1908,
+	},
+	block_00420 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんなにエッチな娘になるとは思ってもみなかったが、",
+					{"rt2"},
+					"これはこれで望んでいた未来なのは間違いなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00419",
+		linknext = "block_00421",
+		line = 1911,
+	},
+	block_00421 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="04_くくる_24"},
+		{"text"},
+		linkback = "block_00420",
+		line = 1914,
+	},
+	label = {
+		scene = { block="block_00000", label=1 },
+		top = { block="block_00000", label=1 },
+	},
+}

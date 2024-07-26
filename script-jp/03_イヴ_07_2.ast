@@ -1,0 +1,2608 @@
+astver = 2.0
+astname = "ast"
+ast = {
+	block_00000 = {
+		{"bg", rule=139, vague=40, file="bg028c", path=":bg/"},
+		{"bgm", file="bgm08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"色々とあった一日だったが、",
+					{"rt2"},
+					"あとはベッドに横になるだけだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 7,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"疲労感は程よく、",
+					{"rt2"},
+					"これならすぐに眠れそうな予感がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 10,
+	},
+	block_00002 = {
+		{"se", file="seノック(木の扉)", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ドアを叩く音で、",
+					{"rt2"},
+					"落ちかけた意識が一気に浮上した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 16,
+	},
+	block_00003 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"時計を見る。",
+					{"rt2"},
+					"もうかなり遅い時間だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 21,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いったい誰だ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 24,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここ数日悪意にさらされているせいか、",
+					{"rt2"},
+					"なんだか嫌な予感がした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 27,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"潜り込んでいた布団から抜け出し、",
+					{"rt2"},
+					"警戒しながら扉を開ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 30,
+	},
+	block_00007 = {
+		{"se", file="se自動ドア", vol=50, id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-80, file="zbg027c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="汐莉", size="z1", mode=3, resize=1, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"fgact", ch="汐莉", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00198", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「どうも、こんな時間に失礼します」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 47,
+	},
+	block_00008 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……汐莉？",
+					{"rt2"},
+					"いったいどうしたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 53,
+	},
+	block_00009 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0051", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00199", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「最近は布波能先輩と話す機会もなかったので、",
+					{"rt2"},
+					"親睦を深めようかと思いまして」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 60,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「この時間にか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 63,
+	},
+	block_00011 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0011", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00200", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「運動部補佐の業務が忙しくて、",
+					{"rt2"},
+					"桜元学園を出たらこんな時間だったんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 69,
+	},
+	block_00012 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0024", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00201", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「つまり、イヴ先輩を独り占めしてる",
+					{"rt2"},
+					"布波能先輩のせいなわけですね！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 75,
+	},
+	block_00013 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0013", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"fgact", ch="汐莉", act="いいえ", time=500, lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0019", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00202", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「疲れ切った後輩が遊びに来たんですよ。",
+					{"rt2"},
+					"休ませてくれてもいいって思いませんか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 83,
+	},
+	block_00014 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00203", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「断るならぼろぼろの身体を引きずって、",
+					{"rt2"},
+					"部屋に帰りますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 90,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……わかったよ、上がってくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 93,
+	},
+	block_00016 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg028c", path=":bg/", sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"想定外の来客だったが、",
+					{"rt2"},
+					"そのまま部屋の中へ迎え入れる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 103,
+	},
+	block_00017 = {
+		{"se", file="se自動ドア閉じ", vol=50, id=1},
+		{"fg", ch="汐莉", size="no", mx=-40, mode=3, resize=1, path=":fg/sio/no/", file="sio_noa0200", face="a0001", head="sio_noa", ex05="sio_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0019", head="sio_noa", ex05="sio_noa0000", lv=3, id=13},
+				{"fgact", ch="汐莉", act="ジャンプ", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00204", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「お邪魔しまーす。",
+					{"rt2"},
+					"うわー、シンプルなお部屋ですねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 114,
+	},
+	block_00018 = {
+		{"fgact", ch="汐莉", act="停止", lv=3, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉は部屋の中をざっと見まわしてから、",
+					{"rt2"},
+					"ベッドに腰かけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 119,
+	},
+	block_00019 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg028c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="汐莉", size="z1", mode=3, resize=1, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", y2=0, y=50, lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"se", file="se倒れる(ベッド)", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「こんな時間に男の部屋に来て親睦を深めようだなんて",
+					{"rt2"},
+					"下手したら勘違いされるぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 132,
+	},
+	block_00020 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0006", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00205", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「おや、それはいったいどんな？",
+					{"rt2"},
+					"布波能先輩が実演しても構いませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 140,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"誘うように、汐莉が足を組む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 142,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「勘弁してくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 145,
+	},
+	block_00023 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg028c", path=":bg/", sync=0},
+		{"fg", ch="汐莉", size="no", mode=3, resize=1, path=":fg/sio/no/", file="sio_noa0210", face="a0006", head="sio_noa", ex05="sio_noa0010", y=50, lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉と距離を取るため、",
+					{"rt2"},
+					"俺は立ったまま壁に背を預けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 155,
+	},
+	block_00024 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0053", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0023", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00206", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「布波能先輩は悪いオオカミさんじゃないんですね。",
+					{"rt2"},
+					"少し残念ですが、いいでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 165,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いいから本題に入ってくれ。",
+					{"rt2"},
+					"どうやって親睦を深めるつもりなんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 169,
+	},
+	block_00026 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0005", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"fgact", ch="汐莉", act="ジャンプ", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00207", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ズバリ、恋バナです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 175,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「恋バナって……。",
+					{"rt2"},
+					"俺と汐莉の二人ですることか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 179,
+	},
+	block_00028 = {
+		{"fgact", ch="汐莉", act="停止", lv=3, id=13},
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0004", head="sio_noa", ex05="sio_noa0010", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00208", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「お互いに青春を謳歌する学生同士じゃないですか。",
+					{"rt2"},
+					"色恋の一つや二つはあって当然だと思います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 186,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いやだって……おまえはイヴ一筋だろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 189,
+	},
+	block_00030 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0051", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00209", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ボクがイヴ先輩に抱いているのは",
+					{"rt2"},
+					"恋心ではなく憧れなので別物ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 195,
+	},
+	block_00031 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0005", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00210", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「布波能先輩が実際のところ、",
+					{"rt2"},
+					"イヴ先輩をどう思ってるのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 201,
+	},
+	block_00032 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0006", head="sio_noa", ex05="sio_noa0010", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00211", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ボクとしては知っておきたいところですし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 206,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「つまり、それを確認するために来たと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 209,
+	},
+	block_00034 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0001", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"fgact", ch="汐莉", act="うなづく", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00212", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「その通りです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 215,
+	},
+	block_00035 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0024", head="sio_noa", ex05="sio_noa0000", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00213", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「布波能先輩とイヴ先輩が仲良しなのは、",
+					{"rt2"},
+					"いまや周知の事実ですし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 221,
+	},
+	block_00036 = {
+		{"fgact", ch="汐莉", act="停止", lv=3, id=13},
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0006", head="sio_noa", ex05="sio_noa0010", y=50, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00214", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「本心を聞かせていただければ、",
+					{"rt2"},
+					"ボクも力になれるかもしれませんよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 228,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「力になるっていうのは、",
+					{"rt2"},
+					"イヴと縁結びしてくれるってことか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 232,
+	},
+	block_00038 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg028c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="汐莉", size="z1", mode=3, resize=1, path=":fg/sio/z1/", file="sio_z1a0200", face="a0019", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0031", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"fgact", ch="汐莉", act="びっくり", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0009", head="sio_z1a", ex05="sio_z1a0000", y2=0, y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00215", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「まさか！",
+					{"rt2"},
+					"……誰の目にもお二人の関係は明白です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 250,
+	},
+	block_00039 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"bgm", stop=1},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0024", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00216", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「そちらではなくて、",
+					{"rt2"},
+					"最近布波能先輩を悩ませている、嫌な噂の方ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 258,
+	},
+	block_00040 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0054", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00217", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「率直に言って、不快だし、困るでしょう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 263,
+	},
+	block_00041 = {
+		{"bgm", file="bgm23"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺に怪しまれているとわかっているのに、",
+					{"rt2"},
+					"切り込んでくるか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 268,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さて、どう対応するべきか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 270,
+	},
+	block_00043 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そういってもな、噂になるのは仕方ないだろ。",
+					{"rt2"},
+					"何しろ運動部総括と珠賀良区の人間だからなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 276,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺とイヴの仲を裂くために暗躍する人間がいなくても、",
+					{"rt2"},
+					"この類の噂は立っていたはずだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 280,
+	},
+	block_00045 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0053", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"fgact", ch="汐莉", act="いいえ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00218", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ボクは人の生まれとかは気にしないですけど、",
+					{"rt2"},
+					"桜元学園の皆さん噂がお好きですからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 288,
+	},
+	block_00046 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「へぇ、少し意外だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 293,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺をイヴから引き離そうとする理由の中に",
+					{"rt2"},
+					"珠賀良区の件も含まれてるのかと思ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 297,
+	},
+	block_00048 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00219", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「それは逆ですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 302,
+	},
+	block_00049 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0004", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00220", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「珠賀良区出身の苦労人ということを知って、",
+					{"rt2"},
+					"ボクは布波能先輩に共感を覚えましたし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 308,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「もしかして、おまえも……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 311,
+	},
+	block_00051 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0009", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"fgact", ch="汐莉", act="いいえ", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00221", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「珠賀良区出身の方と比べたら全然ですよ。",
+					{"rt2"},
+					"ちょっと家庭環境が複雑なだけですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 319,
+	},
+	block_00052 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0013", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0026", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00222", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「だけどね、たまにうんざりするんですよ。",
+					{"rt2"},
+					"ここにはどこを見ても幸福な人間しかいない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 326,
+	},
+	block_00053 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0015", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00223", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「当然ですよね。人は平等じゃない、",
+					{"rt2"},
+					"だって生まれた時から差があるんですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 333,
+	},
+	block_00054 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0029", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00224", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「布波能先輩だって、そんなふうに考えて、",
+					{"rt2"},
+					"嫌になることがあるでしょう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 339,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺は……珠賀良区でも",
+					{"rt2"},
+					"ささやかな幸せを見つけてやってきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 343,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だから自分と人の生活を比べて、",
+					{"rt2"},
+					"妬んだり卑屈になったりしたことはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 350,
+	},
+	block_00057 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0053", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0010", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00225", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「それは残念です。布波能先輩となら、",
+					{"rt2"},
+					"分かり合える気がしたんですけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 357,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「汐莉の気持ちは分からなくもないけど、",
+					{"rt2"},
+					"どうしようもないことだからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 361,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「裕福さを羨むのに時間使うくらいなら、",
+					{"rt2"},
+					"前を向こうって感じだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 368,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「にしても、汐莉って本当にイヴが大好きなんだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 371,
+	},
+	block_00061 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0019", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00226", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「はい？　どうして今の流れでそうなるんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 376,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「だってイヴも相当いいところの出だろ？",
+					{"rt2"},
+					"汐莉の言う、幸福な人間だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 380,
+	},
+	block_00063 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0013", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"fgact", ch="汐莉", act="うなづく", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0023", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00227", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「……ええ、そうですね。",
+					{"rt2"},
+					"なにせ警察庁長官の娘さんですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 388,
+	},
+	block_00064 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00228", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ま、ボクの話はどうでもいいんですよ。",
+					{"rt2"},
+					"いま聞きたいのは布波能先輩の気持ちです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 394,
+	},
+	block_00065 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0026", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00229", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「イヴ先輩と本気で付き合う気があるんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 399,
+	},
+	block_00066 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00230", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「言い方が悪くなりますけど、",
+					{"rt2"},
+					"生まれの違いのせいでかなり面倒になりますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 405,
+	},
+	block_00067 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0023", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00231", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「というか、学園内だと既にそうなってきてますし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 410,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺もイヴもそういうことは気にしないつもりだ。",
+					{"rt2"},
+					"有名税として割り切るさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 414,
+	},
+	block_00069 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0018", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00232", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「……あれ？　もしかして、",
+					{"rt2"},
+					"お二人ってもう付き合ってるんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 420,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「いや、それはまだなんだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 423,
+	},
+	block_00071 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0025", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00233", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「妙な関係ですね。",
+					{"rt2"},
+					"そのまま続けるつもりですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 429,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「まさか、ちゃんと区切りはつけるさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 432,
+	},
+	block_00073 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0004", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"fgact", ch="汐莉", act="おじぎ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00234", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「なるほどー、よぉくわかりました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 438,
+	},
+	block_00074 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0005", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00235", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「それでは、現在フリーの布波能先輩。",
+					{"rt2"},
+					"次はボクの恋バナを聞いてもらえますか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 444,
+	},
+	block_00075 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「意外だな。おまえにもそういうのがあるのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 449,
+	},
+	block_00076 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0004", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00236", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ええ。憧れと恋は別腹ですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 454,
+	},
+	block_00077 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0053", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00237", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「実はですね、",
+					{"rt2"},
+					"最近になって初恋というものを体験したんですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 460,
+	},
+	block_00078 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00238", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「最初は一ミリも好きじゃなかったですし、",
+					{"rt2"},
+					"初恋の相手になるなんて想像もしていませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 468,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「第一印象は当てにならないってことか。",
+					{"rt2"},
+					"何がきっかけで初恋に発展したんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 472,
+	},
+	block_00080 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0010", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00239", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「強いて言うのであれば見えてなかった長所に",
+					{"rt2"},
+					"気付いたからでしょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 478,
+	},
+	block_00081 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0005", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00240", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「その人のことを認めて偏見がなくなった時、",
+					{"rt2"},
+					"とても優しい性格だったんだと気付いたんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 484,
+	},
+	block_00082 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0004", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00241", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「認めたきっかけは",
+					{"rt2"},
+					"先日のクイズ対決だったんですけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 490,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「は……？　いや、それって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 493,
+	},
+	block_00084 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0006", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"fgact", ch="汐莉", act="ジャンプ", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00242", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「せいかーい。",
+					{"rt2"},
+					"ボクの初恋の人は布波能先輩ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 500,
+	},
+	block_00085 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0015", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00243", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「わざわざ会いに来たのだって、",
+					{"rt2"},
+					"本当は少しでも同じ時間を過ごしたかったからです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 506,
+	},
+	block_00086 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0004", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00244", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「お二人が付き合っていないことが",
+					{"rt2"},
+					"わかって安心しましたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 513,
+	},
+	block_00087 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0005", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00245", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ボクにもまだチャンスがあるってことですもんね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 518,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 521,
+	},
+	block_00089 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0006", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00246", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 526,
+	},
+	block_00090 = {
+		{"bg", y=500, zoom=120, speed=150000, time=500, file="zbg028c", path=":bg/", x2=0, y2=500, x=-896, ax=1280, ay=720, bx=-640, by=-360},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"お互いに言葉を紡ぐことなく、",
+					{"rt2"},
+					"無言のまま時間が過ぎ去っていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 531,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"正直どういう反応をすればいいのか分からなかった。",
+					{"rt2"},
+					"イヴに告白された時もこんなだった気がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 534,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉が俺のことを好き？　",
+					{"rt2"},
+					"言葉通り受け取るなら、噂の出所は別のところになる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 537,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"好きという言葉がブラフなら……理屈は通る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 539,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが俺とイヴを引き離すためだけに、",
+					{"rt2"},
+					"そんなことする必要があるのか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 542,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が汐莉を受け入れれば、",
+					{"rt2"},
+					"汐莉とイヴの関係は破綻する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 545,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉がイヴと取り戻したいと考えて動いているなら、",
+					{"rt2"},
+					"まったく意味のない行動じゃないか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 548,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"……だめだ。どれが真実か全然わからない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 550,
+	},
+	block_00098 = {
+		{"fg", ch="汐莉", size="z1", mode=1, path=":fg/sio/z1/", file="sio_z1a0200", face="a0014", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=200},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00247", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「布波能先輩？",
+					{"rt2"},
+					"あの、黙られると気まずいんですけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 556,
+	},
+	block_00099 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, file="zbg028c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0001", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……すまん、なんか汐莉から告白されたのが",
+					{"rt2"},
+					"信じられなくてさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 567,
+	},
+	block_00100 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0023", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00248", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ボクだって驚いてますよ。",
+					{"rt2"},
+					"まさか、あなたを好きになるとは思いませんでしたし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 573,
+	},
+	block_00101 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0005", head="sio_z1a", ex05="sio_z1a0000", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00249", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「でも、好きな人の部屋に告白に来た勇気は",
+					{"rt2"},
+					"評価してほしいところです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 579,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「それは凄いと思ってるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 582,
+	},
+	block_00103 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0025", head="sio_z1a", ex05="sio_z1a0010", y=50, lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00250", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「えぇ？　本当ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 587,
+	},
+	block_00104 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg028c", path=":bg/", sync=0},
+		{"fg", ch="汐莉", size="no", mode=3, resize=1, path=":fg/sio/no/", file="sio_noa0200", face="a0015", head="sio_noa", ex05="sio_noa0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"くすくすと笑いながら汐莉はベッドから立ち上がり、",
+					{"rt2"},
+					"ゆっくりとこちらへ近づいてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 597,
+	},
+	block_00105 = {
+		{"fg", ch="汐莉", size="z2", mode=3, resize=1, path=":fg/sio/z2/", file="sio_z2a0210", face="a0015", head="sio_z2a", ex05="sio_z2a0010", lv=5, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あと一歩の距離になると、汐莉の手が",
+					{"rt2"},
+					"両頬に手を添えられ、そして……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 602,
+	},
+	block_00106 = {
+		{"se", file="se起き上がる", id=1},
+		{"fg", ch="汐莉", size="z1", mode=3, resize=1, path=":fg/sio/z1/", file="sio_z1a0200", face="a0019", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「待て！　おまえ、何しようとしてるんだ……！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 608,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"慌てて汐莉を引きはがす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 610,
+	},
+	block_00108 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0015", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00251", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「なんだ。動かないからてっきりいいのかと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 617,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「予想外のことに固まってただけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 620,
+	},
+	block_00110 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0025", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00252", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「惜しかったですね。",
+					{"rt2"},
+					"そのまま固まっててくれたら奪えたのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 626,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「う、奪えたって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 629,
+	},
+	block_00112 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0053", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0006", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00253", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「仕方ないじゃないですか。好きな人に",
+					{"rt2"},
+					"キスをしたいっていう欲求は誰にでもありますよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 636,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そうかもしれないが……。",
+					{"rt2"},
+					"される側はそんな簡単な問題じゃないんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 640,
+	},
+	block_00114 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0025", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+		{"fgact", ch="汐莉", act="うんうん", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00254", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ふふっ。布波能先輩って可愛いですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 646,
+	},
+	block_00115 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0005", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00255", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「先輩……改めて、告白しますね。",
+					{"rt2"},
+					"ボクと付き合ってくれませんか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 652,
+	},
+	block_00116 = {
+		{"fgact", ch="汐莉", act="停止", lv=4, id=13},
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0015", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00256", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「先輩が望むことだったらなんだってしますよ？",
+					{"rt2"},
+					"エッチな行為でも全然受け入れますし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 659,
+	},
+	block_00117 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0053", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0210", face="a0005", head="sio_z1a", ex05="sio_z1a0010", lv=4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00257", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「イヴ先輩が一番でボクが二番目でも構わない。",
+					{"rt2"},
+					"……どうですか？　凄くお得だと思いますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 666,
+	},
+	block_00118 = {
+		{"fg", ch="汐莉", size="z1", mode=3, path=":fg/sio/z1/", file="sio_z1a0200", face="a0006", head="sio_z1a", ex05="sio_z1a0000", lv=4, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00258", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「このまま、あのベッドの上で遊ぶのもいいですね。",
+					{"rt2"},
+					"きっとすごく気持ちいいですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 672,
+	},
+	block_00119 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=40, zoom=120, file="zbg028c", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="汐莉", size="z2", mode=3, resize=1, path=":fg/sio/z2/", file="sio_z2a0200", face="a0015", head="sio_z2a", ex05="sio_z2a0000", lv=5, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00259", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「ねぇ、凪先輩？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 683,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「…………やめておくよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 686,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「俺は一人と真剣に向き合って付き合いたい。",
+					{"rt2"},
+					"そしてその相手は、おまえじゃなくてイヴなんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 690,
+	},
+	block_00122 = {
+		{"fg", ch="汐莉", size="z2", mode=3, path=":fg/sio/z2/", file="sio_z2a0200", face="a0019", head="sio_z2a", ex05="sio_z2a0000", lv=5, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00260", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「付き合う前に他の女の子と遊ぶのはノーカンでは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 695,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「そういう問題じゃないんだ。悪いが諦めてくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 698,
+	},
+	block_00124 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg028c", path=":bg/", sync=0},
+		{"fg", ch="汐莉", size="no", mode=3, resize=1, path=":fg/sio/no/", file="sio_noa0200", face="a0012", head="sio_noa", ex05="sio_noa0000", lv=3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00261", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「分かりました……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 708,
+	},
+	block_00125 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0013", head="sio_noa", ex05="sio_noa0000", lv=3, id=13},
+		{"fgact", ch="汐莉", act="いいえ", time=500, lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00262", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「勇気を出して告白したのに、",
+					{"rt2"},
+					"こーんなきっぱり振られるなんてなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 715,
+	},
+	block_00126 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0010", head="sio_noa", ex05="sio_noa0000", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0005", head="sio_noa", ex05="sio_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00263", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「あーあ、このままだと泣いちゃうかも。",
+					{"rt2"},
+					"布波能先輩、責任をもって慰めてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 722,
+	},
+	block_00127 = {
+		{"fgact", ch="汐莉", act="停止", lv=3, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「慰めるって、どうやってだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 727,
+	},
+	block_00128 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0004", head="sio_noa", ex05="sio_noa0010", lv=3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0210", face="a0051", head="sio_noa", ex05="sio_noa0010", lv=3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00264", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「少し夜風に当たりましょうよ、",
+					{"rt2"},
+					"二人で夜の散歩です。それぐらいならいいですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 734,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"凪"},
+					"「……分かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 737,
+	},
+	block_00130 = {
+		{"fg", ch="汐莉", size="no", mode=3, path=":fg/sio/no/", file="sio_noa0200", face="a0004", head="sio_noa", ex05="sio_noa0000", lv=3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sio_00265", ch="sio"},
+			},
+			ja = {
+				{
+					name = {"汐莉"},
+					"「先に出て待ってるんで、用意してきてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 743,
+	},
+	block_00131 = {
+		{"fg", ch="汐莉", mx=-40, mode=-1, lv=3, id=13},
+		{"se", file="se自動ドア", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"汐莉の言葉がどこまで本当なのか俺にはわからない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 749,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"イヴと俺を引き離すための策だという可能性も、",
+					{"rt2"},
+					"捨てきれないままだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 752,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とはいえ初恋とまで言ってくれた相手を、",
+					{"rt2"},
+					"振ったのもまた事実。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 755,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恋の楽しさを知ってしまった俺は、",
+					{"rt2"},
+					"汐莉を無碍に扱うことができなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 758,
+	},
+	block_00135 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"excall", file="03_イヴ_07_3"},
+		{"text"},
+		linkback = "block_00134",
+		line = 761,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
