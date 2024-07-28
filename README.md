@@ -1,5 +1,5 @@
 # select-oblige-zh-machine-translation
-Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 汉化补丁  
+Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 中文补丁  
 ### 简要说明  
 [演示视频](https://www.bilibili.com/video/BV1G1421t7Qu)  
 欢迎提 PR。请在 **script-cn** 中修改。  
@@ -16,7 +16,7 @@ Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 汉化补丁
 - 基于提示词的上标保留（不稳定）。
 - 基于日文字符检测的漏译防止机制。
 - 针对 H-Scene 的提示词优化。
-- 游戏界面部分常用按钮的汉化。（设置和开始界面暂未汉化）
+- 游戏界面部分常用按钮的翻译。（设置和开始界面暂未翻译）
 ### 统计  
 总对话数: 33342  
 原文总字符数: 802900
