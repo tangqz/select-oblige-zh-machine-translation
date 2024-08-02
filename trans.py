@@ -127,7 +127,7 @@ def process_folder(input_folder, output_folder):
             
             # 检查输出文件是否已经存在
             if os.path.exists(output_file_path):
-                print(f"File {output_file_path} already exists. Skipping.")  #万一报错了，再次运行也不会从头开始翻，注意看看最后一个文件结尾有没有翻译完整
+                print(f"File {output_file_path} already exists. Skipping.") 
                 continue
             
             process_json_file(input_file_path, output_folder)
