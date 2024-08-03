@@ -94,7 +94,7 @@ def process_json_file(file_path, output_folder):
                 clean_translated_batch_no_ruby = re.sub(r'\[txruby text=\\"[^\\"]*\\"\]', '', clean_translated_batch)
                 
                 # 解析JSON对象
-                translated_json = json.loads(clean_translated_batch_no_ruby)
+                translated_json = json.loads(clean_translated_batch)
                 
                  检查翻译结果中是否包含日文字符（仅正文部分）
                 for item in translated_json:
