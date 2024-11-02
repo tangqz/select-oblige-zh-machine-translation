@@ -1,12 +1,11 @@
 # select-oblige-zh-machine-translation
 Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 中文补丁  
+此作品已有汉化补丁，该项目的历史使命已经结束。
 ### 简要说明  
 [演示视频](https://www.bilibili.com/video/BV1G1421t7Qu)  
-欢迎提 PR。请在 **script-cn** 中修改。  
 用到 [VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools) 进行格式转换。
 在此开源用到的代码，供参考。  
 此补丁中，“ファイブ”暂译为“法伊芙”。AI名 モンステラ 译为“Monstera”（有译成“蒙斯特拉”的就不改了）
-个人日语只是正常阿宅的水平，各位大佬们如果有想法非常欢迎提issue！
 ### 用法
 将 releases 中发布的文件解压，将解压出的script、pc文件夹放到游戏根目录即可。
 ### 特性  
@@ -17,8 +16,6 @@ Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 中文补丁
 - 基于日文字符检测的漏译防止机制。
 - 针对 H-Scene 的提示词优化。
 - 游戏界面部分常用按钮的翻译。（设置和开始界面暂未翻译）
-### 计划  
-OpenAI API 现已支持json结构化输出，这意味着不必使用提示词控制格式了。在下一次的翻译工作中（如果有的话），计划修改输出方式，以增加稳定性，提高翻译质量和稳定性。
 ### 统计  
 总对话数: 33342  
 原文总字符数: 802900
