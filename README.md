@@ -1,5 +1,5 @@
 # select-oblige-zh-machine-translation
-Madosoft（窗社）新作 SELECT OBLIGE gpt-4o 中文补丁  
+Madosoft（窗社） SELECT OBLIGE （官方译名：天选庶民的真命之选） gpt-4o 中文补丁  
 此作品已有汉化补丁，该项目的历史使命已经结束。
 ### 简要说明  
 [演示视频](https://www.bilibili.com/video/BV1G1421t7Qu)  
